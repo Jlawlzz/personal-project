@@ -11,10 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160301030440) do
+ActiveRecord::Schema.define(version: 20160301041342) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "platforms", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "token_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "platforms", ["token_id"], name: "index_platforms_on_token_id", using: :btree
+  add_index "platforms", ["user_id"], name: "index_platforms_on_user_id", using: :btree
+
+  create_table "tokens", force: :cascade do |t|
+    t.string   "token"
+    t.string   "key"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "uid"
@@ -27,4 +45,6 @@ ActiveRecord::Schema.define(version: 20160301030440) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "platforms", "tokens"
+  add_foreign_key "platforms", "users"
 end

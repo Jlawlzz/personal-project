@@ -11,4 +11,10 @@ class User < ActiveRecord::Base
     user.save!
     user
   end
+
+  def self.spotify_login(auth)
+    spotify_user = RSpotify::User.new(auth)
+    binding.pry
+    spotify_user
+  end
 end
