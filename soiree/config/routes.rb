@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
-  get '/auth/:provider/callback', to: 'sessions#create'
+  get '/auth/spotify/callback', to: 'spotify#create'
+  get '/auth/facebook/callback', to: 'sessions#create'
   get '/dashboard', to: 'dashboard#show'
   delete '/logout', to: 'sessions#destroy'
 end
