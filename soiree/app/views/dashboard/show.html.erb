@@ -1,4 +1,6 @@
 <%= image_tag current_user.image %>
 <%= link_to 'Logout', logout_path, method: :delete %>
 
-<%= link_to 'Spotify Login', '/auth/spotify' %>
+<% if !spotify_user %>
+  <%= link_to 'Spotify Login', '/auth/spotify' %>
+<% end %>
