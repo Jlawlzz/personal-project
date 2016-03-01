@@ -246,9 +246,8 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   koala (~> 2.2)
-  mocha
-  oauth2
   omniauth-facebook
+  omniauth-oauth2
   pg (~> 0.15)
   pry
   rails (= 4.2.5)

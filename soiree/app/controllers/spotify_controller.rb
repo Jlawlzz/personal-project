@@ -1,9 +1,8 @@
 class SpotifyController < ApplicationController
 
   def create
-    binding.pry
-    spotify_user = User.spotify_login(env["omniauth.auth"])
-    session[:spotify] = spotify_user
+    @user = User.spotify_login(request.env["omniauth.auth"], current_user)
+    session[:spotify_auth] = request.env["omniauth.auth"]
     redirect_to dashboard_path
   end
 
