@@ -1,3 +1,15 @@
-<ul class='nav navbar-inverse nav-pills nav-stacked nav_style'>
-  <li role="presentation"> <a href='#'>Soiree</a> </li>
-</ul>
+<div class="nav_top">
+  <ul class='nav navbar-inverse nav-pills nav-stacked nav_style'>
+    <li role="presentation" class="active"> <a href='#'>Soiree</a> </li>
+    <li role="presentation"><h4>My Playlist <span class="glyphicon glyphicon-plus-sign"></span></h4></li>
+    <br>
+    <% @user_playlist.each do |playlist| %>
+      <li role="presentation"><%= link_to playlist.name, "#" %></li>
+      <% end %>
+  </ul>
+</div>
+<div class="nav_bottom">
+  <ul class='nav navbar-inverse nav-pills nav-stacked nav_style'>
+    <li role="presentation"><h4>My Groups <span class="glyphicon glyphicon-plus-sign"></span></h4></li>
+  </ul>
+</div>

@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :tokens
   has_many :platforms, through: :tokens
+  has_many :playlists
 
   def self.omniauth(auth)
     user = User.find_or_create_by(provider: auth['provider'], uid: auth['uid'])

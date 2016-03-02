@@ -18,3 +18,24 @@
  .nav_style{
    height: 100vh
  }
+
+ .nav_top {
+    height: 50vh;
+    text-indent: 30px;
+    color: white;
+    a {
+     color: white !important;
+    }
+    a:hover{
+      background-color: blue !important;
+    }
+ }
+
+ .nav_bottom {
+    height: inherit;;
+    color: white;
+    text-indent: 30px;
+    a {
+     color: white;
+    }
+ }
