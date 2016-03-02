@@ -95,12 +95,6 @@ h1{
   color: #00bfff;
 }
 
- .nav_style{
-   height: 100vh;
-   margin-right: 0px;
-   border-right: 0px;
-   padding-right: 0px;
- }
 
  .backdrop {
    background-color: #293954;
@@ -114,6 +108,22 @@ h1{
    font-size: 125px !important;
    color:white;
    font-style: 'now';
+ }
+
+ .nav_top {
+    height: 50%;
+    text-indent: 30px;
+    color: white;
+    a {
+     color: white;
+    }
+ }
+
+ .nav_style {
+   height: 100vh;
+   margin-right: 0px;
+   border-right: 0px;
+   padding-right: 0px;
  }
 
  .title-description{
