@@ -21,5 +21,6 @@ class User < ActiveRecord::Base
     user = User.find(current_user.id)
     token = Token.create(key: spotify_user.credentials['token'], platform_id: spotify.id)
     user.tokens << token
+    binding.pry
   end
 end
