@@ -1,16 +1,25 @@
 <div class="fluid-container">
-  <div class="panel panel-default">
+  <div class="panel">
     <!-- Default panel contents -->
-    <div class="panel-heading"><%= @playlist.name %></div>
+    <div class="panel-heading"><h2><%= @playlist.name %></h2></div>
     <div class="panel-body">
-      <p><%= @playlist.description %></p>
+      <p><h4><%= @playlist.description %></h4></p>
     </div>
 
     <!-- Table -->
-    <table class="table">
-      <% @playlist.songs.each do |song| %>
+    <table class="table table-hover">
       <tr>
-        <td><%= song.title %> BY: <%= song.artist %></td>
+        <th>#</th>
+        <th>Song Title</th>
+        <th>Artist</th>
+      </tr>
+      <% count = 0 %>
+      <% @playlist.songs.each do |song| %>
+      <% count += 1 %>
+      <tr>
+        <td><%= count %></td>
+        <td><%= song.title %></td>
+        <td><%= song.artist %></td>
       </tr>
       <% end %>
     </table>
