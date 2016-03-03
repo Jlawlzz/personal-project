@@ -22,6 +22,11 @@ module OmniAuth
   end
 end
 
+Echowrap.configure do |config|
+  config.api_key =       ENV['ECHO_KEY']
+  config.consumer_key =  ENV['ECHO_CONSUMER']
+  config.shared_secret = ENV['ECHO_SECRET']
+end
 
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']

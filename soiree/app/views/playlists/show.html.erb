@@ -1,0 +1,18 @@
+<div class="fluid-container">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading"><%= @playlist.name %></div>
+    <div class="panel-body">
+      <p><%= @playlist.description %></p>
+    </div>
+
+    <!-- Table -->
+    <table class="table">
+      <% @playlist.songs.each do |song| %>
+      <ul>
+        <li><%= song.title %> BY: <%= song.artist %></li>
+      </ul>
+      <% end %>
+    </table>
+  </div>
+</div>

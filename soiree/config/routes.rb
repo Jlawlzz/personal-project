@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get '/auth/facebook/callback', to: 'sessions#create'
   get '/dashboard', to: 'dashboard#show'
   delete '/logout', to: 'sessions#destroy'
+  resources :playlists, only: [:new, :create, :show]
 end
