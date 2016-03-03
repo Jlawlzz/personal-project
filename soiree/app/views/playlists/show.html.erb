@@ -9,9 +9,9 @@
     <!-- Table -->
     <table class="table">
       <% @playlist.songs.each do |song| %>
-      <ul>
-        <li><%= song.title %> BY: <%= song.artist %></li>
-      </ul>
+      <tr>
+        <td><%= song.title %> BY: <%= song.artist %></td>
+      </tr>
       <% end %>
     </table>
   </div>
