@@ -1,4 +1,4 @@
-<div class="form">
+
     <h1>Create Personal Playlist</h1>
 
   <%= simple_form_for :post, url: playlists_path, method: :post do |f| %>
@@ -15,8 +15,7 @@
     <%= f.collection_select :platform_id, Platform.all, :id, :name  %>
     <br><br>
 
-    <%= f.input :genre, collection: ["R&B", "Hip-Hop", "Classical"] %>
+    <%= f.input :genre, collection: Echowrap.artist_list_genres.map {|genre| genre.attrs[:name]} %>
     <br><br>
     <%= f.submit "Create Playlist", class:"btn btn-primary btn-lg active logout-button" %>
   <% end %>
-</div>
