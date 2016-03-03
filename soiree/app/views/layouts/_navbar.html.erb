@@ -1,12 +1,12 @@
 <div class="nav_top">
   <ul class='nav navbar-inverse nav-pills nav-stacked nav_style'>
-    <li role="presentation" class="active"><h2><a href='#'>Soiree</a></h2></li>
+    <li role="presentation" class="active"><h1><a href='/dashboard'>Soiree</a></h1></li>
     <li role="presentation"><h3><%= current_user.name %></h3></li>
-    <li role="presentation"><h4>My Playlist<a href='#'><span class="glyphicon glyphicon-plus-sign"></span></a></h4></li>
+    <li role="presentation"><h4>My Playlist<a href='/playlists/new' ><span class="glyphicon glyphicon-plus-sign" id="add_playlist"></span></a></h4></li>
     <br>
-    <% @user_playlist.each do |playlist| %>
-      <li role="presentation"><%= link_to playlist.name, "#" %></li>
+    <% current_user.user_playlists.each do |playlist| %>
+      <li role="presentation"><%= link_to playlist.name[0..20], playlist %></li>
       <% end %>
-    <li role="presentation"><h4>My Groups<a href='#'><span class="glyphicon glyphicon-plus-sign"></span></a></h4></li>
+    <li role="presentation"><h4>My Groups<a href='#'><span class="glyphicon glyphicon-plus-sign" id="add_group"></span></a></h4></li>
   </ul>
 </div>

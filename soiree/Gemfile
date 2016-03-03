@@ -17,6 +17,8 @@ gem 'omniauth-facebook'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rspotify'
 gem 'omniauth-oauth2'
+gem 'simple_form'
+gem 'echowrap'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

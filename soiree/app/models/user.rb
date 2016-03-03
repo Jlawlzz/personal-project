@@ -16,11 +16,15 @@ class User < ActiveRecord::Base
     user
   end
 
+  def user_playlists
+    self.playlists
+  end
+
   def self.spotify_login(auth, current_user)
     spotify_user = RSpotify::User.new(auth)
     spotify = Platform.find_by(name: 'spotify')
     user = User.find(current_user.id)
-    token = Token.create(key: spotify_user.credentials['token'], platform_id: spotify.id)
+    token = Token.create(auth: auth)
     user.tokens << token
   end
 end

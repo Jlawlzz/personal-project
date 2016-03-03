@@ -1,14 +1,15 @@
 require 'rails_helper'
 
-describe 'FacebookService' do
+describe'FacebookService' do
+  include Capybara::DSL
   context "#sign in" do
     it "returns image and name" do
       VCR.use_cassette("returns user") do
-        visit root_path
-        click_on "Login Through FB"
+        visit '/'
+        click_on "login with facebook"
 
-        expect(current_path).to eq dashboard_path
-        binding.pry
+        expect(current_path).to eq '/dashboard'
+        expect(page).to have_content "Taylor Moore"
       end
     end
   end

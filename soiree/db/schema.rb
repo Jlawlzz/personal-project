@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160302064533) do
+ActiveRecord::Schema.define(version: 20160303025200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,15 +53,15 @@ ActiveRecord::Schema.define(version: 20160302064533) do
     t.string   "album"
     t.string   "image"
     t.integer  "platform_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+    t.string   "echo_id",     default: "no_id"
   end
 
   add_index "songs", ["platform_id"], name: "index_songs_on_platform_id", using: :btree
 
   create_table "tokens", force: :cascade do |t|
-    t.string   "key"
-    t.string   "secret_key"
+    t.hstore   "auth"
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

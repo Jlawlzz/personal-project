@@ -1,0 +1,22 @@
+<div class="form">
+    <h1>Create Personal Playlist</h1>
+
+  <%= simple_form_for :post, url: playlists_path, method: :post do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br><br>
+
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+    <br><br>
+
+    <%= f.label :service %>
+    <%= f.collection_select :platform_id, Platform.all, :id, :name  %>
+    <br><br>
+
+    <%= f.input :genre, collection: ["R&B", "Hip-Hop", "Classical"] %>
+    <br><br>
+    <%= f.submit "Create Playlist", class:"btn btn-primary btn-lg active logout-button" %>
+  <% end %>
+</div>
