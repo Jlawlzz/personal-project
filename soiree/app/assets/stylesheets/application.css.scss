@@ -14,17 +14,6 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- .form-form {
-   width: 70% !important;
-   height: 50px !important;
-   font-size: 16px !important;
- }
-
- .form-text {
-   font-size: 20px;
-   color: white;
- }
-
 .home-stats{
   margin-top: 3vh;
 }
@@ -38,7 +27,7 @@
   margin-right: 30px;
   margin-top: 30px;
   margin-down: 30px;
-  border: none;
+  border: none; 
   tr:hover {
     color: #293954 !important;
     font-style: italic;
