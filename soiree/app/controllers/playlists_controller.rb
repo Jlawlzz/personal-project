@@ -8,6 +8,7 @@ class PlaylistsController < ApplicationController
     playlist = Playlist.create(playlist_params)
     playlist.populate(spotify_user)
     current_user.playlists << playlist
+    
     redirect_to playlist_path(playlist.id)
   end
 

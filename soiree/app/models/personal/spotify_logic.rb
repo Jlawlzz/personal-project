@@ -1,10 +1,6 @@
 class Personal::SpotifyLogic
-
+  
   def self.find_songs(preferences)
-    echonest(preferences)
-  end
-
-  def self.echonest(preferences)
     artist = Echowrap.artist_search(description: preferences['genre'])
     artist = artist.first.attrs
     songs = Echowrap.song_search(artist: artist[:name], results: 100, bucket: ['id:spotify', 'tracks'])
