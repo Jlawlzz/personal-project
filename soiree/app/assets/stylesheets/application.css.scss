@@ -40,6 +40,13 @@
   .panel-body {
     text-align: center;
   }
+  table td{
+    vertical-align: middle !important;
+  }
+}
+
+.img-circle {
+  height: 50px;
 }
 
 .form {
