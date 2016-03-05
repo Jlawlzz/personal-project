@@ -10,16 +10,22 @@
     <table class="table table-hover">
       <tr>
         <th>#</th>
+        <th></th>
         <th>Song Title</th>
         <th>Artist</th>
+        <th>Album</th>
       </tr>
       <% count = 0 %>
       <% @playlist.songs.each do |song| %>
       <% count += 1 %>
       <tr>
         <td><%= count %></td>
+        <% cache('album-image') do %>
+        <td><%= image_tag song.image, class:"img-circle" %></td>
+        <% end %>
         <td><%= song.title %></td>
         <td><%= song.artist %></td>
+        <td><%= song.album %></td>
       </tr>
       <% end %>
     </table>

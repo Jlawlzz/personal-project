@@ -38,7 +38,12 @@ class Playlist < ActiveRecord::Base
   def save_songs(tracks)
     tracks.each do |song|
       artists = song.artists.map {|artist| artist.name}.join(', ')
-      self.songs << Song.create(title: song.name, track_id: song.id, artist: artists, platform_id: self.platform_id)
+      self.songs << Song.create(title: song.name,
+                                track_id: song.id,
+                                artist: artists,
+                                platform_id: self.platform_id,
+                                image: song.album.images[2]['url'],
+                                album: song.album.name)
     end
   end
 
