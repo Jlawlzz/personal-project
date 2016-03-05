@@ -1,0 +1,34 @@
+
+  <div class="container centered" style="width:40%">
+  <h1>Create Personal Playlist</h1>
+  <%= simple_form_for :post, url: playlists_path, method: :post do |f| %>
+
+    <div class="form-group">
+    <h2 class="form-text">name:</h2>
+    <%= f.text_field :name, class: "form-control"%>
+    <br>
+    </div>
+
+    <div class="form-group">
+    <h2 class="form-text">description:</h2>
+    <%= f.text_field :description, class: "form-control" %>
+    <br>
+    </div>
+
+    <div class="form-group">
+    <h2 class="form-text">service:</h2>
+    <%= f.collection_select :platform_id, Platform.all, :id, :name, class:"form-form"  %>
+    <br>
+    </div>
+
+    <div class="form-group">
+    <h2 class="form-text">genre:</h2>
+    <%= f.select(:genre, Echowrap.artist_list_genres.map {|genre| genre.attrs[:name]}, {}, { :class => 'form-control' }) %>
+    <br>
+    </div>
+
+    <div class="form-group">
+    <%= f.submit "Create Playlist", class:"btn btn-primary btn-lg active logout-button" %>
+    </div>
+  <% end %>
+</div>

@@ -1,4 +1,4 @@
-class GroupController < ApplicationController
+class PlaylistsController < ApplicationController
 
   def new
   end
