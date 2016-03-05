@@ -52,7 +52,7 @@ class Playlist < ActiveRecord::Base
   end
 
   def spotify_create_playlist(user_auth)
-    user_auth.create_playlist!(self.name)
+    user_auth.create_playlist!(self.name + ' - Soriee')
   end
 
 end
