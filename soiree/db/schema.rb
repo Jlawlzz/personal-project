@@ -11,11 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160303025200) do
+ActiveRecord::Schema.define(version: 20160304220930) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "group_playlists", force: :cascade do |t|
+    t.integer  "group_id"
+    t.integer  "playlist_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "group_playlists", ["group_id"], name: "index_group_playlists_on_group_id", using: :btree
+  add_index "group_playlists", ["playlist_id"], name: "index_group_playlists_on_playlist_id", using: :btree
+
+  create_table "group_users", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "group_users", ["group_id"], name: "index_group_users_on_group_id", using: :btree
+  add_index "group_users", ["user_id"], name: "index_group_users_on_user_id", using: :btree
+
+  create_table "groups", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "platforms", force: :cascade do |t|
     t.string   "name"
@@ -82,6 +107,10 @@ ActiveRecord::Schema.define(version: 20160303025200) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "group_playlists", "groups"
+  add_foreign_key "group_playlists", "playlists"
+  add_foreign_key "group_users", "groups"
+  add_foreign_key "group_users", "users"
   add_foreign_key "playlist_songs", "playlists"
   add_foreign_key "playlist_songs", "songs"
   add_foreign_key "playlists", "platforms"

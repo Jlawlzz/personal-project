@@ -21,7 +21,14 @@ RSpec.describe "User can create a group" do
     fill_in "Name", with: "Boss"
     fill_in "Description", with: "Coolio"
     expect(page).to have_content "Preferences"
+
+    #select friends
+    #only show friends that are in spotify
     click_on "Create Playlist"
+
+    #Populate music based off of users
+
+
   #
   #   playlist = Playlist.first
   #   expect(current_path).to eq playlist_path(playlist.id)

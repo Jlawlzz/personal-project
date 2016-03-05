@@ -8,7 +8,7 @@ class PlaylistsController < ApplicationController
     playlist = Playlist.create(playlist_params)
     playlist.populate(spotify_user)
     current_user.playlists << playlist
-    
+
     redirect_to playlist_path(playlist.id)
   end
 
@@ -19,11 +19,11 @@ class PlaylistsController < ApplicationController
   private
 
   def playlist_params
-    e = params.require(:post).permit( :name,
+    params = params.require(:post).permit( :name,
                                       :description,
                                       :platform_id)
 
-    e[:preferences] = {genre: params[:post][:genre]}
-    e
+    params[:preferences] = {genre: params[:post][:genre]}
+    params
   end
 end
