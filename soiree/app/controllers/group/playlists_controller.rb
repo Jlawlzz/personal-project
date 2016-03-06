@@ -1,9 +1,11 @@
-class PlaylistsController < ApplicationController
+class Group::PlaylistsController < ApplicationController
 
   def new
+    @friends = facebook_user.get_connections('me', 'friends')
   end
 
   def create
+    binding.pry
     @group = Group.new
     @users = User.find_by(group_users_params)
     @group.users <<  @users

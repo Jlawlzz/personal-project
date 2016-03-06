@@ -19,7 +19,7 @@ class Playlist < ActiveRecord::Base
   end
 
   def spotify_split
-    case self.preferences[:type]
+    case self.preferences['type']
     when "personal" then Personal::SpotifyLogic.find_songs(self.preferences)
     when "group" then Group::SpotifyLogic.find_songs(self.preferences)
     end

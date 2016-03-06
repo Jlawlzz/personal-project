@@ -11,5 +11,9 @@ class ApplicationController < ActionController::Base
   def spotify_user
     @spotify_user ||= RSpotify::User.new(session[:spotify_auth]) if session[:spotify_auth]
   end
-  
+
+  def facebook_user
+    @facebook_user ||= Koala::Facebook::API.new(current_user.token)
+  end
+
 end

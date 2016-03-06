@@ -1,11 +1,11 @@
-class PlaylistsController < ApplicationController
+class Personal::PlaylistsController < ApplicationController
 
   def new
     @playlist = Playlist.new
   end
 
   def create
-    playlist = Playlist.create(playlist_params)
+    playlist = Playlist.create(playlist(params))
     playlist.populate(spotify_user)
     current_user.playlists << playlist
 
@@ -18,13 +18,12 @@ class PlaylistsController < ApplicationController
 
   private
 
-  def playlist_params
-    params = params.require(:post).permit( :name,
+  def playlist(params)
+    playlist_params = params.require(:post).permit( :name,
                                       :description,
                                       :platform_id)
 
-    params[:preferences] = {genre: params[:post][:genre]}
-    params[:preferences] = {type: 'personal'}
-    params
+    playlist_params[:preferences] = {genre: params[:post][:genre], type: 'personal'}
+    playlist_params
   end
 end
