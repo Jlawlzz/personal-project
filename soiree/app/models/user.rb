@@ -19,7 +19,11 @@ class User < ActiveRecord::Base
   end
 
   def user_playlists
-    self.playlists
+    self.playlists.where("preferences @> 'type=>personal'")
+  end
+
+  def group_playlists
+    self.playlists.where("preferences @> 'type=>group'")
   end
 
   def self.spotify_login(auth, current_user)

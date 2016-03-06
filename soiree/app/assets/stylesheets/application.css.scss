@@ -18,6 +18,13 @@
   margin-top: 3vh;
 }
 
+  .spotify-last:before{
+    content: "•";
+    margin-right: 10px;
+    font-weight: bold;
+    color: #00FF00;
+}
+
 .panel {
   background-color: inherit !important;
   overflow: scroll;
@@ -27,7 +34,7 @@
   margin-right: 30px;
   margin-top: 30px;
   margin-down: 30px;
-  border: none; 
+  border: none;
   tr:hover {
     color: #293954 !important;
     font-style: italic;
@@ -168,6 +175,15 @@ h1{
   h1 {
     font-size: 50px !important;
     text-decoration: underline;
+  }
+  ul {
+    list-style-type: square;
+  }
+  li.spotify a::before{
+    content: "•";
+    margin-right: 5px;
+    font-weight: bold;
+    color: #00FF00;
   }
 }
 
