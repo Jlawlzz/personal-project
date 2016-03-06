@@ -29,10 +29,6 @@ Echowrap.configure do |config|
 end
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET'],
-  :client_options => {
-       scope: 'user_friends'
-    },
-    token_params: { parse: :json }
+  provider :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_SECRET']
   provider :spotify, ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET'], scope: 'user-read-email user-read-birthdate user-read-private user-library-modify user-library-read user-follow-read user-follow-modify streaming playlist-modify-private playlist-modify-public playlist-read-collaborative playlist-read-private'
 end

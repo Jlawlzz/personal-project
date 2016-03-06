@@ -30,10 +30,8 @@
   <div class="form-group">
     <div class="checkbox">
       <% @friends.each do |friend| %>
-      <label>
+      <%= f.label friend['name'] %> 
       <%= check_box_tag 'fb_ids', friend['id'], :false %>
-      <h5><%= friend['name'] %></h5>
-      </label>
       <% end %>
     </div>
     <br>

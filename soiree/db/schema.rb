@@ -86,7 +86,7 @@ ActiveRecord::Schema.define(version: 20160304220930) do
   add_index "songs", ["platform_id"], name: "index_songs_on_platform_id", using: :btree
 
   create_table "tokens", force: :cascade do |t|
-    t.hstore   "auth"
+    t.string   "auth"
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false

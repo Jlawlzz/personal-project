@@ -2,6 +2,8 @@ class Playlist < ActiveRecord::Base
   belongs_to :user
   has_many :playlist_songs
   has_many :songs, through: :playlist_songs
+  has_many :group_playlists
+  has_many :groups, through: :group_playlists
 
 
   def populate(user_auth)
