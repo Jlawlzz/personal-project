@@ -2,6 +2,8 @@ class Playlist < ActiveRecord::Base
   belongs_to :user
   has_many :playlist_songs
   has_many :songs, through: :playlist_songs
+  has_many :group_playlists
+  has_many :groups, through: :group_playlists
 
 
   def populate(user_auth)
@@ -13,13 +15,16 @@ class Playlist < ActiveRecord::Base
   def fetch_songs_by_platform
     platform = Platform.find(self.platform_id)
     case platform.name
-    when "spotify" then songs = self.spotify_personal_logic
+    when "spotify" then songs = self.spotify_split
     end
     songs
   end
 
-  def spotify_personal_logic
-    Personal::SpotifyLogic.find_songs(self.preferences)
+  def spotify_split
+    case self.preferences['type']
+    when "personal" then Personal::SpotifyLogic.find_songs(self.preferences)
+    when "group" then Group::SpotifyLogic.find_songs(self.preferences)
+    end
   end
 
   def sanitize(songs)

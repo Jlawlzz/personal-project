@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   has_many :tokens
   has_many :platforms, through: :tokens
   has_many :playlists
+  has_many :group_users
+  has_many :groups, through: :group_users
 
   def self.omniauth(auth)
     user = User.find_or_create_by(provider: auth['provider'], uid: auth['uid'])
@@ -21,10 +23,14 @@ class User < ActiveRecord::Base
   end
 
   def self.spotify_login(auth, current_user)
-    spotify_user = RSpotify::User.new(auth)
     spotify = Platform.find_by(name: 'spotify')
-    user = User.find(current_user.id)
-    token = Token.create(auth: auth)
-    user.tokens << token
+
+    if !current_user.platforms.where(name: 'spotify').empty?
+      token = current_user.tokens.where(platform: {name: 'spotify'})
+    else
+      token = Token.create(auth: auth.to_json, platform_id: spotify.id)
+      current_user.tokens << token
+    end
+    token
   end
 end
