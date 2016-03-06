@@ -1,0 +1,871 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/search?api_key=SWOUMYTGV1Z9RU0RU&description=rap
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 06 Mar 2016 20:45:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - hBg0YPfvTpCSHfxZKrCmVw
+      X-Worker-Node:
+      - 89a7b:3259
+      X-Ratelimit-Remaining:
+      - '19'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - SWOUMYTGV1Z9RU0RU
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": [{"id": "ARPXULK1241B9C6305", "name": "GZA"}, {"id": "ARUDYKB11F4C83C269",
+        "name": "Lil Wayne"}, {"id": "ARZ5H0P1187B98A1DD", "name": "Snoop Dogg"},
+        {"id": "ARODZUF11F4C841E1F", "name": "Drake"}, {"id": "ARHBUNW14561E062F3",
+        "name": "Jeezy"}, {"id": "ARMFTPF1187FB3AA43", "name": "Too $hort"}, {"id":
+        "ARPXABO1187FB4D15F", "name": "2Pac"}, {"id": "AR9RY7L1187B9A00A5", "name":
+        "The Diplomats"}, {"id": "AR6YR7H1187FB40D23", "name": "J-Live"}, {"id": "AR8VVB21187B9B6ED3",
+        "name": "Clipse"}, {"id": "ARV6Z5I1187B9A22A8", "name": "Gucci Mane"}, {"id":
+        "ARLGIX31187B9AE9A0", "name": "Jay-Z"}, {"id": "ARXFB7K1187B9B1E54", "name":
+        "Missy Elliott"}, {"id": "ARZ3U2M1187B989ACB", "name": "Nas"}, {"id": "ARRH63Y1187FB47783",
+        "name": "Kanye West"}]}}'
+    http_version: 
+  recorded_at: Sun, 06 Mar 2016 20:45:50 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/song/search?api_key=SWOUMYTGV1Z9RU0RU&artist=GZA&bucket=tracks&results=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 06 Mar 2016 20:45:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - xLY1pIQKQ5+RFa73VKDG2A
+      X-Worker-Node:
+      - f61bc:38197
+      X-Ratelimit-Remaining:
+      - '18'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - SWOUMYTGV1Z9RU0RU
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '2'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "songs": [{"title": "Acapella", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOPFKWQ14297FD61CF"},
+        {"title": "Pool Of Blood (Clean)", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"foreign_release_id": "spotify:album:5LBiEFRsIgU7AiPehze02j",
+        "catalog": "spotify", "foreign_id": "spotify:track:3IUVgCJaaUnVU1iDS8AxJ5",
+        "id": "TRHMWFA14600544B7E"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOSYXGG137316AE060"},
+        {"title": "7 Pounds (Produced by Black Milk)", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:1jWvUIDhb64Z2hL7pKpxuP", "album_name": "Pro Tools", "id": "TRGJDMZ146004FFB08"},
+        {"foreign_release_id": "spotify:album:0Nw5z4nusOXeJmK6O1YuL5", "catalog":
+        "spotify", "foreign_id": "spotify:track:16wQQz10XKg0K7Dzut67dw", "id": "TRRKTGY144D0BD367F"},
+        {"foreign_release_id": "spotify:album:6wjwVbZ3aBNbeNekPWA1br", "catalog":
+        "spotify", "foreign_id": "spotify:track:3qDmm5g5WmpldRLmxDEA8T", "id": "TRHMQDO144D1354256"},
+        {"foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog":
+        "spotify", "foreign_id": "spotify:track:7AqEmY9yL180qYx1qL5k29", "id": "TRJBGHB144D1CC6BE9"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOAPLKR12A58A79AC6"}, {"title":
+        "Hell''s Wind Staff / Killah Hills 10304", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE",
+        "catalog": "spotify", "foreign_id": "spotify:track:16ScyFeGq5svgd1I0FEZ6q",
+        "id": "TRMWKHN146004E949B"}, {"foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P",
+        "catalog": "spotify", "foreign_id": "spotify:track:4veKiWte7ppq5jEqcI1xEP",
+        "id": "TRZQGMZ1460057D24B"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOCIJBU1373195A96C"},
+        {"title": "Swordsman", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1995-11-07", "foreign_release_id":
+        "spotify:album:07iExA8pPReAFXXIIthVsE", "catalog": "spotify", "foreign_id":
+        "spotify:track:0XryfhPj8ryE2AUfZE3oEm", "album_name": "Liquid Swords", "id":
+        "TRMSDDZ146004D7067"}, {"album_type": "unknown", "album_date": "1995-11-07",
+        "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P", "catalog": "spotify",
+        "foreign_id": "spotify:track:3zwJm9BHB4tGjxDerxTTRU", "album_name": "Liquid
+        Swords", "id": "TRBYYLW14600559F78"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOGCZEJ12A6701EB4C"}, {"title": "Shadowboxin''", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOXYXRR14297FD6057"},
+        {"title": "Alphabets", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"foreign_release_id": "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog":
+        "spotify", "foreign_id": "spotify:track:6PhVFy78x18tLrP1s0zgTr", "id": "TRPZLFP146005B5FF3"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOJWWBK1311AFEBAF0"}, {"title":
+        "Intro", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH",
+        "catalog": "spotify", "foreign_id": "spotify:track:27cYtrXcrTSHHQ0FAIpwMU",
+        "album_name": "Beneath the Surface", "id": "TRNAAYG1460050E21A"}, {"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9",
+        "catalog": "spotify", "foreign_id": "spotify:track:518xj6jptRqFoWN2D0eqlX",
+        "album_name": "Beneath the Surface", "id": "TRCCRBO14600580665"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOBYECT12AF72A4B3D"}, {"title": "Amplified Sample",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1999-06-29", "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9",
+        "catalog": "spotify", "foreign_id": "spotify:track:6NEAAHajyhk2wcGm8WxhcB",
+        "album_name": "Beneath the Surface", "id": "TRPIITY146005BDAFF"}, {"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH",
+        "catalog": "spotify", "foreign_id": "spotify:track:2nNPaVA0vzuzpyRRgNrunh",
+        "album_name": "Beneath the Surface", "id": "TROYJIW14735A56F1B"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOGRIBF12B0B808227"}, {"title": "Intro", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:0CCiamMneF3QvlChkxUs5D", "catalog": "spotify", "foreign_id":
+        "spotify:track:2i07gGCeiMkUWxFSogMuUg", "album_name": "Legend of the Liquid
+        Sword", "id": "TREGIWW14600524AF1"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:7qjPNAZ8cVZEbqL0l7zktn",
+        "album_name": "Legend of the Liquid Sword", "id": "TRFKMKZ146005E4CA1"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:3vbpgQhZ8GGd1nD5harcus", "id": "TRPFXWW146005574E5"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOHLBXW12A6D4F7C95"}, {"title": "Animal Planet",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2002-12-10", "foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:0JFRQVwATqYjRbpRmwyDoX",
+        "album_name": "Legend of the Liquid Sword", "id": "TRBMPUI146004CE277"}, {"album_type":
+        "unknown", "album_date": "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:5JAMS3p3wOHcVzKajhIy4D",
+        "album_name": "Legend of the Liquid Sword", "id": "TRWKLIQ1460058B7BA"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:2jqs4C7sk1KYWnceJqoBZX", "id": "TROKAJT14600526102"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOAGXOT12B0B808226"}, {"title": "0% Finance",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOQGOOY1423AE622FC"}, {"title": "0% Finance", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOESUWF136891D08B2"},
+        {"title": "0% Finance", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOPTWSE136886C50D5"}, {"title":
+        "Pencil", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:5wUFA3rLnzrNHiL2RtZhsy", "id": "TRKEMQB146005A3986"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOSOACR12AF72A2FA9"}, {"title": "Uncut Material",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2002-12-10", "foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:1PILovjKPr9QrL8dHLbHeh",
+        "album_name": "Legend of the Liquid Sword", "id": "TRNMXUD146004F3E41"}, {"album_type":
+        "unknown", "album_date": "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:2Vk6HLLQetWnM5sRRTKYSg",
+        "album_name": "Legend of the Liquid Sword", "id": "TRDHDJX1460051CD74"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:43WXKRarOKzEJGhWROGcIO", "id": "TRKZUNO1460056299F"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOEPPTM12A6D4F7CA3"}, {"title": "Skit #4", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify", "foreign_id":
+        "spotify:track:1u0srEBryJcJMYHvKyLGXg", "album_name": "Beneath the Surface",
+        "id": "TRVWOCN14600505C50"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify",
+        "foreign_id": "spotify:track:44qT5mRB3fADxvKed9Ee6S", "album_name": "Beneath
+        the Surface", "id": "TRKIYRP1460055CF82"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOCXRXX12A58A79E28"}, {"title": "High Price, Small Reward", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify", "foreign_id":
+        "spotify:track:1jCNcghWRBCTPYvLDnXhhI", "album_name": "Beneath the Surface",
+        "id": "TRYFEXD146004FF93E"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify",
+        "foreign_id": "spotify:track:1mqXIwq2izrpWgzyZgge2S", "album_name": "Beneath
+        the Surface", "id": "TRUQKBA146005019AB"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOCVFIS12AF72A4B42"}, {"title": "Skit #1", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify", "foreign_id":
+        "spotify:track:117AcbCuIJeDYem9B92vhi", "album_name": "Beneath the Surface",
+        "id": "TRULHYP146004E645C"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify",
+        "foreign_id": "spotify:track:66J1GKBy3tJxUIKmhj0Aot", "album_name": "Beneath
+        the Surface", "id": "TRRKGPI146005A9C74"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SONQKQQ12A6D4F6926"}, {"title": "Paper Plate", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:6UVXqASYJANQqT6AR1mmRk", "album_name": "Pro Tools", "id": "TRJCHXA146005C0D09"},
+        {"foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog":
+        "spotify", "foreign_id": "spotify:track:7AzflJJui0cZIGFc47MSwp", "id": "TRZMQIQ144D1CF1144"},
+        {"foreign_release_id": "spotify:album:7DrMe8icxQoMxZSrWi1Fn1", "catalog":
+        "spotify", "foreign_id": "spotify:track:4QjAJYJ6vbX7QN3Qn0hx79", "id": "TRLPXVQ1460057133D"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SONLPLJ1371B5DB51C"}, {"title":
+        "Alphabets", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "2008-08-19", "foreign_release_id": "spotify:album:5nmN1wW90fbqNbz7ltY7rg",
+        "catalog": "spotify", "foreign_id": "spotify:track:4oyflpWgqWLCL9La8nHNd2",
+        "album_name": "Pro Tools", "id": "TREAQWN1460058029F"}, {"album_type": "other",
+        "album_date": "2008-10-07", "foreign_release_id": "spotify:album:59awA2VX1f8wYTIBclbE2L",
+        "catalog": "spotify", "foreign_id": "spotify:track:3ORfwcLV8TEkUers9MDe7M",
+        "album_name": "Soundtracks From the Shaolin Temple", "id": "TRVCCBB144D122634D"},
+        {"album_type": "other", "album_date": "2008-10-07", "foreign_release_id":
+        "spotify:album:1TLuxDebJWMQQ0Bh87uPT0", "catalog": "spotify", "foreign_id":
+        "spotify:track:2p5htO5gREX8yzqhUcML54", "album_name": "Soundtracks From the
+        Shaolin Temple", "id": "TRMFRUF1460052A3C6"}, {"foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL",
+        "catalog": "spotify", "foreign_id": "spotify:track:1I5pyjQpbDjeqG8ENjeKcU",
+        "id": "TRBRZMJ144D0C5E25F"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOBSLBK12AAA8C883B"},
+        {"title": "Pencil", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog": "spotify", "foreign_id":
+        "spotify:track:1f7BxIpAQGU2X4bBj8p2cY", "album_name": "Pro Tools", "id": "TRSHICO144D0D3D5A8"},
+        {"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:3Pi5rN2K3mstLR2tZCe55v", "album_name": "Pro Tools", "id": "TRXDDOI146005492B5"},
+        {"album_type": "other", "album_date": "2008-10-07", "foreign_release_id":
+        "spotify:album:1TLuxDebJWMQQ0Bh87uPT0", "catalog": "spotify", "foreign_id":
+        "spotify:track:3h7CrcUBT4EkquYjQb1cD2", "album_name": "Soundtracks From the
+        Shaolin Temple", "id": "TRVHOPR1460054E93A"}, {"foreign_release_id": "spotify:album:59awA2VX1f8wYTIBclbE2L",
+        "catalog": "spotify", "foreign_id": "spotify:track:2LMcJCyX5vV8E9OGpofaoJ",
+        "id": "TRMYSXA144D0F32ACD"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOMPLZK1311AFE6D6E"},
+        {"title": "Skit #2", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify", "foreign_id":
+        "spotify:track:2GI2YAnddWjnRlXT8FEycM", "album_name": "Beneath the Surface",
+        "id": "TRNANWI146005137E1"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify",
+        "foreign_id": "spotify:track:3FQR28G4JU1dkM5UgQnw2H", "album_name": "Beneath
+        the Surface", "id": "TRPQHAS1460053D9EC"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOKYVNU12AF72A5E97"}, {"title": "0% Finance", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:3gP5NBnAGLlDeelSCs2d49", "album_name": "Pro Tools", "id": "TRQQCKW1460054E26E"},
+        {"foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog":
+        "spotify", "foreign_id": "spotify:track:3IR8IyIsTankMotkb6PxDT", "id": "TRXLFAF144D11CF085"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOXCHNL1371B637C56"}, {"title":
+        "7 Pounds", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:78GUBq5uQfsJSxoRdqXu1G", "id": "TRSKKRZ146005D1795"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOGIABX12A58A7B8F4"}, {"title": "Skit #3", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify", "foreign_id":
+        "spotify:track:1h1oyUlTZZKloDtC80bj1r", "album_name": "Beneath the Surface",
+        "id": "TRXIDRN146004FE42C"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify",
+        "foreign_id": "spotify:track:2LKt7zhzrlNr3ffxAzvX9F", "album_name": "Beneath
+        the Surface", "id": "TRYOIQZ1460051A593"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOPRNIX12AF729F199"}, {"title": "Knock, Knock", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:5uxYLiUKqQNoiD5rIVHnkm", "catalog": "spotify", "foreign_id":
+        "spotify:track:33crwDYOj3HWmIq7LXTRHP", "album_name": "Legend of the Liquid
+        Sword", "id": "TRIDCTS1460053B3F5"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:4eCtHoR2PZET9E36PFEt2y",
+        "album_name": "Legend of the Liquid Sword", "id": "TRVILHG14600572ABB"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:2VAQQQdr2MwS41XuDBf5aN", "id": "TRFLCVN1460051C849"}, {"foreign_release_id":
+        "spotify:album:5FMrMKf6HODHa3DwYLPLHt", "catalog": "spotify", "foreign_id":
+        "spotify:track:1pE4KCeytDoYtn4eP33Uc0", "id": "TRTIJFN14865C1D529"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOGTBIQ1315CD4802C"}, {"title": "Intromental",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2008-08-19", "foreign_release_id": "spotify:album:5nmN1wW90fbqNbz7ltY7rg",
+        "catalog": "spotify", "foreign_id": "spotify:track:4PONvhTFV8JOaZN2Xk2C4p",
+        "album_name": "Pro Tools", "id": "TREESZH14600570587"}, {"foreign_release_id":
+        "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog": "spotify", "foreign_id":
+        "spotify:track:0mPc9D6tWzNpIa8CYd7lZi", "id": "TRYJOEW144D0B0B30B"}, {"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:1ZcN9r1xYv5ZOGR73s2HER", "id": "TRFJUDX146004F9F82"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOBJDDY12AAA8C8832"}, {"title": "Mic Trippin",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1999-06-29", "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9",
+        "catalog": "spotify", "foreign_id": "spotify:track:5gw0JT7lIGW9XhxogHfXHy",
+        "album_name": "Beneath the Surface", "id": "TRBRSKS14600599EED"}, {"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH",
+        "catalog": "spotify", "foreign_id": "spotify:track:1DQNEcXResS5FlkGoX2A2G",
+        "album_name": "Beneath the Surface", "id": "TRATKYD147359AEA62"}, {"foreign_release_id":
+        "spotify:album:2DW5ffPVewXy3AzFw4e7ve", "catalog": "spotify", "foreign_id":
+        "spotify:track:4Zk56xqlxnfOvcKDjunuvD", "id": "TRODULI14600570056"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOIJSTW12A6D4F6933"}, {"title": "Auto Bio", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:0CCiamMneF3QvlChkxUs5D", "catalog": "spotify", "foreign_id":
+        "spotify:track:24O3A92oBUFbvkPDcegIIi", "album_name": "Legend of the Liquid
+        Sword", "id": "TRQNMKA1460050C2E4"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:2zLPR5khCorDfVSnhDiBDK",
+        "album_name": "Legend of the Liquid Sword", "id": "TRIGWWV14600532650"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:5qvypl8guB4C15QuOCM4dt", "id": "TRKAQIB146005A01E9"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOAIJOB12B0B80822B"}, {"title": "Lyrical Swords",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:6IaGPBX41eWW3p4Xs6pAK7", "catalog": "spotify", "foreign_id":
+        "spotify:track:3weiePtoucJlVm570S6O21", "id": "TRCTWRF144D139ACF7"}, {"foreign_release_id":
+        "spotify:album:3Z7FT0uHk4FpnlAYxhPkQ6", "catalog": "spotify", "foreign_id":
+        "spotify:track:2WuJidDJlCZXXMwoUdJD3e", "id": "TRZNPHJ144D0FAA11E"}, {"foreign_release_id":
+        "spotify:album:71i2DEJp6T0ywlT62T3gLv", "catalog": "spotify", "foreign_id":
+        "spotify:track:2wVaikw9WmhmIPyNt6BWa2", "id": "TRCAPTA144D10D953B"}, {"foreign_release_id":
+        "spotify:album:3Z7FT0uHk4FpnlAYxhPkQ6", "catalog": "spotify", "foreign_id":
+        "spotify:track:5SFZ3dUWEYTIpPKRLZKT4e", "id": "TRGBOZH144D180440D"}, {"foreign_release_id":
+        "spotify:album:59awA2VX1f8wYTIBclbE2L", "catalog": "spotify", "foreign_id":
+        "spotify:track:60jLNoLn2sKJ1Pd58BrAGY", "id": "TRMIABN147B6E77B1E"}, {"foreign_release_id":
+        "spotify:album:1TLuxDebJWMQQ0Bh87uPT0", "catalog": "spotify", "foreign_id":
+        "spotify:track:7qkV5DIGbIfXeBgQ0S6GPo", "id": "TRGPQFO147B6EB51E7"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SODEXGO12A8C13C01D"}, {"title": "Breaker, Breaker",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOTHYMP13E9060B324"}, {"title": "Beneath The Surface", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify", "foreign_id":
+        "spotify:track:1sHORj8kcuIce9Fi6nspRX", "album_name": "Beneath the Surface",
+        "id": "TRCRXCL14600504BF1"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify",
+        "foreign_id": "spotify:track:7KONNlDNSZvm4t5HWCkvje", "album_name": "Beneath
+        the Surface", "id": "TRJVWEB146005D8EB7"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOGBGZF12A6D4F6925"}, {"title": "Beneath the Surface", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOBFPJZ14297F9AA51"},
+        {"title": "Publicity", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOSQFXT14297F5EFA5"}, {"title":
+        "Breaker, Breaker", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify", "foreign_id":
+        "spotify:track:6JeNcjFXvc2pjUMgRtuosy", "album_name": "Beneath the Surface",
+        "id": "TRVNZVS146005B23BC"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify",
+        "foreign_id": "spotify:track:0iOHx38av0ZyaFMsu2ko9H", "album_name": "Beneath
+        the Surface", "id": "TRBLUHD1473597BB21"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOLKXEB12AF72A7256"}, {"title": "Publicity", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"foreign_release_id": "spotify:album:1hLGkzQxMaLI5EdMwy3uFm",
+        "catalog": "spotify", "foreign_id": "spotify:track:6DYFCx1eky01f5z0PJbm3T",
+        "id": "TRLMASH14735BC0C74"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOPXLPS146FE7D980D"},
+        {"title": "Hip Hop Fury", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify", "foreign_id":
+        "spotify:track:6PYfkGJkQkq0Mx9d9y240L", "album_name": "Beneath the Surface",
+        "id": "TRXOOCM146005B5DB1"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify",
+        "foreign_id": "spotify:track:3MeX0M5XdlTx3M3Zjl47Tt", "album_name": "Beneath
+        the Surface", "id": "TRXXFDK14735A92000"}, {"album_type": "other", "album_date":
+        "2001-07-03", "foreign_release_id": "spotify:album:5JjWhCSCIc94WBqqYYZnfA",
+        "catalog": "spotify", "foreign_id": "spotify:track:40MrtZYSsU7exL81nugWX5",
+        "album_name": "Wu-Chronicles: Chapter II", "id": "TRSUGEI144D13D954D"}, {"foreign_release_id":
+        "spotify:album:4yKvg39shQ51oDPMStRif0", "catalog": "spotify", "foreign_id":
+        "spotify:track:3GivigrJszfNXZn3QXtvf7", "id": "TRZQJLL144D11B838D"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SODZUPQ12AF729D92D"}, {"title": "Crash Your Crew",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOQZJPC14373B75E80"}, {"title": "1112", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify", "foreign_id":
+        "spotify:track:5pwW3wFoJw9v7EmG7hzgOD", "album_name": "Beneath the Surface",
+        "id": "TRPIBTV146005A8AA6"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify",
+        "foreign_id": "spotify:track:6nkSlfO0s66HuWoumzvHmA", "album_name": "Beneath
+        the Surface", "id": "TRRGIOM146005C4AA6"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOACCBE12AF72A0211"}, {"title": "Crash Your Crew", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify", "foreign_id":
+        "spotify:track:51hAzI62bOxYxd75vmQE3U", "album_name": "Beneath the Surface",
+        "id": "TRJWJSM14600580C1F"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify",
+        "foreign_id": "spotify:track:7oNBUoDshvQtNQrMK6zMUs", "album_name": "Beneath
+        the Surface", "id": "TRDOGMQ146005E3461"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOBUVKN12A6D4F6928"}, {"title": "Stay In Line", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:0CCiamMneF3QvlChkxUs5D", "catalog": "spotify", "foreign_id":
+        "spotify:track:2Q9N3TYQzRFnCNBfdD3upj", "album_name": "Legend of the Liquid
+        Sword", "id": "TROHDBU14600519773"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:3rNcmTCSu1PlZFb1LUPJxn",
+        "album_name": "Legend of the Liquid Sword", "id": "TROCSLG14600554B5C"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:0JezWVc5HZWhV0mLUU3CNa", "id": "TRSGMCO146004CE67A"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SODSCKZ12AB017E0CA"}, {"title": "Crash Your Crew",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOCTMCN13E9060B862"}, {"title": "Living In The World Today", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1995-11-07", "foreign_release_id":
+        "spotify:album:3k8xoyOXkGgZxUKgpmxz4P", "catalog": "spotify", "foreign_id":
+        "spotify:track:4EcwMZC5srOdOVUTIkQWkW", "album_name": "Liquid Swords", "id":
+        "TRCKQUI14600563111"}, {"album_type": "unknown", "album_date": "1995-11-07",
+        "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE", "catalog": "spotify",
+        "foreign_id": "spotify:track:7BmXynoJZSvpb0RxOAfTYK", "album_name": "Liquid
+        Swords", "id": "TRCAYPY146005D389A"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOFITFF1315CD4942E"}, {"title": "Labels", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1995-11-07", "foreign_release_id":
+        "spotify:album:3k8xoyOXkGgZxUKgpmxz4P", "catalog": "spotify", "foreign_id":
+        "spotify:track:50yW206ahsPJsFNmKUTFIo", "album_name": "Liquid Swords", "id":
+        "TRRSFZK146005804F6"}, {"album_type": "unknown", "album_date": "1995-11-07",
+        "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE", "catalog": "spotify",
+        "foreign_id": "spotify:track:7zYYc4tr4NMVFPQVsFblAj", "album_name": "Liquid
+        Swords", "id": "TRDJOVG146005EA3A8"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOPELLI12A6701EB47"}, {"title": "Cold World", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOEQYXV14297F7E5C6"},
+        {"title": "Cold World", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"foreign_release_id": "spotify:album:2sLL3R2AD4G8ssa31KBxBp", "catalog":
+        "spotify", "foreign_id": "spotify:track:04DuwBZP1QGtbSgnYc3Wzj", "id": "TRJXHGB146004C6016"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOGAWVV1366750B451"}, {"title":
+        "Liquid Swords", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOOODSV14297FBB9DF"}, {"title":
+        "Duel of the Iron Mic", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOYZHCU14297F7E5AD"}, {"title":
+        "4th Chamber", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOUMIPO14297FA54A0"}, {"title": "Cold World",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1995-11-07", "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE",
+        "catalog": "spotify", "foreign_id": "spotify:track:231s02QeO9sY1K0hQj7uCE",
+        "album_name": "Liquid Swords", "id": "TRIFZDK1460050B5B3"}, {"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P",
+        "catalog": "spotify", "foreign_id": "spotify:track:4kxcVF4kEZTQZDlnNfDeur",
+        "album_name": "Liquid Swords", "id": "TRVZLCH14600576C2F"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SODUXZA12AF72A2563"}, {"title": "Shadowboxin''
+        (Album Version (Explicit))", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1995-11-07", "foreign_release_id":
+        "spotify:album:07iExA8pPReAFXXIIthVsE", "catalog": "spotify", "foreign_id":
+        "spotify:track:5wLbH0gCmtaczMZbFfafXY", "album_name": "Liquid Swords", "id":
+        "TRGMQVT146005A3892"}, {"album_type": "unknown", "album_date": "1995-11-07",
+        "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P", "catalog": "spotify",
+        "foreign_id": "spotify:track:7bp5DfkdK1OAvNJ1U4HfDA", "album_name": "Liquid
+        Swords", "id": "TRGMVKR146005DB8F9"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOCMSVB12B0B808230"}, {"title": "Basic Instructions Before Leaving
+        Earth", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE",
+        "catalog": "spotify", "foreign_id": "spotify:track:1tgTGzn3IYM1O66XfJCYOL",
+        "album_name": "Liquid Swords", "id": "TRCOHYI146005058D9"}, {"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P",
+        "catalog": "spotify", "foreign_id": "spotify:track:5mOzvm41Pdh1WOtBKlCtZd",
+        "album_name": "Liquid Swords", "id": "TRVBXMD1460059D52B"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOCJTQN1373195AFD9"}, {"title": "I Gotcha Back",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1995-11-07", "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P",
+        "catalog": "spotify", "foreign_id": "spotify:track:3ToCwT51GYA1HTDJxy7ZZX",
+        "album_name": "Liquid Swords", "id": "TRQXYZO14600546730"}, {"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE",
+        "catalog": "spotify", "foreign_id": "spotify:track:5ZHsxoBCMCKFQtXoZRM66H",
+        "album_name": "Liquid Swords", "id": "TRIDQTX1460059546F"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOKZJPN12A58A7DFFF"}, {"title": "Liquid Swords",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "other",
+        "album_date": "1999", "foreign_release_id": "spotify:album:3zHjtZZrDdEHPnY7309KgX",
+        "catalog": "spotify", "foreign_id": "spotify:track:0BzwoM0PIIZEcBNGnnDrzA",
+        "album_name": "The RZA Hits", "id": "TRLFUYZ144D0989FAC"}, {"album_type":
+        "other", "album_date": "1999", "foreign_release_id": "spotify:album:7y9EurwDqA6OIfrFTx1BFh",
+        "catalog": "spotify", "foreign_id": "spotify:track:3OGMjIeGB9VO4QoG2ISFNQ",
+        "album_name": "The RZA Hits", "id": "TRQAYAY144D121324B"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOAGAFF139358AEE40"}, {"title": "Duel Of The Iron Mic", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1995-11-07", "foreign_release_id":
+        "spotify:album:3k8xoyOXkGgZxUKgpmxz4P", "catalog": "spotify", "foreign_id":
+        "spotify:track:1OYjATyA5kqLK3CfYfvg3y", "album_name": "Liquid Swords", "id":
+        "TRFNTKZ146004F3799"}, {"album_type": "unknown", "album_date": "1995-11-07",
+        "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE", "catalog": "spotify",
+        "foreign_id": "spotify:track:4O8wUr0ZwsksABwXsNnaBZ", "album_name": "Liquid
+        Swords", "id": "TRBYXVD14600568DA5"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOCMXEV1315CD4850E"}, {"title": "4th Chamber", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1995-11-07", "foreign_release_id":
+        "spotify:album:07iExA8pPReAFXXIIthVsE", "catalog": "spotify", "foreign_id":
+        "spotify:track:3I0JtdL4n3yxvvLCPum4uH", "album_name": "Liquid Swords", "id":
+        "TRAACXS1460053F48F"}, {"album_type": "unknown", "album_date": "1995-11-07",
+        "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P", "catalog": "spotify",
+        "foreign_id": "spotify:track:4qfUlchVD7WM4JhA5xio6m", "album_name": "Liquid
+        Swords", "id": "TRBXLHI1460057A317"}, {"foreign_release_id": "spotify:album:5bmhS3cVf6noVqzley0iq4",
+        "catalog": "spotify", "foreign_id": "spotify:track:0oJx5Zezx9OsW3Ln7TMKFq",
+        "id": "TRIPSKP144D0B1F3F1"}, {"foreign_release_id": "spotify:album:2y1qbTzCWLTW1nJrReb4n5",
+        "catalog": "spotify", "foreign_id": "spotify:track:31dg7oJsw1yHltFoesjaTd",
+        "id": "TRKCPXF144D110EA1C"}, {"foreign_release_id": "spotify:album:3t2nEfRZ1um6Spqw5P7g5F",
+        "catalog": "spotify", "foreign_id": "spotify:track:29bQqvXMQJNoXzBjpP5uAR",
+        "id": "TRIKTJE144D0E85A35"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOHYMNJ1315CD49769"},
+        {"title": "Living in the World Today", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOJPQXT141808D8239"},
+        {"title": "Liquid Swords", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOZBHUF135CBFA60BD"}, {"title":
+        "Gold", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P",
+        "catalog": "spotify", "foreign_id": "spotify:track:1UTX5wGyy7IC6HeT5MmAJ1",
+        "album_name": "Liquid Swords", "id": "TRDWJAI146004F6E53"}, {"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE",
+        "catalog": "spotify", "foreign_id": "spotify:track:63Uy28gqMLe7KiPSBxF75s",
+        "album_name": "Liquid Swords", "id": "TRHVPPK146005A7FC2"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOEVLYI1315CD472FD"}, {"title": "Legend Of The
+        Liquid Sword", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "2002-12-10", "foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:7dILpPbAzGESJltWvvTh41",
+        "album_name": "Legend of the Liquid Sword", "id": "TRMRTWN146005DC700"}, {"album_type":
+        "unknown", "album_date": "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:7l06lO1TRxH1rdxlW0NYq7",
+        "album_name": "Legend of the Liquid Sword", "id": "TRQTZCE146005E143A"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:1i21poQsPRVCv6Q96z6iYb", "id": "TRLJYML146004FECA7"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOVWRNG1315CD48377"}, {"title": "Stringplay (Like
+        This, Like That)", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1999-06-29", "foreign_release_id":
+        "spotify:album:1EDKJJMPpOQxj2Q82TO7SH", "catalog": "spotify", "foreign_id":
+        "spotify:track:3VG3nd31F4DwSuDMOz00ZM", "album_name": "Beneath the Surface",
+        "id": "TRDMPCX146005474BA"}, {"album_type": "unknown", "album_date": "1999-06-29",
+        "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9", "catalog": "spotify",
+        "foreign_id": "spotify:track:7d1rDxe1xDYoKRidmJXGYP", "album_name": "Beneath
+        the Surface", "id": "TREYHED146005DC464"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOATAZD12AF72AB19B"}, {"title": "Cinema", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog": "spotify", "foreign_id":
+        "spotify:track:2l8zHxjHL4AfsNPYjIY5CI", "album_name": "Pro Tools", "id": "TRHSKJY144D104B61F"},
+        {"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:5n38uXfGishVPCXJXNl2ie", "album_name": "Pro Tools", "id": "TRCSVTA1460059DBCE"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOCZUGO1312A8A33C0"}, {"title":
+        "Cinema", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:08kG5tMOi386f9Bs2NrzXu", "id": "TRUWFJG146004C8811"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOGXTOH12AF72A40A9"}, {"title": "Fame", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:5uxYLiUKqQNoiD5rIVHnkm", "catalog": "spotify", "foreign_id":
+        "spotify:track:0S6lsFEXbSkVy6GecmhGLD", "album_name": "Legend of the Liquid
+        Sword", "id": "TRZYYPK146004D3230"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:2LfPO6EtjOOssbNcMoaxuO",
+        "album_name": "Legend of the Liquid Sword", "id": "TRJJEQD14600516BD8"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:5wgIptoCo5er5xsIZxS4py", "id": "TRRXHXX146005A3B36"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SODCGRO12A6D4F7C9E"}, {"title": "Path of Destruction",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:3nBRMp70aFTpbi0lpXDx5J", "id": "TRLAGDO14600552300"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOMBTTU12A58A7E539"}, {"title": "0% Finance",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOLWLAJ144F4A8EC8A"}, {"title": "0% Finance", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOUGMIE13748C1CFA0"},
+        {"title": "Did Ya Say That", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:0CCiamMneF3QvlChkxUs5D", "catalog": "spotify", "foreign_id":
+        "spotify:track:3kjixTUNTQ2lo3RDmP0GUU", "album_name": "Legend of the Liquid
+        Sword", "id": "TRPOPEB14600550B26"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:57Z9q1NUn2oLhdquEa4Z5m",
+        "album_name": "Legend of the Liquid Sword", "id": "TRGDGHL146005847B6"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:6sdAaep3ObfHaqdNmQu2qC", "id": "TRVXFYO146005D1C6B"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOCURBM1315CD46213"}, {"title": "Luminal", "artist_name":
+        "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:0CCiamMneF3QvlChkxUs5D", "catalog": "spotify", "foreign_id":
+        "spotify:track:0szdYjtNNbxjltCAT72qQH", "album_name": "Legend of the Liquid
+        Sword", "id": "TRNQXQK146004E1AF7"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:6U2Mj88aDvUZGL8bBCEbDI",
+        "album_name": "Legend of the Liquid Sword", "id": "TRSZVSH146005B89F0"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOIKTNJ1315CD4613A"}, {"title":
+        "Victim", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH",
+        "catalog": "spotify", "foreign_id": "spotify:track:1AwDEgFpT6CYAYdfJkNg56",
+        "album_name": "Beneath the Surface", "id": "TRTVYFP146004EDD01"}, {"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9",
+        "catalog": "spotify", "foreign_id": "spotify:track:6WtUaNxDSdHRzBhhenZNIl",
+        "album_name": "Beneath the Surface", "id": "TRQFGQM146005BA4CF"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOCVYRU12AF72A03E9"}, {"title": "Sparring Minds",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2002-12-10", "foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:5nA7zj5JuEuf0IxyJVpcXQ",
+        "album_name": "Legend of the Liquid Sword", "id": "TRVILBI1460059DCE7"}, {"album_type":
+        "unknown", "album_date": "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:7zU9bYRQdVq4wUyJKbUmDK",
+        "album_name": "Legend of the Liquid Sword", "id": "TREVACO146005EA649"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:6lcNGhIDUucoFUC836YCOD", "id": "TRUUJSW146005C35A3"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOJDZIC12B0B80822E"}, {"title": "Firehouse",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2008-08-19", "foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL",
+        "catalog": "spotify", "foreign_id": "spotify:track:5DrFBAcWPh3steAwpzxqp5",
+        "album_name": "Pro Tools", "id": "TRKTQBW144D1749752"}, {"album_type": "unknown",
+        "album_date": "2008-08-19", "foreign_release_id": "spotify:album:5nmN1wW90fbqNbz7ltY7rg",
+        "catalog": "spotify", "foreign_id": "spotify:track:0Yo64daRTGNPnLAbcK5JeU",
+        "album_name": "Pro Tools", "id": "TRTZVSW146004D6B60"}], "artist_id": "ARPXULK1241B9C6305",
+        "id": "SOMNPIG1313439A1F7"}, {"title": "Columbian Ties", "artist_name": "GZA",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog": "spotify", "foreign_id":
+        "spotify:track:6OqO7mURTgiPcyLRQDkztH", "album_name": "Pro Tools", "id": "TRUIMXC144D1AAD672"},
+        {"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:7uGIPjwvjKPOLrlonW6bsU", "album_name": "Pro Tools", "id": "TREFINE146005E6E19"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOPQPAS12AAA8C8852"}, {"title":
+        "Firehouse", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:1m3uefZiTaA3DRAvHJ4t1g", "id": "TRAYSXS14600501264"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SODNTOY12AF72A090D"}, {"title": "Highway Robbery",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:0MqkYjehgDcwmN28K0RqOm",
+        "album_name": "Legend of the Liquid Sword", "id": "TRFXRXC146004D033B"}, {"album_type":
+        "unknown", "album_date": "2002-12-10", "foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:1uJ6gXYaweXciUYUEKvJLo",
+        "album_name": "Legend of the Liquid Sword", "id": "TRXQZFP14600508A45"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:53Oe8XDsIigxL9uLyfMorJ", "id": "TROIFKM14600581D29"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOCBZKS12AF72A66CE"}, {"title": "Feel Like An
+        Enemy", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9",
+        "catalog": "spotify", "foreign_id": "spotify:track:2CrTxhnCKJ8aVAWAMovCnV",
+        "album_name": "Beneath the Surface", "id": "TRPKTEQ14600511688"}, {"album_type":
+        "unknown", "album_date": "1999-06-29", "foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH",
+        "catalog": "spotify", "foreign_id": "spotify:track:7qCWcsnPztozi6HrtjHCJ6",
+        "album_name": "Beneath the Surface", "id": "TRQOZHT146005E464B"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOINWQF12AF72A3BEE"}, {"title": "Outro (GZA/The
+        Genius/Beneath The Surface)", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4QMKELvG0VNODbiFigj4K9",
+        "catalog": "spotify", "foreign_id": "spotify:track:0HRnvAwly657f8L5zmMenK",
+        "id": "TRBIMAG146004CD2E7"}, {"foreign_release_id": "spotify:album:1EDKJJMPpOQxj2Q82TO7SH",
+        "catalog": "spotify", "foreign_id": "spotify:track:7bz8lo2857KAdYA5QtfTMr",
+        "id": "TRQLSWS146005DBBF0"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOSXLNM12A58A7A66C"},
+        {"title": "Silent", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2002-12-10", "foreign_release_id":
+        "spotify:album:0CCiamMneF3QvlChkxUs5D", "catalog": "spotify", "foreign_id":
+        "spotify:track:4oxalYKcVuUv8XwRXpRiQK", "album_name": "Legend of the Liquid
+        Sword", "id": "TRCDKUR146005792AA"}, {"album_type": "unknown", "album_date":
+        "2002-12-10", "foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:5G3k8ztC8oyejUNAVuL8EV",
+        "album_name": "Legend of the Liquid Sword", "id": "TRAMOBH146005898A8"}, {"foreign_release_id":
+        "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog": "spotify", "foreign_id":
+        "spotify:track:3B4DtY1LPXzf2f4JEOFADs", "id": "TRZHAPP1460053AD03"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOGVEMR12A6D4F7C98"}, {"title": "Short Race",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:0yagB0gNBRx73iVOU7b3qb", "id": "TRKEWMJ146004E6337"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOGNCUC1311AFDA85B"}, {"title": "Short Race",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2008-08-19", "foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL",
+        "catalog": "spotify", "foreign_id": "spotify:track:5GwwSEkAmVgNsBGDXo4Ps8",
+        "album_name": "Pro Tools", "id": "TRFVLPZ144D176582E"}, {"album_type": "unknown",
+        "album_date": "2008-08-19", "foreign_release_id": "spotify:album:5nmN1wW90fbqNbz7ltY7rg",
+        "catalog": "spotify", "foreign_id": "spotify:track:1lNjiMB3TxtXyFULU0emXJ",
+        "album_name": "Pro Tools", "id": "TRGQKDW14600500C87"}, {"foreign_release_id":
+        "spotify:album:4tZaF9FF0c3yqmZEpM0oOf", "catalog": "spotify", "foreign_id":
+        "spotify:track:1jEDRR6YaVYG70XHlzubH8", "id": "TRCLKZP144D0D90A48"}, {"foreign_release_id":
+        "spotify:album:3LXazrDgUYUQnvMglXVAVJ", "catalog": "spotify", "foreign_id":
+        "spotify:track:3cB3IYcH5L9SRVRACjwwT8", "id": "TRIBFWZ144D12AE358"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOFNXHH13129A91CB3"}, {"title": "Groundbreaking",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:6Ofd7LDM78j44pyCAmzu1m", "id": "TRRXIRG146005B55DC"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOKEARN1370A4906FC"}, {"title": "Life is a Movie",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:2qxqYMnnMy44wDySLDcCvx", "id": "TRYYAFS1460052C24D"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOKADFO1312A8A6D7B"}, {"title": "Colombian Ties",
+        "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0ic6rMSwqDasuXSA7zJ1pw", "catalog": "spotify", "foreign_id":
+        "spotify:track:78otSGcXDoMmyJcYZ36o8M", "id": "TRNWAHB146005D1A29"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOPZRJN1370A490767"}, {"title": "Intermission
+        - Drive In Movie", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOJTGPH12AAA8C8863"}, {"title":
+        "Intermission (Drive in Movie)", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [], "artist_id": "ARPXULK1241B9C6305", "id": "SOJDPQG12AF72A49B3"},
+        {"title": "Rough Cut", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"foreign_release_id": "spotify:album:2HYc4BHptMvX78fxda7eUl", "catalog":
+        "spotify", "foreign_id": "spotify:track:21w9suzR6aIAenSpJVQV9j", "id": "TRALRSU1460050AABD"},
+        {"foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm", "catalog":
+        "spotify", "foreign_id": "spotify:track:5QNKEqS1bdr3pyGLfnIAR4", "id": "TRRLPSC1460058FC68"},
+        {"foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D", "catalog":
+        "spotify", "foreign_id": "spotify:track:6T1k3kf5L8oNMvlzJUoZ2E", "id": "TROOGZW146005B7FC1"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOAUVHY12AF729BF58"}, {"title":
+        "Groundbreaking", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog": "spotify", "foreign_id":
+        "spotify:track:5S7TB1vfAxCE1JMP7UvIYl", "album_name": "Pro Tools", "id": "TRICJTR144D17E7021"},
+        {"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:6Yit7Txd7YCfypO4rJtrlX", "album_name": "Pro Tools", "id": "TREUYSH146005BB72A"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOGVCTI13134393E2E"}, {"title":
+        "Pool Of Blood (Instr.)", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOGRFZP1315CD4F836"}, {"title":
+        "Paper Plate (Instrumental)", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"foreign_release_id": "spotify:album:7DrMe8icxQoMxZSrWi1Fn1",
+        "catalog": "spotify", "foreign_id": "spotify:track:06jkVURnZ0T1RjrsDjCuUE",
+        "id": "TRPYKJJ146004C76F6"}, {"foreign_release_id": "spotify:album:0ic6rMSwqDasuXSA7zJ1pw",
+        "catalog": "spotify", "foreign_id": "spotify:track:6wAuYLRq60vVFpWiYJjbiE",
+        "id": "TRWSMMP146005D2693"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOIFMLB12AF72A9F18"},
+        {"title": "Path of Destruction", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:3JkfflZURCIBQlwlGLsLsu", "album_name": "Pro Tools", "id": "TRBZIWV14600540671"},
+        {"foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog":
+        "spotify", "foreign_id": "spotify:track:6wEaHOCaujnXZz2ZuXj4cd", "id": "TRHLXWW144D1C1AA2E"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOIGPEU12AF729C37E"}, {"title":
+        "Fam (Members Only) (Album Version Explicit)", "artist_name": "GZA", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}],
+        "tracks": [{"foreign_release_id": "spotify:album:5uxYLiUKqQNoiD5rIVHnkm",
+        "catalog": "spotify", "foreign_id": "spotify:track:1Mbzy78NuHlPNcCmDS27wf",
+        "id": "TRFDZQO146004F2691"}, {"foreign_release_id": "spotify:album:0CCiamMneF3QvlChkxUs5D",
+        "catalog": "spotify", "foreign_id": "spotify:track:41hqZMIqn478p3Dh2igm9c",
+        "id": "TRRIYFB1460055B117"}, {"foreign_release_id": "spotify:album:2HYc4BHptMvX78fxda7eUl",
+        "catalog": "spotify", "foreign_id": "spotify:track:6qK8Lkoo0CXHuLee8BxoPF",
+        "id": "TRRWIBQ146005C6469"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOHUASQ12AF72A04E4"},
+        {"title": "Interlude", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:2QMuD5QAePpQsOEISKdY3D", "album_name": "Pro Tools", "id": "TRGIMYM146005199E0"},
+        {"foreign_release_id": "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog":
+        "spotify", "foreign_id": "spotify:track:7KJyeHNSsbi3nR4HchN3dJ", "id": "TRUPDPG144D1D3B90F"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOHXXRU12AAA8C884C"}, {"title":
+        "Bring da Ruckus", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOKJYPM14297FBB6E1"}, {"title":
+        "Cold World (Instrumental)", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"foreign_release_id": "spotify:album:2sLL3R2AD4G8ssa31KBxBp", "catalog":
+        "spotify", "foreign_id": "spotify:track:0v9HeIwDf2uRa2Z2znIYxv", "id": "TRIMDJD146004E2E30"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOLFMWN1315CD4E003"}, {"title":
+        "Cold World", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"foreign_release_id":
+        "spotify:album:2sLL3R2AD4G8ssa31KBxBp", "catalog": "spotify", "foreign_id":
+        "spotify:track:0wCGE5Lk8qaxB0xAvgFn6r", "id": "TRBVHPX146004E5050"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOLAGAU1366750EC72"}, {"title": "Investigative
+        Reports", "artist_name": "GZA", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:07iExA8pPReAFXXIIthVsE",
+        "catalog": "spotify", "foreign_id": "spotify:track:503rkA6A7WqXNFV0r4ikDf",
+        "album_name": "Liquid Swords", "id": "TRMYOKY1460057FCB5"}, {"album_type":
+        "unknown", "album_date": "1995-11-07", "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P",
+        "catalog": "spotify", "foreign_id": "spotify:track:6NTceGKsDLTYehlyRbYp6O",
+        "album_name": "Liquid Swords", "id": "TRBANSW146005B491E"}], "artist_id":
+        "ARPXULK1241B9C6305", "id": "SOCNQMJ12A6701EB4B"}, {"title": "Liquid Swords
+        (Album Version (Explicit))", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1995-11-07", "foreign_release_id":
+        "spotify:album:07iExA8pPReAFXXIIthVsE", "catalog": "spotify", "foreign_id":
+        "spotify:track:2qmxggATKFIeg68guRSG3r", "album_name": "Liquid Swords", "id":
+        "TRJDKHI1460052BF64"}, {"album_type": "unknown", "album_date": "1995-11-07",
+        "foreign_release_id": "spotify:album:3k8xoyOXkGgZxUKgpmxz4P", "catalog": "spotify",
+        "foreign_id": "spotify:track:4dmh3OPtAhbEybhGoOG9TE", "album_name": "Liquid
+        Swords", "id": "TRGABUL146005781C1"}, {"foreign_release_id": "spotify:album:26z2gTkvl5HRgKNVlK180j",
+        "catalog": "spotify", "foreign_id": "spotify:track:13Nllzx53UAI6QQcUkS7Gp",
+        "id": "TRDLPTJ149B22E6DBE"}], "artist_id": "ARPXULK1241B9C6305", "id": "SOBZAXS1315CD47534"},
+        {"title": "Life Is A Movie", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:3fHsNHm7SpZjrK1RwGACKL", "catalog": "spotify", "foreign_id":
+        "spotify:track:4uA0pcfSl3UWLaXNA1nS5k", "album_name": "Pro Tools", "id": "TRSMXXA144D166DA75"},
+        {"album_type": "unknown", "album_date": "2008-08-19", "foreign_release_id":
+        "spotify:album:5nmN1wW90fbqNbz7ltY7rg", "catalog": "spotify", "foreign_id":
+        "spotify:track:2VLzVCU5GOFhLHXeg1I7SZ", "album_name": "Pro Tools", "id": "TRYPXHA1460051CA8D"},
+        {"foreign_release_id": "spotify:album:0Nw5z4nusOXeJmK6O1YuL5", "catalog":
+        "spotify", "foreign_id": "spotify:track:3aJNbPqjX4ZTrSjOyoj9A0", "id": "TRHFQWK144D129C64B"},
+        {"foreign_release_id": "spotify:album:6wjwVbZ3aBNbeNekPWA1br", "catalog":
+        "spotify", "foreign_id": "spotify:track:6VKCBbKHKXZX5HkCJELYv8", "id": "TRYQTEQ144D1AFB695"}],
+        "artist_id": "ARPXULK1241B9C6305", "id": "SOCILZB1371B55F571"}, {"title":
+        "Clan in da Front", "artist_name": "GZA", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:6ns6XAOsw4B0nDUIovAOUO"}], "tracks":
+        [], "artist_id": "ARPXULK1241B9C6305", "id": "SOEGCLM1429800B148"}]}}'
+    http_version: 
+  recorded_at: Sun, 06 Mar 2016 20:45:50 GMT
+recorded_with: VCR 3.0.1
