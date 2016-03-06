@@ -42,7 +42,7 @@ class Playlist < ActiveRecord::Base
   def sanitize(songs)
     songs.map do |song|
       song if !(self.songs.find_by(track_id: song))
-    end
+    end.compact
   end
 
   def spotify_save(sanitized_songs, user_auth)
