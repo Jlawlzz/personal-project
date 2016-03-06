@@ -16,6 +16,14 @@ class Personal::PlaylistsController < ApplicationController
     @playlist = Playlist.find(params[:id])
   end
 
+  def destroy
+    playlist = Playlist.find(params['id'])
+    playlist.playlist_songs.delete_all
+    playlist.destroy
+
+    redirect_to dashboard_path
+  end
+
   private
 
   def playlist(params)
