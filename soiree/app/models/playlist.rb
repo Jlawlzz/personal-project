@@ -4,7 +4,19 @@ class Playlist < ActiveRecord::Base
   has_many :songs, through: :playlist_songs
   has_many :group_playlists
   has_many :groups, through: :group_playlists
+  belongs_to :platform
 
+  def name_params
+    if self.name.length > 18
+      self.name[0..15] + "..."
+    else
+      self.name[0..15]
+    end
+  end
+
+  def platform_type
+    self.platform.name
+  end
 
   def populate(user_auth)
     songs = fetch_songs_by_platform
