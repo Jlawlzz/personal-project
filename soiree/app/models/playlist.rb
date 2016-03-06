@@ -57,7 +57,12 @@ class Playlist < ActiveRecord::Base
   end
 
   def spotify_create_playlist(user_auth)
+    RSpotify::authenticate(ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET'])
     user_auth.create_playlist!(self.name + ' - Soriee')
+  end
+
+  def spotify_delete_playlist(spotify_user, playlist)
+    spotify_user.delete_playlist!(self.name + ' - Soriee')
   end
 
 end

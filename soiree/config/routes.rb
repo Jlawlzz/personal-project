@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   end
 
   namespace :personal do
-    resources :playlists, only: [:new, :create, :show]
+    resources :playlists, only: [:new, :create, :show, :destroy]
   end
 end
