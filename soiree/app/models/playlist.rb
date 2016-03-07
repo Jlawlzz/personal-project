@@ -18,6 +18,11 @@ class Playlist < ActiveRecord::Base
     self.platform.name
   end
 
+  def genres
+    [ "All", "Rap", "Country", "Hip-hop",
+      "Jazz", "Alternative", "Rock", "Punk"].sort
+  end
+
   def populate(user_auth)
     songs = fetch_songs_by_platform
     sanitized_songs = sanitize(songs)
@@ -60,7 +65,8 @@ class Playlist < ActiveRecord::Base
                                 artist: artists,
                                 platform_id: self.platform_id,
                                 image: song.album.images[2]['url'],
-                                album: song.album.name)
+                                album: song.album.name,
+                                link: song.external_urls["spotify"])
     end
   end
 

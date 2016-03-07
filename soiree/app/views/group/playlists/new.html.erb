@@ -17,21 +17,21 @@
 
   <div class="form-group">
     <h2 class="form-text">service:</h2>
-    <%= f.collection_select :platform_id, Platform.all, :id, :name, class:"form-form"  %>
+    <span class:"something"><%= f.collection_select :platform_id, Platform.all, :id, :name %></span>
     <br>
   </div>
 
   <div class="form-group">
     <h2 class="form-text">genre:</h2>
-    <%= f.select(:genre, Echowrap.artist_list_genres.map {|genre| genre.attrs[:name]}, {}, { :class => 'form-control' }) %>
+    <%= f.select(:genre, @playlist.genres, {}, { :class => 'form-control' }) %>
     <br>
   </div>
 
   <div class="form-group">
     <div class="checkbox">
       <% @friends.each do |friend| %>
-      <%= f.label friend['name'] %> 
-      <%= check_box_tag 'fb_ids', friend['id'], :false %>
+        <%= check_box_tag 'fb_ids', friend['id'], :false %>
+        <%= f.label friend['name']%> <br>
       <% end %>
     </div>
     <br>
