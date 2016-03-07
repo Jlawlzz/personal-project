@@ -5,6 +5,7 @@ class Playlist < ActiveRecord::Base
   has_many :group_playlists
   has_many :groups, through: :group_playlists
   belongs_to :platform
+  validates :name, presence: true
 
   def name_params
     if self.name.length > 18

@@ -25,9 +25,9 @@
         <% cache('album-image') do %>
         <td><%= image_tag song.image, class:"img-circle" %></td>
         <% end %>
-        <td><%= song.title %></td>
-        <td><%= song.artist %></td>
-        <td><%= song.album %></td>
+        <td><%= song.truncate('title') %></td>
+        <td><%= song.truncate('artist') %></td>
+        <td><%= song.truncate('album') %></td>
         <td>
           <a href="<%= song.link %>" class="provider"><%= image_tag 'spotify_button' %></a>
         </td>
