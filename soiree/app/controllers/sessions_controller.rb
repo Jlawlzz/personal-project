@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   def create
-    user = User.omniauth(env["omniauth.auth"])
+    user = User.facebook_login(env["omniauth.auth"])
     session[:user_id] = user.id
     redirect_to dashboard_path
   end
