@@ -16,6 +16,7 @@
         <th>Song Title</th>
         <th>Artist</th>
         <th>Album</th>
+        <th></th>
       </tr>
       <% count = 0 %>
       <% @playlist.songs.each do |song| %>
@@ -28,6 +29,9 @@
         <td><%= song.title %></td>
         <td><%= song.artist %></td>
         <td><%= song.album %></td>
+        <td>
+          <a href="<%= song.link %>" class="provider"><%= image_tag 'spotify_button' %></a>
+        </td>
       </tr>
       <% end %>
     </table>

@@ -23,7 +23,7 @@
 
     <div class="form-group">
     <h2 class="form-text">genre:</h2>
-    <%= f.select(:genre, Echowrap.artist_list_genres.map {|genre| genre.attrs[:name]}, {}, { :class => 'form-control' }) %>
+    <%= f.select(:genre, @playlist.genres, {}, { :class => 'form-control' }) %>
     <br>
     </div>
 

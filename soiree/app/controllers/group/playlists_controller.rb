@@ -2,6 +2,7 @@ class Group::PlaylistsController < ApplicationController
 
   def new
     @friends = facebook_user.get_connections('me', 'friends')
+    @playlist = Playlist.new
   end
 
   def create
