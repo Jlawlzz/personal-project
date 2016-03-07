@@ -4,16 +4,18 @@
   <%= simple_form_for :post, url: group_playlists_path, method: :post do |f| %>
 
   <div class="form-group">
-    <h2 class="form-text">name:</h2>
+    <%= f.label :name, "name:"%>
     <%= f.text_field :name, class: "form-control"%>
     <br>
   </div>
 
   <div class="form-group">
-    <h2 class="form-text">description:</h2>
+    <%= f.label :description, "description:"%>
     <%= f.text_field :description, class: "form-control" %>
     <br>
   </div>
+
+  <h1>preferences:</h1>
 
   <div class="form-group">
     <h2 class="form-text">service:</h2>
@@ -30,8 +32,8 @@
   <div class="form-group">
     <div class="checkbox">
       <% @friends.each do |friend| %>
-      <%= f.label friend['name'] %> 
-      <%= check_box_tag 'fb_ids', friend['id'], :false %>
+      <%= f.label friend['name'] %>
+      <%= check_box_tag 'fb_ids', friend['id'], :false, id:"#{friend['name'].split[1]}" %>
       <% end %>
     </div>
     <br>
