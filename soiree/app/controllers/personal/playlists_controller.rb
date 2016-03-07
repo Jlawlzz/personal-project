@@ -13,7 +13,7 @@ class Personal::PlaylistsController < ApplicationController
   end
 
   def show
-    @playlist = Playlist.find(params[:id])
+    @playlist = playlist_owner?
   end
 
   def destroy

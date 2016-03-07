@@ -1,6 +1,7 @@
 <div class="fluid-container">
   <div class="panel">
     <!-- Default panel contents -->
+    <%= link_to "Remove Playlist", group_playlist_path(@playlist), method: :delete, :data => { :confirm => "This will prevent this playlist from being updated! This will not remove the playlist from your service."}, class:"btn btn-primary btn-lg blue-button remove" %>
     <div class="panel-heading"><h2><%= @playlist.name %></h2></div>
     <div class="panel-body">
       <p><h4><%= @playlist.description %></h4></p>

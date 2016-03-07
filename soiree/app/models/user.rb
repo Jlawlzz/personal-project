@@ -26,4 +26,12 @@ class User < ActiveRecord::Base
     self.playlists.where("preferences @> 'type=>group'")
   end
 
+  def user?
+    provider == 'facebook'
+  end
+
+  def spotify?
+
+  end
+
 end

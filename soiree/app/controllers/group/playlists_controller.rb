@@ -1,12 +1,11 @@
 class Group::PlaylistsController < ApplicationController
-
   def new
     @playlist = Playlist.new
     @friends = facebook_user.get_connections('me', 'friends')
   end
 
   def show
-    @playlist = Playlist.find(params[:id])
+    @playlist = playlist_owner?
   end
 
   def create
@@ -20,7 +19,6 @@ class Group::PlaylistsController < ApplicationController
     group.playlists << playlist
     current_user.playlists << playlist
     playlist.create(spotify_user)
-
 
     redirect_to group_playlist_path(playlist.id)
   end
