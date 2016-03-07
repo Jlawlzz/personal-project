@@ -1,5 +1,4 @@
 class Group::PlaylistsController < ApplicationController
-
   def new
     @friends = facebook_user.get_connections('me', 'friends')
     @playlist = Playlist.new
@@ -23,9 +22,8 @@ class Group::PlaylistsController < ApplicationController
   end
 
   def show
-    @playlist = Playlist.find(params[:id])
+    @playlist = playlist_owner?
   end
-
 
   private
 

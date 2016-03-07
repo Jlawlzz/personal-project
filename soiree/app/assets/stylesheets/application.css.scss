@@ -18,11 +18,11 @@
   margin-top: 3vh;
 }
 
-  .spotify-last:before{
-    content: "•";
-    margin-right: 10px;
-    font-weight: bold;
-    color: #00FF00;
+.spotify-last:before{
+  content: "•";
+  margin-right: 10px;
+  font-weight: bold;
+  color: #00FF00;
 }
 
 .panel {
@@ -53,7 +53,7 @@
 }
 
 .provider {
-padding-right: 90px;
+  padding-right: 90px;
 }
 
 .img-circle {
@@ -136,8 +136,12 @@ h1{
   color: white !important;
 }
 
-.btn.logout-button {
+.btn.blue-button {
   background: none;
+}
+
+.remove {
+  margin-left: 85%;
 }
 
 .user-dash-info {
