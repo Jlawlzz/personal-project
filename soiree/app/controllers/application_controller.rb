@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
 
   def authorize!
     unless authorized?
-      redirect_to root_path
+      redirect_to root_url
     end
   end
 
