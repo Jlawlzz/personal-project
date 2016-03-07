@@ -5,6 +5,7 @@ class CreatePlaylists < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.hstore :preferences
+      t.string :service_playlist_id
       t.references :user, index: true, foreign_key: true
 
       t.timestamps null: false

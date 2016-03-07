@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
   namespace :personal do
     resources :playlists, only: [:new, :create, :show, :destroy]
+    resources :invites, only: [:index, :update]
   end
 end

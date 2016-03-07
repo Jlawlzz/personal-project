@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307024219) do
+ActiveRecord::Schema.define(version: 20160307043414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,17 @@ ActiveRecord::Schema.define(version: 20160307024219) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "invites", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "status"
+    t.integer  "group_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "invites", ["group_id"], name: "index_invites_on_group_id", using: :btree
+  add_index "invites", ["user_id"], name: "index_invites_on_user_id", using: :btree
+
   create_table "platforms", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -62,9 +73,10 @@ ActiveRecord::Schema.define(version: 20160307024219) do
     t.string   "name"
     t.string   "description"
     t.hstore   "preferences"
+    t.string   "service_playlist_id"
     t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.integer  "platform_id"
   end
 
@@ -112,6 +124,8 @@ ActiveRecord::Schema.define(version: 20160307024219) do
   add_foreign_key "group_playlists", "playlists"
   add_foreign_key "group_users", "groups"
   add_foreign_key "group_users", "users"
+  add_foreign_key "invites", "groups"
+  add_foreign_key "invites", "users"
   add_foreign_key "playlist_songs", "playlists"
   add_foreign_key "playlist_songs", "songs"
   add_foreign_key "playlists", "platforms"

@@ -1,31 +1,29 @@
 class Group::PlaylistsController < ApplicationController
 
   def new
-    @friends = facebook_user.get_connections('me', 'friends')
     @playlist = Playlist.new
-  end
-
-  def create
-    @group = Group.create
-    @users = User.find_by(uid: group_users_params['fb_ids'])
-    @group.users <<  @users
-    @group.users << current_user
-    @group.users.each do |user|
-      token = user.tokens.find_by(platform_id: Platform.find(params[:post][:platform_id]))
-      spotify_group_user = RSpotify::User.new(JSON.parse(token.auth))
-      playlist = Playlist.create(playlist_params(params))
-      @group.playlists << playlist
-      playlist.populate(spotify_group_user)
-      user.playlists << playlist
-    end
-    playlist = @group.playlists.find_by(user_id: current_user.id)
-    redirect_to group_playlist_path(playlist.id)
+    @friends = facebook_user.get_connections('me', 'friends')
   end
 
   def show
     @playlist = Playlist.find(params[:id])
   end
 
+  def create
+    group = Group.create
+    users = User.find_by(uid: group_users_params['fb_ids'])
+    group.users <<  users
+    group.send_invites
+    group.users << current_user
+    current_user.find_token(params[:post][:platform_id])
+    playlist = Playlist.create(playlist_params(params))
+    group.playlists << playlist
+    current_user.playlists << playlist
+    playlist.create(spotify_user)
+
+
+    redirect_to group_playlist_path(playlist.id)
+  end
 
   private
 

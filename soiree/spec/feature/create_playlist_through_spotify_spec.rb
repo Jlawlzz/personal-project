@@ -17,7 +17,7 @@ RSpec.describe "User can create a playlist" do
 
     visit '/playlists/new'
 
-    expect(current_path).to eq '/playlists/new'
+    expect(current_path).to eq 'personal/playlists/new'
 
     fill_in "Name", with: "Boss"
     fill_in "Description", with: "Coolio"

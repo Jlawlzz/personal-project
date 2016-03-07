@@ -6,7 +6,7 @@ class Personal::PlaylistsController < ApplicationController
 
   def create
     playlist = Playlist.create(playlist(params))
-    playlist.populate(spotify_user)
+    playlist.create(spotify_user)
     current_user.playlists << playlist
 
     redirect_to personal_playlist_path(playlist.id)
