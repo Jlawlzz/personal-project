@@ -26,22 +26,22 @@ class SpotifyService
     end
   end
 
-  def save_playlist(sanitized_songs, user_auth, playlist_name)
+  def save_playlist(sanitized_songs, user_auth, playlist)
     tracks = fetch_songs(sanitized_songs)
-    playlist = create_playlist(user_auth, playlist_name)
-    playlist.add_tracks!(tracks)
+    playlist = RSpotify::Playlist.find(user_auth.id, playlist.service_playlist_id)
+    refresh_playlist(playlist, tracks)
   end
 
   def fetch_songs(sanitized_songs)
     RSpotify::Track.find(sanitized_songs.first(30))
   end
 
-  def create_playlist(user_auth, playlist_name)
+  def create_playlist(playlist_name, user_auth)
     user_auth.create_playlist!(playlist_name + ' - Soriee')
   end
 
   def refresh_playlist(playlist, tracks)
-    playlist.add_tracks!(tracks)
+    playlist.replace_tracks!(tracks)
   end
 
 end

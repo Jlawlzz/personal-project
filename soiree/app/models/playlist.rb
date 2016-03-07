@@ -5,7 +5,7 @@ class Playlist < ActiveRecord::Base
   has_many :group_playlists
   has_many :groups, through: :group_playlists
   belongs_to :platform
-  validates :name, presence: true
+  belongs_to :service_playlist
 
   def name_params
     if self.name.length > 18
@@ -24,10 +24,19 @@ class Playlist < ActiveRecord::Base
       "Jazz", "Alternative", "Rock", "Punk"].sort
   end
 
-  def populate(user_auth)
+  def create(user_auth)
     songs = fetch_songs_by_platform
     sanitized_songs = sanitize(songs)
+    playlist = create_playlist_by_platform(user_auth)
+    self.update_attribute(:service_playlist_id, playlist.id)
     tracks = save_songs_by_platform(sanitized_songs, user_auth)
+    save_songs(tracks)
+  end
+
+  def populate(user_auth, controller)
+    songs = fetch_songs_by_platform
+    songs = sanitize(songs) if controller != "personal/invites"
+    tracks = save_songs_by_platform(songs, user_auth)
     save_songs(tracks)
   end
 
@@ -43,6 +52,14 @@ class Playlist < ActiveRecord::Base
     songs
   end
 
+  def create_playlist_by_platform(user_auth)
+    platform = Platform.find(self.platform_id)
+    case platform.name
+    when "spotify" then playlist = @spotify_service.create_playlist(self.name, user_auth)
+    end
+    playlist
+  end
+
   def fetch_spotify_songs
     @spotify_service = SpotifyService.new
     @spotify_service.return_playlist(self.preferences)
@@ -51,7 +68,7 @@ class Playlist < ActiveRecord::Base
   def save_songs_by_platform(sanitized_songs, user_auth)
     platform = Platform.find(self.platform_id)
     case platform.name
-    when "spotify" then tracks = @spotify_service.save_playlist(sanitized_songs, user_auth, self.name)
+    when "spotify" then tracks = @spotify_service.save_playlist(sanitized_songs, user_auth, self)
     end
     tracks
   end
