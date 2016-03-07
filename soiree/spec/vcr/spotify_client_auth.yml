@@ -1,0 +1,2657 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:04 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3NTQuCMBgA4P+ycwdhtaCjCH6gYuUHnWRuLyLOpZs5Z/Tf
+        s67P5XkjyhhoXc/PHiS6IPfq3T2WwyvV7FgVPCznyPprU3bbEvA4i7OmNeIm
+        RZ4zmhh7JmqTD5sG4SSw9AuXtxXZyESjYcGRPUkz9YNBB/QP6tmO8FuAKlC7
+        wjp2CnTd7TcmjvP5Ah1vlZ2RAAAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:04 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/search?api_key=SWOUMYTGV1Z9RU0RU&description=a%20cappella
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Mar 2016 01:40:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - quRsja+8SZ+JeLm0psNnzw
+      X-Worker-Node:
+      - b6334:6541
+      X-Ratelimit-Remaining:
+      - '18'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - SWOUMYTGV1Z9RU0RU
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '2'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": [{"id": "ARYI8XT1187B98C8AD", "name": "The Bobs"}, {"id": "AR5PGVD1187B9A14BE",
+        "name": "Rockapella"}, {"id": "AR4LE591187FB3FCFB", "name": "Take 6"}, {"id":
+        "ARSK10P1187B9B717C", "name": "Bobby McFerrin"}, {"id": "ARUIUR01187FB3FE7D",
+        "name": "The Real Group"}, {"id": "ARGG0Q51187FB531D8", "name": "Sweet Honey
+        in the Rock"}, {"id": "ARGC66L1187B99E0E2", "name": "The Persuasions"}, {"id":
+        "ARF1PV11187FB5BC66", "name": "The Swingle Singers"}, {"id": "ARR9XGB1187B9912E6",
+        "name": "Boyz II Men"}, {"id": "AR7K8671187FB49531", "name": "Die Prinzen"},
+        {"id": "AR9SUZE1187B9B8BC5", "name": "The Blanks"}, {"id": "ARPZC2B1187FB49908",
+        "name": "Rajaton"}, {"id": "ARF3Z5I1187FB3BC79", "name": "Ladysmith Black
+        Mambazo"}, {"id": "AR3UL401187B991200", "name": "Voice Male"}, {"id": "ARYAVLQ1187FB3DDAB",
+        "name": "Acappella"}]}}'
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:04 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/song/search?api_key=SWOUMYTGV1Z9RU0RU&artist=The%20Bobs&bucket=tracks&results=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Mar 2016 01:40:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - g3Wdf3FXTlysuereC0tYPQ
+      X-Worker-Node:
+      - d550a:38268
+      X-Ratelimit-Remaining:
+      - '17'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - SWOUMYTGV1Z9RU0RU
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '3'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "songs": [{"title": "Do You Hear What I Hear, Man?", "artist_name": "The Bobs",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAWCJK12AF72A36D1"},
+        {"title": "Killer Bees", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1988", "foreign_release_id":
+        "spotify:album:0nIGY0WXXlv2m6atInv5dF", "catalog": "spotify", "foreign_id":
+        "spotify:track:3fDFBj4o0OIru8A5myaqFw", "album_name": "Songs for Tomorrow
+        Morning", "id": "TRIOFLE144D12E1585"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOAOPSM13758F57DA6"}, {"title": "Too Many Santas", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOANZZT12AF729F3C3"},
+        {"title": "Poverty", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:6XtXVp6IzbfGvVClpb9OGy",
+        "album_name": "Get your Monkey off my Dog", "id": "TRHNUYQ144D1AFF6C2"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAXFSG13EFCD00D09"}, {"title":
+        "Rainbird", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1993", "foreign_release_id": "spotify:album:6AisvGmCkiXGDH1TskgfuW",
+        "catalog": "spotify", "foreign_id": "spotify:track:1JZiHF5jrOkYt9Z7WTmdMv",
+        "album_name": "Shut Up and Sing!", "id": "TRZHNVR144D0C6EF4A"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOARBPV131677128F9"}, {"title": "Dictator in
+        a Polo Shirt", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1988", "foreign_release_id": "spotify:album:0nIGY0WXXlv2m6atInv5dF",
+        "catalog": "spotify", "foreign_id": "spotify:track:4p9PoUSdfwP6IqDNOEomAa",
+        "album_name": "Songs for Tomorrow Morning", "id": "TRDHCLI144D160A565"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBHPIT1375A48DF26"}, {"title":
+        "Tattoo Me Now", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBCFNS12A58A7E24C"}, {"title":
+        "The Night Before The Night Before Christmas", "artist_name": "The Bobs",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBKKSS12AF729F858"},
+        {"title": "The Waiting Song", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1997", "foreign_release_id":
+        "spotify:album:2pZa5rnZKi7CX4bd6IHGMo", "catalog": "spotify", "foreign_id":
+        "spotify:track:1FoY2FYuw2JqRZcSnksNRu", "album_name": "I Brow Club", "id":
+        "TRPMFXH144D0C49755"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAIUJP12AF72A0190"},
+        {"title": "Lorenzo Da Ponte", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:2FMk9ZDgmb6qTt4onjnpUd", "album_name": "Biographies", "id":
+        "TRURYWP144D0EEC34B"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOADYOA14121B1B68B"},
+        {"title": "Elwood Decker", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOTFYCL12AF72A3F1E"},
+        {"title": "Elwood Decker", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:1V5ePhZ8tzTzfmS9qqjeh0", "album_name": "Biographies", "id":
+        "TRUXXJB144D0CE9E6A"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJPYXK14121B410E8"},
+        {"title": "Andy Always Dreamed of Wrestling", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:5hTymXbSSSaBV1obbYcktP", "album_name": "Biographies", "id":
+        "TRENAHW144D18AFD06"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJZLBV14121BF598D"},
+        {"title": "Andy Always Dreamed Of Wrestling", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SODHNVP12A58A78E53"},
+        {"title": "Art for Art''s Sake", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:5jrJ9f7ilTswkUnQpc9wgB", "album_name": "The Bobs", "id": "TRCZNXC144D18D3E0F"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOPLGXB1375B479F26"}, {"title":
+        "Purple Haze", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "audiobook", "album_date": "1992-11-23", "foreign_release_id":
+        "spotify:album:4KSaieBSrthbM4AtdkSh9D", "catalog": "spotify", "foreign_id":
+        "spotify:track:4pTIz76L3mHkXCkff5mjIS", "album_name": "The Best of Mountain
+        Stage Live, Volume 4", "id": "TRRVICY144D15BCA0C"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOBYILU12AF72A2D39"}, {"title": "Purple Haze", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:1TRi90cZtIWaxgBkW2J9zl",
+        "id": "TRCWODV144D0CD8140"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBEZRB1311AFE07E9"},
+        {"title": "Johnny''s Room", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:2LNRlJL9vKP7HNYOf6kpV6", "album_name": "My, I''m Large", "id":
+        "TRWRPMV144D0F381A5"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBDQFB13756C4145F"},
+        {"title": "Bach to Bach", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:4fffOBcPQCmPtdSfrYNsHw", "album_name": "Biographies", "id":
+        "TRQJWIV144D15AD9D6"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAZJLX14121BD424C"},
+        {"title": "Shut Up and Sing", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:2dbljkp6S1GwUoCq0QkiV2", "album_name": "Biographies", "id":
+        "TRSJWYW144D0FFC376"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAZPDH14121BA0992"},
+        {"title": "Like a Parrot", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1997", "foreign_release_id":
+        "spotify:album:2pZa5rnZKi7CX4bd6IHGMo", "catalog": "spotify", "foreign_id":
+        "spotify:track:7jxl11f4xFzJRz5dV9G77g", "album_name": "I Brow Club", "id":
+        "TRUYBEP144D1DCEF26"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORAXZS12A58A7A395"},
+        {"title": "Come Here Often?", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2007", "foreign_release_id":
+        "spotify:album:2Lt4RlVE8KuiUMSuvPVprC", "catalog": "spotify", "foreign_id":
+        "spotify:track:7ctgvr9T6h2rLsPWjDmPNr", "album_name": "Get your Monkey off
+        my Dog", "id": "TRYKWOG144D1D7C411"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOPVPWX13EFCCFFC07"}, {"title": "Mrs. Claus Want Some Lovin'' (Santa
+        Claus Want Some Lovin'')", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSPJJP12AF72A3435"},
+        {"title": "Tweak Your Peak", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:7Ljuu7pim6qfcavItPQTmt", "album_name": "Shut Up and Sing!",
+        "id": "TRHPCXM144D1D3ECB9"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOTKQRU12AF729D740"},
+        {"title": "Hope", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:07uZO1JJkWxrf5UUrht9hZ",
+        "album_name": "Get your Monkey off my Dog", "id": "TRAKMWP144D0960FEB"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSVGDH13EFCD00CAA"}, {"title":
+        "Hit the Road, Greg", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:7Fkw7TnFSIWEGpC754cM1S",
+        "album_name": "Get your Monkey off my Dog", "id": "TRQXSVL144D1CFD4F8"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSUDZB13EFCD555B8"}, {"title":
+        "Party Arty", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:7xk2lTcAuJ7jnTEXgvGKWk",
+        "album_name": "Get your Monkey off my Dog", "id": "TRTUIJU144D1E656C6"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSUENT13EFCCB2C81"}, {"title":
+        "Torpedo R.I.P.", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"foreign_release_id": "spotify:album:4XoKvXLuQ6a5VVNKKtoK3D", "catalog":
+        "spotify", "foreign_id": "spotify:track:0kLIcFT5VlzLDuVPYsOe5P", "id": "TRMJTQH144D0AF3BEB"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQXJFF13FFC2A1187"}, {"title":
+        "I Hate the Beach Boys", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:4GqJLEQWnk0AQrHSnOwwfd", "album_name": "The Bobs", "id": "TRAJEQK144D148A39F"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQUTDH13759A8D692"}, {"title":
+        "There Is a Mountain", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog":
+        "spotify", "foreign_id": "spotify:track:6dqlJIRMiPmQF3u4RNij5o", "id": "TRVGGHE144D1B3E579"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQIDSO1312A8AB58E"}, {"title":
+        "Plata (Original mix)", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQRWKY146355AFCC5"}, {"title":
+        "Anduril [Original Mix]", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQPKBG146479448F2"},
+        {"title": "Banana Love", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:6cBebxX8yXSIPywkBiFGct", "album_name": "My, I''m Large", "id":
+        "TRDOURT144D1B33C33"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSNHGH1377A6C1D3E"},
+        {"title": "Mess Me Up Again", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:2LDJ6VbpvrB0UPJI5qLrt7",
+        "id": "TRGUVTH144D0F02EF2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORCLQT1312FDFC852"},
+        {"title": "Rhapsody in Blue", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2005", "foreign_release_id":
+        "spotify:album:3UEXQHrljSeVZiFX5V1KzV", "catalog": "spotify", "foreign_id":
+        "spotify:track:3G8eHnIYQX6Gbjc5vulISf", "album_name": "Rhapsody in Bob", "id":
+        "TRYXTBX144D11B4537"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORFMZI1313438AAC4"},
+        {"title": "Helter Skelter", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:4Hr0HXZYXavTX3z8kKkVdo", "album_name": "The Bobs", "id": "TRMWPIU144D143FE13"},
+        {"album_type": "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:50k2z2Xw7wn8EoXAvaQEEc",
+        "album_name": "Sing the Songs of...", "id": "TRCGPXQ144D16A68D5"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOBTLYT12A58A7A066"}, {"title": "Valentino''s",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1987", "foreign_release_id": "spotify:album:2YnWPgYfP142g3OL0BtgN4",
+        "catalog": "spotify", "foreign_id": "spotify:track:2oaekQc71BQZqUaLsjsPzf",
+        "album_name": "My, I''m Large", "id": "TRQYQLX144D1040FBE"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOENHUF137581A7E61"}, {"title": "Late Model Love",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1997", "foreign_release_id": "spotify:album:2pZa5rnZKi7CX4bd6IHGMo",
+        "catalog": "spotify", "foreign_id": "spotify:track:35w8fST1e3EqlXfWarCtuF",
+        "album_name": "I Brow Club", "id": "TREGEHJ144D113FABE"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOBBWXU12AF72A24FC"}, {"title": "Mopping, Mopping, Mopping", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:6iTRRtTUO1H2hNoOJ4rpJt", "album_name": "My, I''m Large", "id":
+        "TRVKBFU144D1B05B3E"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSZYZA1377AA74C86"},
+        {"title": "Bulky Rhythm", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:4mJWN4m1XoVYfxzlW9OR2X", "album_name": "My, I''m Large", "id":
+        "TRYRNQR144D15F25F4"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOKHFXV1375A3D3A59"},
+        {"title": "The Wind Cries Mary", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:2diErWCyROsZO02Iayg8nv",
+        "id": "TRPJQHL144D0FFF148"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOOQPLB1311AFE363F"},
+        {"title": "Spontaneous Human Combustion", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:5GkOxtEn77mfWGKeWkjjuD", "album_name": "Shut Up and Sing!",
+        "id": "TRARUEY144D1783027"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOLRGIZ12AF72A0421"},
+        {"title": "Ring of Fire", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:6Fr2iUfkrDZxigoHDsEuiI", "album_name": "Sing the Songs of...",
+        "id": "TRPGSKX144D1A28F00"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBUBBD12AB018E40B"},
+        {"title": "Ring of Fire", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:7qwutNhgMYDhg6zYHnauGE",
+        "id": "TRTCIZA144D1E31773"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBHNER1311AFEC249"},
+        {"title": "Free Fallin''", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2005", "foreign_release_id":
+        "spotify:album:3UEXQHrljSeVZiFX5V1KzV", "catalog": "spotify", "foreign_id":
+        "spotify:track:0gCdz5wubvX5oltp8TKRjJ", "album_name": "Rhapsody in Bob", "id":
+        "TRAKEIU144D0AC9FC2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOVCWQY131343939A1"},
+        {"title": "Cowboy Lips", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:36rn3acsJdYIErFqVEhZOz", "album_name": "The Bobs", "id": "TRHXIVF144D1149ADC"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOTIOKD13DC04C6913"}, {"title":
+        "Please Let Me Be your Third World Country", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:5Ca4StGLO1ymQyF7sAO9Ur", "album_name": "My, I''m Large", "id":
+        "TRSCTHB144D17332CA"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOZKLIA13DBBF91619"},
+        {"title": "The Gate", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1997", "foreign_release_id": "spotify:album:2pZa5rnZKi7CX4bd6IHGMo",
+        "catalog": "spotify", "foreign_id": "spotify:track:5JQ5gYLDnAmcPms0Pxc8zJ",
+        "album_name": "I Brow Club", "id": "TRFNERS144D1785C2C"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOSMIXJ13167713887"}, {"title": "Prisoner of Funk", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:631TjNzWo3QZMxilqxPuma", "album_name": "The Bobs", "id": "TRAKKTZ144D19AEABD"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOURVGE1375BB8757F"}, {"title":
+        "Particle Man", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog":
+        "spotify", "foreign_id": "spotify:track:1WayNB8M9A6Clfeo9Ni6iM", "id": "TRKIMHG144D0CFCE15"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAADDY1312FDFC835"}, {"title":
+        "Sign My Snarling Doggie", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:3iRZUiwimqDPDGyAhF3hsb", "album_name": "Shut Up and Sing!",
+        "id": "TRXWZZU144D13068E2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOUVOXB12AF72A2369"},
+        {"title": "Come Together", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:08bEPzOQisqOPogZrKOlry", "album_name": "Sing the Songs of...",
+        "id": "TRRQDUR144D09644EE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SODWMIA12AB018E422"},
+        {"title": "Through The Wall", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:7Gs4wfSBmsDvNKmprB6YP3", "album_name": "The Bobs", "id": "TRLPHCN144D1D09BBD"},
+        {"album_type": "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:1fhimvJSVgq6EXLCsSQRJo",
+        "album_name": "Sing the Songs of...", "id": "TRIYDWV144D0D439C3"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOAZQTH1312FDFE1E7"}, {"title": "White Room",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2005", "foreign_release_id": "spotify:album:3UEXQHrljSeVZiFX5V1KzV",
+        "catalog": "spotify", "foreign_id": "spotify:track:2Mh72LS9w7Z8bZqOOx3KAP",
+        "album_name": "Rhapsody in Bob", "id": "TRDBKAW144D0F3B370"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOKFDUX1313439E0AD"}, {"title": "Come Together",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"foreign_release_id":
+        "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog": "spotify", "foreign_id":
+        "spotify:track:40EwYnKMz5s2GB1d1LPDFZ", "id": "TRZVBEG144D13C7DD2"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOKSHRI1311AFDE730"}, {"title": "My, I''m Large",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1987", "foreign_release_id": "spotify:album:2YnWPgYfP142g3OL0BtgN4",
+        "catalog": "spotify", "foreign_id": "spotify:track:2osIpnqQByVuKGtykNSKS6",
+        "album_name": "My, I''m Large", "id": "TRLEMGW144D1078835"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOXBAWW137581BD500"}, {"title": "Trash", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:6syK3HuzFU0VdrukG0Ow4c", "album_name": "The Bobs", "id": "TRYGEZV144D1BFA740"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOCJPMQ1377AFF266E"}, {"title":
+        "The Deprogrammer", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1983", "foreign_release_id": "spotify:album:7zUYuhkIfpCjA6KxYElX5K",
+        "catalog": "spotify", "foreign_id": "spotify:track:7qL3QYzA1Iig4SoPRcZfLA",
+        "album_name": "The Bobs", "id": "TRHYKFB144D1E0C202"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SORVEGI1377C23F4C8"}, {"title": "Psycho Killer", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:4FR7bDcIHwXcoC4LWfaqGt", "album_name": "Sing the Songs of...",
+        "id": "TROOKHI144D14693C6"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOMNKWO12AB018E426"},
+        {"title": "PsychoKiller", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:557itKRcOnqxUFxmwb8CA8", "album_name": "The Bobs", "id": "TRFDPGV144D16E209B"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOGSHHB133EB4B78F0"}, {"title":
+        "Helmet", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1987", "foreign_release_id": "spotify:album:2YnWPgYfP142g3OL0BtgN4",
+        "catalog": "spotify", "foreign_id": "spotify:track:6yFG1xrfq1gwR6x50m95zI",
+        "album_name": "My, I''m Large", "id": "TRBYSTK144D1C48377"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOBZTTB136C753C8EC"}, {"title": "Whole Lotta
+        Love", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type":
+        "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:64VRK3gzCPbRmqWHP5RlRW",
+        "album_name": "Sing the Songs of...", "id": "TRJPHGW144D19A4733"}, {"foreign_release_id":
+        "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog": "spotify", "foreign_id":
+        "spotify:track:0hVV0Nak9VgRdlZBrQAP5e", "id": "TRXPJCH144D0AD8A8F"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOIFKLQ1312A8A8644"}, {"title": "Share a Load",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"foreign_release_id":
+        "spotify:album:0nIGY0WXXlv2m6atInv5dF", "catalog": "spotify", "foreign_id":
+        "spotify:track:7MZYWtc5MYezrII06WdFe4", "id": "TRDBFCJ144D1D6624A"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SORGBLL1377BDD610A"}, {"title": "Purple Haze",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:4nlewuaN6CP7Cy0I0t4b5r",
+        "album_name": "Sing the Songs of...", "id": "TRRDLUA144D15AD9E2"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOFKVGR12AB018E408"}, {"title": "Yuleman vs.
+        the Anti-Claus", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SONURIT12A58A806BD"}, {"title":
+        "Searchin''", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog":
+        "spotify", "foreign_id": "spotify:track:3oowz1ozuuhKIi7e2LJg68", "id": "TRIUBTZ144D1340023"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOOTDFN1313439501A"}, {"title":
+        "Alabama Song", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2005", "foreign_release_id": "spotify:album:3UEXQHrljSeVZiFX5V1KzV",
+        "catalog": "spotify", "foreign_id": "spotify:track:7y8puBu87GBKmfhD55G9uB",
+        "album_name": "Rhapsody in Bob", "id": "TRYZUYL144D1E7C2B5"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOKNWPZ1312A8A50AF"}, {"title": "Howard Peterson",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:4FwWbUvbM7tRet8UC7oBIg",
+        "album_name": "Get your Monkey off my Dog", "id": "TRNNBSQ144D1487697"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOKOOVV13EFCD55842"}, {"title":
+        "Aspartam - Original mix", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:1VBtdX4fuxaLCaW9k9emyb",
+        "catalog": "spotify", "foreign_id": "spotify:track:5iuihIObQ1R8w6uYTzOw2K",
+        "id": "TRERGSJ144D18B05A1"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOOQPFX14249623E7D"},
+        {"title": "Disco Inferno", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:2QWiEm31W0Ij0G2qeFTIus",
+        "id": "TRQVSIP144D0F61FFF"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SONZDQJ131343A0B1E"},
+        {"title": "Bumps in the Baseline", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1997", "foreign_release_id":
+        "spotify:album:2pZa5rnZKi7CX4bd6IHGMo", "catalog": "spotify", "foreign_id":
+        "spotify:track:2NrxCIAM96mG8RvAwcWdsX", "album_name": "I Brow Club", "id":
+        "TRRCVJJ144D0F45197"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOOPCZC12A58A7BC6A"},
+        {"title": "Julia''s Too Tall", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:1U8FoGXN2IzwMCrIgPkxNd", "album_name": "Biographies", "id":
+        "TRDIJSD144D0CC84AE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOPHYBR14121B42D80"},
+        {"title": "Cow Tipping", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:0QJdPqardbb49UZ1ii0hi7",
+        "id": "TRAAOKZ144D0A1FDE2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOOKGID13EFCD00CA5"},
+        {"title": "Plastic or Paper", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1988", "foreign_release_id":
+        "spotify:album:0nIGY0WXXlv2m6atInv5dF", "catalog": "spotify", "foreign_id":
+        "spotify:track:3ePYgtD9lfsVGUR4rm8Ucc", "album_name": "Songs for Tomorrow
+        Morning", "id": "TROOQHT144D12C715C"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOOFVHR13758F26746"}, {"title": "Democratic Process", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:6OrP6Fc5Op4pjY2s3L3g4U", "album_name": "The Bobs", "id": "TRQFETN144D1AA13A9"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SONLTMF1375C353373"}, {"title":
+        "Stranger Then Love", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SONHTVL12AF729D441"}, {"title":
+        "Funk Shui", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:0yBGYH3ov23wtkkxv77yqw",
+        "album_name": "Get your Monkey off my Dog", "id": "TRGHGHQ144D0B887EB"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SONGFAV13EFCD5522F"}, {"title":
+        "Plata (Skeletonium version 2)", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQFBMY146355AFFC8"},
+        {"title": "Bus Tours", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOLDIZU12AF729E3D0"}, {"title":
+        "Johnny Ramone", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:13oAsM3EAAh6QdvocQI3yO", "album_name": "Biographies", "id":
+        "TRNUTWU144D0BC44FE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOLFXMA14121B72E9A"},
+        {"title": "Something In My Ear", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:4oS3dqV14NXdCPr1A7lwof", "album_name": "Shut Up and Sing!",
+        "id": "TRHBRAR144D16063D4"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOOAAAW12AF72A03C2"},
+        {"title": "Hedy Lamarr Spreads It Around", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:3AiklKJSUgyXkS2sgDh3OT", "album_name": "Biographies", "id":
+        "TRWNPEC144D1174BA0"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOMDFTL14121B5EA3A"},
+        {"title": "Blok 6 - Original Mix", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:3PSLprogNbRTAkkPYDO6um",
+        "catalog": "spotify", "foreign_id": "spotify:track:5jckvl53ALhqxz8KsYJWCj",
+        "id": "TRWOBDG144D185C8DE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHKQIQ150F6A2C9AC"},
+        {"title": "Plata (Skeletonium version 3)", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHQWDN146355B0078"},
+        {"title": "Plug (Original Mix)", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:7sY09gpNiQolXYJdXEvfr9",
+        "catalog": "spotify", "foreign_id": "spotify:track:6qkxBWB9FzfbjJJHNnDaWe",
+        "id": "TRRPVTX144D1BE3418"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHQEYR13E8EE0F081"},
+        {"title": "Temptation", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:5Ymc7PJMunU2a29kNvxgPf",
+        "album_name": "Sing the Songs of...", "id": "TROBILA144D18514FC"}, {"foreign_release_id":
+        "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog": "spotify", "foreign_id":
+        "spotify:track:1gTpktwgm01ujJQkNVAC9T", "id": "TRWYHXJ144D0D6A8C8"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOHXIAY12AB018E40F"}, {"title": "Disappointment
+        Pants", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type":
+        "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:1B5SWjs0ckrk0msiyRNhH8",
+        "album_name": "Get your Monkey off my Dog", "id": "TRKSEXN144D0C11AD4"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHQCDG13EFCCB2B2D"}, {"title":
+        "Meat On The Moon", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHSRTV12AF729FDCB"}, {"title":
+        "Good Lovin''", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:77ajqCDNKVTUzEA1lHzQQv",
+        "album_name": "Sing the Songs of...", "id": "TRXLMAU144D1CAC0CA"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOHROYX1312FE00BEF"}, {"title": "Blok 6 - Aleks
+        Woodpecker Remix", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"foreign_release_id": "spotify:album:5WcZwImxLpxUiCXJwCP2G1", "catalog":
+        "spotify", "foreign_id": "spotify:track:37ECRFgT5IioVXfdpjyCdk", "id": "TRWNTVI144D115FECE"},
+        {"foreign_release_id": "spotify:album:3PSLprogNbRTAkkPYDO6um", "catalog":
+        "spotify", "foreign_id": "spotify:track:7E0H3IdbQcFIjF3sS4K5cp", "id": "TROQRHZ144D1CF679D"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHJJPQ150DFB1B142"}, {"title":
+        "My Shoes", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1987", "foreign_release_id": "spotify:album:2YnWPgYfP142g3OL0BtgN4",
+        "catalog": "spotify", "foreign_id": "spotify:track:3795gbvVg0GaLZTKaN7utG",
+        "album_name": "My, I''m Large", "id": "TRQOROX144D114AF3E"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOHAUPE136C37CC315"}, {"title": "Santa Ana Woman",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1988", "foreign_release_id": "spotify:album:0nIGY0WXXlv2m6atInv5dF",
+        "catalog": "spotify", "foreign_id": "spotify:track:06PNL7iwd3dAN3fHyL4Jtu",
+        "album_name": "Songs for Tomorrow Morning", "id": "TRTAOAR144D0952103"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHAAYA136F0E13535"}, {"title":
+        "Nose to Nose", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1983", "foreign_release_id": "spotify:album:7zUYuhkIfpCjA6KxYElX5K",
+        "catalog": "spotify", "foreign_id": "spotify:track:69QpXpaeA7PyQmifhXjrQq",
+        "album_name": "The Bobs", "id": "TRXYZWC144D19DF23C"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOIQRTX1375BF0D66D"}, {"title": "The Crow", "artist_name": "The Bobs",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1997", "foreign_release_id":
+        "spotify:album:2pZa5rnZKi7CX4bd6IHGMo", "catalog": "spotify", "foreign_id":
+        "spotify:track:6IYSZYWJixCV0EnCBYGBsy", "album_name": "I Brow Club", "id":
+        "TRFEDSP144D1A4CB11"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOIPYKV13167711EAE"},
+        {"title": "I.T.H.O.T.M.O.A.", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOITCBX12AF72A5901"},
+        {"title": "My Husband was a Weatherman", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:1nyQH5hJDW9j7kel1Q6Wfd", "album_name": "My, I''m Large", "id":
+        "TRECISF144D0DC02E4"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOIJXIV137532DEACD"},
+        {"title": "But Then, a Week Ago LAst Thursday", "artist_name": "The Bobs",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1988", "foreign_release_id":
+        "spotify:album:0nIGY0WXXlv2m6atInv5dF", "catalog": "spotify", "foreign_id":
+        "spotify:track:6xscZ0KJL4gQcVtOcETPil", "album_name": "Songs for Tomorrow
+        Morning", "id": "TRYVDSM144D1C2D514"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOIJLDQ1377B25116C"}, {"title": "Pajska (Original Mix)", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJFYTE13E8EB1BEB3"},
+        {"title": "Sandwich Man", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2007", "foreign_release_id":
+        "spotify:album:2Lt4RlVE8KuiUMSuvPVprC", "catalog": "spotify", "foreign_id":
+        "spotify:track:0Vwu3YM5BUYnaDW8YU65gW", "album_name": "Get your Monkey off
+        my Dog", "id": "TRPLEFT144D0A5D492"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOJJIWA13EFCD55340"}, {"title": "Angels Of Mercy", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:5S8NTsxQsNIVUHrLicteyH", "album_name": "Shut Up and Sing!",
+        "id": "TRAKIQW144D1787EB0"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJRVGL13167714077"}]}}'
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:05 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/tracks?ids=3fDFBj4o0OIru8A5myaqFw,6XtXVp6IzbfGvVClpb9OGy,1JZiHF5jrOkYt9Z7WTmdMv,4p9PoUSdfwP6IqDNOEomAa,1FoY2FYuw2JqRZcSnksNRu,2FMk9ZDgmb6qTt4onjnpUd,1V5ePhZ8tzTzfmS9qqjeh0,5hTymXbSSSaBV1obbYcktP,5jrJ9f7ilTswkUnQpc9wgB,4pTIz76L3mHkXCkff5mjIS,1TRi90cZtIWaxgBkW2J9zl,2LNRlJL9vKP7HNYOf6kpV6,4fffOBcPQCmPtdSfrYNsHw,2dbljkp6S1GwUoCq0QkiV2,7jxl11f4xFzJRz5dV9G77g,7ctgvr9T6h2rLsPWjDmPNr,7Ljuu7pim6qfcavItPQTmt,07uZO1JJkWxrf5UUrht9hZ,7Fkw7TnFSIWEGpC754cM1S,7xk2lTcAuJ7jnTEXgvGKWk,0kLIcFT5VlzLDuVPYsOe5P,4GqJLEQWnk0AQrHSnOwwfd,6dqlJIRMiPmQF3u4RNij5o,6cBebxX8yXSIPywkBiFGct,2LDJ6VbpvrB0UPJI5qLrt7,3G8eHnIYQX6Gbjc5vulISf,4Hr0HXZYXavTX3z8kKkVdo,2oaekQc71BQZqUaLsjsPzf,35w8fST1e3EqlXfWarCtuF,6iTRRtTUO1H2hNoOJ4rpJt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQDSDcTeuNsc4WUdIVtJyGxbVizvHdLPLPbgwlRnlTTcaMwy76rznYyNHIql3nGUBdgW6z6qaJmv3Jy5nwqkmw
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        8Z//BwAA//8DAN/hiwLCIAEA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:06 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"Boss - Soriee","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQAAQ8-aXwdtiNJQRQJ6ulJr8rEAWuAVD0yeqaQKoE0km-z441BgAubrXvKDsgZL6Ad7uPRCXR_toj78php4u5ekqQPzAEKdWOH-FCeFnl-qPZU8m2TZo8PdK9sxI0Y4k_Oz_FaEunTL63oBdkIxbM0iVsB2BBx7eTqD4VizCyJo9kjja3aKB2Idx65-Bz4-_vi9tqAmi8pSmn9UiDKSMOJ6FhvKIGN1dy3nVlEui1sQYxJ2yTXhj8jWE9SUDA8Beh8ntzTSujTXa_YJXCtgV7wAerHFtDITlffACbtg4cEsJ4nA
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Www-Authenticate:
+      - Bearer realm="spotify", error="invalid_token", error_description="The access
+        token expired"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQSi0qyi9SslKoBnKA3OKSxJLSYiDfxMBQByKUm1pc
+        nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
+        BolRAAAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:06 GMT
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3Nuw6CMBQA0H/p7ADII7hVCxISBAfSwNI05BKKSS0tUtT4
+        76LrWc4b8a4DY9h8v4FEB3S8YpfY6dFeugJy4VGv9iI+lkNchbY5ta5cJRmX
+        oKmzKPdxOsVlnYogs0UlXr1N2TpE56S1Gi++oiWhvOkDjHboH7D5qeC3ANeg
+        N4VVCQ2Gie3eh47z+QKw39MxkQAAAA==
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:06 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"Boss - Soriee","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQAAQ8-aXwdtiNJQRQJ6ulJr8rEAWuAVD0yeqaQKoE0km-z441BgAubrXvKDsgZL6Ad7uPRCXR_toj78php4u5ekqQPzAEKdWOH-FCeFnl-qPZU8m2TZo8PdK9sxI0Y4k_Oz_FaEunTL63oBdkIxbM0iVsB2BBx7eTqD4VizCyJo9kjja3aKB2Idx65-Bz4-_vi9tqAmi8pSmn9UiDKSMOJ6FhvKIGN1dy3nVlEui1sQYxJ2yTXhj8jWE9SUDA8Beh8ntzTSujTXa_YJXCtgV7wAerHFtDITlffACbtg4cEsJ4nA
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Www-Authenticate:
+      - Bearer realm="spotify", error="invalid_token", error_description="The access
+        token expired"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQSi0qyi9SslKoBnKA3OKSxJLSYiDfxMBQByKUm1pc
+        nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
+        BolRAAAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:06 GMT
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=refresh_token&refresh_token=AQBpV0OIex2KT2UmdFavA62t92Q5zE9n_XSvkMW27w-DJVre7ETwbHcun8ebdhwr9hFyFFmFYZ4LGBhw-98axqL26zIcYEAG5NxJykKOYM1R_0GcSNXi5LlTRt6BIS-W4YA
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '170'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3QuXKCQAAA0H+hDjMcsmC6IOKykAWEcNgwyCU3LCpHJv8e
+        k/aV75uKkySbpuje11lHvVOy/cGigmdHn16wlUMa6EVDV86yqq0vy+e7gKIS
+        XZXm+sRlgyvSBy0MzdBWU0Z55KnAyWepWA10Xjjc3XaXIV6VWmphrRB1Y+Yc
+        JHudiIPQJjbr2cSuQj6iJa3Bkn/xbOh8zBNOCzuAR7OKIAw86IjKw5VQp8OY
+        7KWmRVo9QWVOgGuZDKsH+cy4T937ak80OJrTiEyXrPPKjhvPdbrjJFzqaUIN
+        wvkpFkDmMdtv1q6SD/rm8EHv8waaVdr/jFjAG0cb1D0SMFLnIvVGuspBuQGd
+        wRVMQkG0zFsY73CtPkPpdHC18ho6BvVG/fdF93XI/g6zmGTkpdkylCSbovI1
+        ywOG+fkFKIIcQW8BAAA=
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:06 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"Boss - Soriee","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQA1Jg31qW-xNPfH-6Kgl-jSxyFmWBBRt5J_iJbDlbvNilNjroXmHYOYQFd0Dufd52BR8gyLJRx2Nnh4ZpayDk8mHkDrFz0wf6c9Kr7p5mcQ1VQrQjY3_-8IlN8WZVQHSAwsNdgQXHEOj_HHXVHS7DuT8JnKHar98lmJIksHDwc6TPO01KXfw0TvKVUmG-6EOsqJOTrywy1qz32nKSSc2dVI5k6Ywv7g6B3N1ozP4jBCKzS3XoW3LJwF-WM_163LEQ6koJ5NJFwgdVq-jf6iz6K0NjHcY57POhYa4NkFvY8GCTIibYSL
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Location:
+      - https://api.spotify.com/v1/users/1247992398/playlists/7v1wr0l0niDRGOJzUyqHWq
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKyTXW/TMBSG7/kVUa7HnLbQ0FyySd0YMHWlmwRCk5edNB6O
+        j2efpM2m/ndiJ5laWJlA3D7n6/V7jh9fBUGYopT8Bg0nUUEYJEHGpYUDF7oF
+        mxqhSaByAVVK6TmsCYzi8ro00rrIY0MbbjWSyGpHwpxIJ4yhBnXY8cMUC1Za
+        MGwwfBNPJsPR5B3TktdSWGJxNViZSEZKHF9Mzz88LOr7k6v7sOm88UOzRieu
+        wGwPzA1k28oaREhcOhY9VfZZXpNtRHEtdjRVAy/LPqfL7hPmW4tb3/iPKQVf
+        ghf9LfjuieKFNzp8j9YGr4M5GgHQZuNKgdl64R6r/83s0NduDnbN+xtbwq62
+        e/fvAap1+zZX2cPSCM+65omLJbuy2k3p8kaK1OWSKdsbtIprmyNddyPhoVrQ
+        PI/vpuNsORstcxofsbuj0+z8sv5yxcazRXyMJwhvP87SYTw5O0Ocs+noc3z6
+        9dN6nV+2NpPh6Y/nLum/3gjrxvSmERTbh9AgKQpBDg2iqEOqWfkvN41ZZsHD
+        PkkbqASW9uXjf1pIL7Y14IWVJH12su9bbn4CAAD//wMAUsA4vT0EAAA=
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:07 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists/7v1wr0l0niDRGOJzUyqHWq/tracks?uris=spotify:track:3fDFBj4o0OIru8A5myaqFw,spotify:track:6XtXVp6IzbfGvVClpb9OGy,spotify:track:1JZiHF5jrOkYt9Z7WTmdMv,spotify:track:4p9PoUSdfwP6IqDNOEomAa,spotify:track:1FoY2FYuw2JqRZcSnksNRu,spotify:track:2FMk9ZDgmb6qTt4onjnpUd,spotify:track:1V5ePhZ8tzTzfmS9qqjeh0,spotify:track:5hTymXbSSSaBV1obbYcktP,spotify:track:5jrJ9f7ilTswkUnQpc9wgB,spotify:track:4pTIz76L3mHkXCkff5mjIS,spotify:track:1TRi90cZtIWaxgBkW2J9zl,spotify:track:2LNRlJL9vKP7HNYOf6kpV6,spotify:track:4fffOBcPQCmPtdSfrYNsHw,spotify:track:2dbljkp6S1GwUoCq0QkiV2,spotify:track:7jxl11f4xFzJRz5dV9G77g,spotify:track:7ctgvr9T6h2rLsPWjDmPNr,spotify:track:7Ljuu7pim6qfcavItPQTmt,spotify:track:07uZO1JJkWxrf5UUrht9hZ,spotify:track:7Fkw7TnFSIWEGpC754cM1S,spotify:track:7xk2lTcAuJ7jnTEXgvGKWk,spotify:track:0kLIcFT5VlzLDuVPYsOe5P,spotify:track:4GqJLEQWnk0AQrHSnOwwfd,spotify:track:6dqlJIRMiPmQF3u4RNij5o,spotify:track:6cBebxX8yXSIPywkBiFGct,spotify:track:2LDJ6VbpvrB0UPJI5qLrt7,spotify:track:3G8eHnIYQX6Gbjc5vulISf,spotify:track:4Hr0HXZYXavTX3z8kKkVdo,spotify:track:2oaekQc71BQZqUaLsjsPzf,spotify:track:35w8fST1e3EqlXfWarCtuF,spotify:track:6iTRRtTUO1H2hNoOJ4rpJt
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQA1Jg31qW-xNPfH-6Kgl-jSxyFmWBBRt5J_iJbDlbvNilNjroXmHYOYQFd0Dufd52BR8gyLJRx2Nnh4ZpayDk8mHkDrFz0wf6c9Kr7p5mcQ1VQrQjY3_-8IlN8WZVQHSAwsNdgQXHEOj_HHXVHS7DuT8JnKHar98lmJIksHDwc6TPO01KXfw0TvKVUmG-6EOsqJOTrywy1qz32nKSSc2dVI5k6Ywv7g6B3N1ozP4jBCKzS3XoW3LJwF-WM_163LEQ6koJ5NJFwgdVq-jf6iz6K0NjHcY57POhYa4NkFvY8GCTIibYSL
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQKs5LLCjOyC+Jz0xRUrBSUAoO8HIq9U1Jc/ILS8vy
+        0i6rrDAsTA6oSvKLDM6OMijKz8swdinLqnJLcw0xCypI9Pa0TCoJjTAtNXMx
+        KbfMyElV4qoFAAAA//8DAM0d4odYAAAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:07 GMT
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:10 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3Nuw6CMBQA0H/pLEnVxNcohhRfoLGILE2t11pRqJQKavx3
+        0PUs54O4EGAMK/MUMjRB043rdQ/7WXiOhD2GWNIwi98r+Uy9bOs7I82vtpo7
+        uXrEixuulwGpCE0sGSolknukLVsH5fhyYn6P7JSgRtLKlaiD/gErXxp+C/AC
+        ilah1qoAw1R79wcYfxuQyXldkQAAAA==
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:09 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/artist/search?api_key=SWOUMYTGV1Z9RU0RU&description=a%20cappella
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Mar 2016 01:40:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - QEFqWoi2Tl+S43I9Pr4+kg
+      X-Worker-Node:
+      - 89a7b:11657
+      X-Ratelimit-Remaining:
+      - '16'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - SWOUMYTGV1Z9RU0RU
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '4'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "artists": [{"id": "ARYI8XT1187B98C8AD", "name": "The Bobs"}, {"id": "AR5PGVD1187B9A14BE",
+        "name": "Rockapella"}, {"id": "AR4LE591187FB3FCFB", "name": "Take 6"}, {"id":
+        "ARSK10P1187B9B717C", "name": "Bobby McFerrin"}, {"id": "ARUIUR01187FB3FE7D",
+        "name": "The Real Group"}, {"id": "ARGG0Q51187FB531D8", "name": "Sweet Honey
+        in the Rock"}, {"id": "ARGC66L1187B99E0E2", "name": "The Persuasions"}, {"id":
+        "ARF1PV11187FB5BC66", "name": "The Swingle Singers"}, {"id": "ARR9XGB1187B9912E6",
+        "name": "Boyz II Men"}, {"id": "AR7K8671187FB49531", "name": "Die Prinzen"},
+        {"id": "AR9SUZE1187B9B8BC5", "name": "The Blanks"}, {"id": "ARPZC2B1187FB49908",
+        "name": "Rajaton"}, {"id": "ARF3Z5I1187FB3BC79", "name": "Ladysmith Black
+        Mambazo"}, {"id": "AR3UL401187B991200", "name": "Voice Male"}, {"id": "ARYAVLQ1187FB3DDAB",
+        "name": "Acappella"}]}}'
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:10 GMT
+- request:
+    method: get
+    uri: http://developer.echonest.com/api/v4/song/search?api_key=SWOUMYTGV1Z9RU0RU&artist=The%20Bobs&bucket=tracks&results=100
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Echowrap Ruby Gem 0.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 07 Mar 2016 01:40:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Request-Id:
+      - 8MK84f6cQn2HcC/J6LdN2g
+      X-Worker-Node:
+      - a3028:31659
+      X-Ratelimit-Remaining:
+      - '15'
+      Server:
+      - TornadoServer/3.1
+      X-Ratelimit-Limit:
+      - '20'
+      X-Api-Key:
+      - SWOUMYTGV1Z9RU0RU
+      Cache-Control:
+      - max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Used:
+      - '5'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"response": {"status": {"version": "4.2", "code": 0, "message": "Success"},
+        "songs": [{"title": "Sitting In Limbo", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:7b5aiNvkvsCCdGfSZNInbJ", "album_name": "Sing the Songs of...",
+        "id": "TRHOKIP144D1D78D7E"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSCAGN12A58A7C304"},
+        {"title": "Drive By Love", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:298aAwiM3lMxXXPUvaPKlu", "album_name": "Shut Up and Sing!",
+        "id": "TRSOJEN144D0E8187E"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSBCRI13167713144"},
+        {"title": "Rhapsody in Blue", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2005", "foreign_release_id":
+        "spotify:album:3UEXQHrljSeVZiFX5V1KzV", "catalog": "spotify", "foreign_id":
+        "spotify:track:3G8eHnIYQX6Gbjc5vulISf", "album_name": "Rhapsody in Bob", "id":
+        "TRYXTBX144D11B4537"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORFMZI1313438AAC4"},
+        {"title": "Mess Me Up Again", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:2LDJ6VbpvrB0UPJI5qLrt7",
+        "id": "TRGUVTH144D0F02EF2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORCLQT1312FDFC852"},
+        {"title": "Julia''s Too Tall", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:1U8FoGXN2IzwMCrIgPkxNd", "album_name": "Biographies", "id":
+        "TRDIJSD144D0CC84AE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOPHYBR14121B42D80"},
+        {"title": "There Is a Mountain", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:6dqlJIRMiPmQF3u4RNij5o",
+        "id": "TRVGGHE144D1B3E579"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQIDSO1312A8AB58E"},
+        {"title": "Scinagra (Original Mix)", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:5EF7VELH72vZRffEAd46S2",
+        "catalog": "spotify", "foreign_id": "spotify:track:6k5eT6QS1Eihx1U2aIhFW2",
+        "id": "TRERBCO144D1BADF10"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORYUTT141F8496863"},
+        {"title": "Come Here Often?", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2007", "foreign_release_id":
+        "spotify:album:2Lt4RlVE8KuiUMSuvPVprC", "catalog": "spotify", "foreign_id":
+        "spotify:track:7ctgvr9T6h2rLsPWjDmPNr", "album_name": "Get your Monkey off
+        my Dog", "id": "TRYKWOG144D1D7C411"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOPVPWX13EFCCFFC07"}, {"title": "The Ambient One", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1997", "foreign_release_id":
+        "spotify:album:2pZa5rnZKi7CX4bd6IHGMo", "catalog": "spotify", "foreign_id":
+        "spotify:track:5nJA17gsMXvatiBrCKbFIF", "album_name": "I Brow Club", "id":
+        "TRSEUZS144D18F2283"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSCXXG146205602B1"},
+        {"title": "Plata (Original mix)", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQRWKY146355AFCC5"},
+        {"title": "Like a Parrot", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1997", "foreign_release_id":
+        "spotify:album:2pZa5rnZKi7CX4bd6IHGMo", "catalog": "spotify", "foreign_id":
+        "spotify:track:7jxl11f4xFzJRz5dV9G77g", "album_name": "I Brow Club", "id":
+        "TRUYBEP144D1DCEF26"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORAXZS12A58A7A395"},
+        {"title": "Anduril [Original Mix]", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQPKBG146479448F2"},
+        {"title": "Plata (Skeletonium version 2)", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQFBMY146355AFFC8"},
+        {"title": "I Hate the Beach Boys", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:4GqJLEQWnk0AQrHSnOwwfd", "album_name": "The Bobs", "id": "TRAJEQK144D148A39F"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQUTDH13759A8D692"}, {"title":
+        "Torpedo R.I.P.", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"foreign_release_id": "spotify:album:4XoKvXLuQ6a5VVNKKtoK3D", "catalog":
+        "spotify", "foreign_id": "spotify:track:0kLIcFT5VlzLDuVPYsOe5P", "id": "TRMJTQH144D0AF3BEB"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOQXJFF13FFC2A1187"}, {"title":
+        "Mrs. Claus Want Some Lovin'' (Santa Claus Want Some Lovin'')", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSPJJP12AF72A3435"},
+        {"title": "Please Let Me Be your Third World Country", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:5Ca4StGLO1ymQyF7sAO9Ur", "album_name": "My, I''m Large", "id":
+        "TRSCTHB144D17332CA"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOZKLIA13DBBF91619"},
+        {"title": "Purple Haze", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:1TRi90cZtIWaxgBkW2J9zl",
+        "id": "TRCWODV144D0CD8140"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBEZRB1311AFE07E9"},
+        {"title": "Purple Haze", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "audiobook", "album_date": "1992-11-23", "foreign_release_id":
+        "spotify:album:4KSaieBSrthbM4AtdkSh9D", "catalog": "spotify", "foreign_id":
+        "spotify:track:4pTIz76L3mHkXCkff5mjIS", "album_name": "The Best of Mountain
+        Stage Live, Volume 4", "id": "TRRVICY144D15BCA0C"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOBYILU12AF72A2D39"}, {"title": "Purple Haze", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:4nlewuaN6CP7Cy0I0t4b5r", "album_name": "Sing the Songs of...",
+        "id": "TRRDLUA144D15AD9E2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOFKVGR12AB018E408"},
+        {"title": "Prisoner of Funk", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:631TjNzWo3QZMxilqxPuma", "album_name": "The Bobs", "id": "TRAKKTZ144D19AEABD"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOURVGE1375BB8757F"}, {"title":
+        "Valentino''s", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1987", "foreign_release_id": "spotify:album:2YnWPgYfP142g3OL0BtgN4",
+        "catalog": "spotify", "foreign_id": "spotify:track:2oaekQc71BQZqUaLsjsPzf",
+        "album_name": "My, I''m Large", "id": "TRQYQLX144D1040FBE"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOENHUF137581A7E61"}, {"title": "Helter Skelter",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1983", "foreign_release_id": "spotify:album:7zUYuhkIfpCjA6KxYElX5K",
+        "catalog": "spotify", "foreign_id": "spotify:track:4Hr0HXZYXavTX3z8kKkVdo",
+        "album_name": "The Bobs", "id": "TRMWPIU144D143FE13"}, {"album_type": "unknown",
+        "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:50k2z2Xw7wn8EoXAvaQEEc",
+        "album_name": "Sing the Songs of...", "id": "TRCGPXQ144D16A68D5"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOBTLYT12A58A7A066"}, {"title": "Ring of Fire",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"foreign_release_id":
+        "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog": "spotify", "foreign_id":
+        "spotify:track:7qwutNhgMYDhg6zYHnauGE", "id": "TRTCIZA144D1E31773"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOBHNER1311AFEC249"}, {"title": "Late Model Love",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1997", "foreign_release_id": "spotify:album:2pZa5rnZKi7CX4bd6IHGMo",
+        "catalog": "spotify", "foreign_id": "spotify:track:35w8fST1e3EqlXfWarCtuF",
+        "album_name": "I Brow Club", "id": "TREGEHJ144D113FABE"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOBBWXU12AF72A24FC"}, {"title": "Ring of Fire", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:6Fr2iUfkrDZxigoHDsEuiI", "album_name": "Sing the Songs of...",
+        "id": "TRPGSKX144D1A28F00"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBUBBD12AB018E40B"},
+        {"title": "Bulky Rhythm", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:4mJWN4m1XoVYfxzlW9OR2X", "album_name": "My, I''m Large", "id":
+        "TRYRNQR144D15F25F4"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOKHFXV1375A3D3A59"},
+        {"title": "Spontaneous Human Combustion", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:5GkOxtEn77mfWGKeWkjjuD", "album_name": "Shut Up and Sing!",
+        "id": "TRARUEY144D1783027"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOLRGIZ12AF72A0421"},
+        {"title": "The Wind Cries Mary", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:2diErWCyROsZO02Iayg8nv",
+        "id": "TRPJQHL144D0FFF148"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOOQPLB1311AFE363F"},
+        {"title": "Mopping, Mopping, Mopping", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:6iTRRtTUO1H2hNoOJ4rpJt", "album_name": "My, I''m Large", "id":
+        "TRVKBFU144D1B05B3E"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOSZYZA1377AA74C86"},
+        {"title": "White Room", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2005", "foreign_release_id": "spotify:album:3UEXQHrljSeVZiFX5V1KzV",
+        "catalog": "spotify", "foreign_id": "spotify:track:2Mh72LS9w7Z8bZqOOx3KAP",
+        "album_name": "Rhapsody in Bob", "id": "TRDBKAW144D0F3B370"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOKFDUX1313439E0AD"}, {"title": "The Deprogrammer",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1983", "foreign_release_id": "spotify:album:7zUYuhkIfpCjA6KxYElX5K",
+        "catalog": "spotify", "foreign_id": "spotify:track:7qL3QYzA1Iig4SoPRcZfLA",
+        "album_name": "The Bobs", "id": "TRHYKFB144D1E0C202"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SORVEGI1377C23F4C8"}, {"title": "Come Together", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:08bEPzOQisqOPogZrKOlry", "album_name": "Sing the Songs of...",
+        "id": "TRRQDUR144D09644EE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SODWMIA12AB018E422"},
+        {"title": "Share a Load", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:0nIGY0WXXlv2m6atInv5dF",
+        "catalog": "spotify", "foreign_id": "spotify:track:7MZYWtc5MYezrII06WdFe4",
+        "id": "TRDBFCJ144D1D6624A"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SORGBLL1377BDD610A"},
+        {"title": "Trash", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1983", "foreign_release_id": "spotify:album:7zUYuhkIfpCjA6KxYElX5K",
+        "catalog": "spotify", "foreign_id": "spotify:track:6syK3HuzFU0VdrukG0Ow4c",
+        "album_name": "The Bobs", "id": "TRYGEZV144D1BFA740"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOCJPMQ1377AFF266E"}, {"title": "Helmet", "artist_name": "The Bobs",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:6yFG1xrfq1gwR6x50m95zI", "album_name": "My, I''m Large", "id":
+        "TRBYSTK144D1C48377"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBZTTB136C753C8EC"},
+        {"title": "Particle Man", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:1WayNB8M9A6Clfeo9Ni6iM",
+        "id": "TRKIMHG144D0CFCE15"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAADDY1312FDFC835"},
+        {"title": "Through The Wall", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:7Gs4wfSBmsDvNKmprB6YP3", "album_name": "The Bobs", "id": "TRLPHCN144D1D09BBD"},
+        {"album_type": "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:1fhimvJSVgq6EXLCsSQRJo",
+        "album_name": "Sing the Songs of...", "id": "TRIYDWV144D0D439C3"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOAZQTH1312FDFE1E7"}, {"title": "Come Together",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"foreign_release_id":
+        "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog": "spotify", "foreign_id":
+        "spotify:track:40EwYnKMz5s2GB1d1LPDFZ", "id": "TRZVBEG144D13C7DD2"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOKSHRI1311AFDE730"}, {"title": "Psycho Killer",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:4FR7bDcIHwXcoC4LWfaqGt",
+        "album_name": "Sing the Songs of...", "id": "TROOKHI144D14693C6"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOMNKWO12AB018E426"}, {"title": "PsychoKiller",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1983", "foreign_release_id": "spotify:album:7zUYuhkIfpCjA6KxYElX5K",
+        "catalog": "spotify", "foreign_id": "spotify:track:557itKRcOnqxUFxmwb8CA8",
+        "album_name": "The Bobs", "id": "TRFDPGV144D16E209B"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOGSHHB133EB4B78F0"}, {"title": "Elwood Decker", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:1V5ePhZ8tzTzfmS9qqjeh0", "album_name": "Biographies", "id":
+        "TRUXXJB144D0CE9E6A"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJPYXK14121B410E8"},
+        {"title": "Elwood Decker", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOTFYCL12AF72A3F1E"},
+        {"title": "Free Fallin''", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2005", "foreign_release_id":
+        "spotify:album:3UEXQHrljSeVZiFX5V1KzV", "catalog": "spotify", "foreign_id":
+        "spotify:track:0gCdz5wubvX5oltp8TKRjJ", "album_name": "Rhapsody in Bob", "id":
+        "TRAKEIU144D0AC9FC2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOVCWQY131343939A1"},
+        {"title": "The Gate", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1997", "foreign_release_id": "spotify:album:2pZa5rnZKi7CX4bd6IHGMo",
+        "catalog": "spotify", "foreign_id": "spotify:track:5JQ5gYLDnAmcPms0Pxc8zJ",
+        "album_name": "I Brow Club", "id": "TRFNERS144D1785C2C"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOSMIXJ13167713887"}, {"title": "Cowboy Lips", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:36rn3acsJdYIErFqVEhZOz", "album_name": "The Bobs", "id": "TRHXIVF144D1149ADC"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOTIOKD13DC04C6913"}, {"title":
+        "The Waiting Song", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1997", "foreign_release_id": "spotify:album:2pZa5rnZKi7CX4bd6IHGMo",
+        "catalog": "spotify", "foreign_id": "spotify:track:1FoY2FYuw2JqRZcSnksNRu",
+        "album_name": "I Brow Club", "id": "TRPMFXH144D0C49755"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOAIUJP12AF72A0190"}, {"title": "Lorenzo Da Ponte", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:2FMk9ZDgmb6qTt4onjnpUd", "album_name": "Biographies", "id":
+        "TRURYWP144D0EEC34B"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOADYOA14121B1B68B"},
+        {"title": "Rainbird", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1993", "foreign_release_id": "spotify:album:6AisvGmCkiXGDH1TskgfuW",
+        "catalog": "spotify", "foreign_id": "spotify:track:1JZiHF5jrOkYt9Z7WTmdMv",
+        "album_name": "Shut Up and Sing!", "id": "TRZHNVR144D0C6EF4A"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOARBPV131677128F9"}, {"title": "Andy Always
+        Dreamed of Wrestling", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:5hTymXbSSSaBV1obbYcktP", "album_name": "Biographies", "id":
+        "TRENAHW144D18AFD06"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJZLBV14121BF598D"},
+        {"title": "Andy Always Dreamed Of Wrestling", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SODHNVP12A58A78E53"},
+        {"title": "Art for Art''s Sake", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:5jrJ9f7ilTswkUnQpc9wgB", "album_name": "The Bobs", "id": "TRCZNXC144D18D3E0F"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOPLGXB1375B479F26"}, {"title":
+        "Tattoo Me Now", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBCFNS12A58A7E24C"}, {"title":
+        "Johnny''s Room", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1987", "foreign_release_id": "spotify:album:2YnWPgYfP142g3OL0BtgN4",
+        "catalog": "spotify", "foreign_id": "spotify:track:2LNRlJL9vKP7HNYOf6kpV6",
+        "album_name": "My, I''m Large", "id": "TRWRPMV144D0F381A5"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOBDQFB13756C4145F"}, {"title": "Bach to Bach",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2013-11-19", "foreign_release_id": "spotify:album:6CpIJywUo0zYpQIFltdiga",
+        "catalog": "spotify", "foreign_id": "spotify:track:4fffOBcPQCmPtdSfrYNsHw",
+        "album_name": "Biographies", "id": "TRQJWIV144D15AD9D6"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOAZJLX14121BD424C"}, {"title": "Dictator in a Polo Shirt", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1988", "foreign_release_id":
+        "spotify:album:0nIGY0WXXlv2m6atInv5dF", "catalog": "spotify", "foreign_id":
+        "spotify:track:4p9PoUSdfwP6IqDNOEomAa", "album_name": "Songs for Tomorrow
+        Morning", "id": "TRDHCLI144D160A565"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOBHPIT1375A48DF26"}, {"title": "Shut Up and Sing", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:2dbljkp6S1GwUoCq0QkiV2", "album_name": "Biographies", "id":
+        "TRSJWYW144D0FFC376"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAZPDH14121BA0992"},
+        {"title": "My, I''m Large", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:2osIpnqQByVuKGtykNSKS6", "album_name": "My, I''m Large", "id":
+        "TRLEMGW144D1078835"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOXBAWW137581BD500"},
+        {"title": "Sign My Snarling Doggie", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:3iRZUiwimqDPDGyAhF3hsb", "album_name": "Shut Up and Sing!",
+        "id": "TRXWZZU144D13068E2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOUVOXB12AF72A2369"},
+        {"title": "Whole Lotta Love", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1991", "foreign_release_id":
+        "spotify:album:76t0KICiXPOXCNjNKJB7fQ", "catalog": "spotify", "foreign_id":
+        "spotify:track:64VRK3gzCPbRmqWHP5RlRW", "album_name": "Sing the Songs of...",
+        "id": "TRJPHGW144D19A4733"}, {"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:0hVV0Nak9VgRdlZBrQAP5e",
+        "id": "TRXPJCH144D0AD8A8F"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOIFKLQ1312A8A8644"},
+        {"title": "The Night Before The Night Before Christmas", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBKKSS12AF729F858"},
+        {"title": "Do You Hear What I Hear, Man?", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAWCJK12AF72A36D1"},
+        {"title": "Poverty", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:6XtXVp6IzbfGvVClpb9OGy",
+        "album_name": "Get your Monkey off my Dog", "id": "TRHNUYQ144D1AFF6C2"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOAXFSG13EFCD00D09"}, {"title":
+        "The Homey Rumours", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:774oHOrQlfL6bUzHcbQGk7", "album_name": "Biographies", "id":
+        "TRVXFGR144D1CA7A24"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOBTHQT14121C504F2"},
+        {"title": "Blok 6 - Aleks Woodpecker Remix", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:5WcZwImxLpxUiCXJwCP2G1",
+        "catalog": "spotify", "foreign_id": "spotify:track:37ECRFgT5IioVXfdpjyCdk",
+        "id": "TRWNTVI144D115FECE"}, {"foreign_release_id": "spotify:album:3PSLprogNbRTAkkPYDO6um",
+        "catalog": "spotify", "foreign_id": "spotify:track:7E0H3IdbQcFIjF3sS4K5cp",
+        "id": "TROQRHZ144D1CF679D"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHJJPQ150DFB1B142"},
+        {"title": "Blok 6 - Original Mix", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:3PSLprogNbRTAkkPYDO6um",
+        "catalog": "spotify", "foreign_id": "spotify:track:5jckvl53ALhqxz8KsYJWCj",
+        "id": "TRWOBDG144D185C8DE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHKQIQ150F6A2C9AC"},
+        {"title": "Slow Down Krishna", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:1JN2xLAQKx2vi3yOR37Rat", "album_name": "Shut Up and Sing!",
+        "id": "TROGHZW144D0C6CD33"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOGWKOQ12AF72A324F"},
+        {"title": "My Shoes", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1987", "foreign_release_id": "spotify:album:2YnWPgYfP142g3OL0BtgN4",
+        "catalog": "spotify", "foreign_id": "spotify:track:3795gbvVg0GaLZTKaN7utG",
+        "album_name": "My, I''m Large", "id": "TRQOROX144D114AF3E"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOHAUPE136C37CC315"}, {"title": "Plata (Skeletonium
+        version 1)", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOGYKWH146355AFF9B"}, {"title":
+        "Disappointment Pants", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:1B5SWjs0ckrk0msiyRNhH8",
+        "album_name": "Get your Monkey off my Dog", "id": "TRKSEXN144D0C11AD4"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHQCDG13EFCCB2B2D"}, {"title":
+        "Good Lovin''", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:77ajqCDNKVTUzEA1lHzQQv",
+        "album_name": "Sing the Songs of...", "id": "TRXLMAU144D1CAC0CA"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOHROYX1312FE00BEF"}, {"title": "Meat On The
+        Moon", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOHSRTV12AF729FDCB"}, {"title": "Sulfur (Original
+        Mix)", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify",
+        "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOFQTRH141F84A2BFF"}, {"title": "Mr. Duality",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1993", "foreign_release_id": "spotify:album:6AisvGmCkiXGDH1TskgfuW",
+        "catalog": "spotify", "foreign_id": "spotify:track:04KIaS6zNjXbzyfnsxGEg7",
+        "album_name": "Shut Up and Sing!", "id": "TREMWIX144D093B1FB"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOIBRIS13167711F80"}, {"title": "Plata (Skeletonium
+        version 3)", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHQWDN146355B0078"}, {"title":
+        "My Husband was a Weatherman", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1987", "foreign_release_id":
+        "spotify:album:2YnWPgYfP142g3OL0BtgN4", "catalog": "spotify", "foreign_id":
+        "spotify:track:1nyQH5hJDW9j7kel1Q6Wfd", "album_name": "My, I''m Large", "id":
+        "TRECISF144D0DC02E4"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOIJXIV137532DEACD"},
+        {"title": "But Then, a Week Ago LAst Thursday", "artist_name": "The Bobs",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1988", "foreign_release_id":
+        "spotify:album:0nIGY0WXXlv2m6atInv5dF", "catalog": "spotify", "foreign_id":
+        "spotify:track:6xscZ0KJL4gQcVtOcETPil", "album_name": "Songs for Tomorrow
+        Morning", "id": "TRYVDSM144D1C2D514"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOIJLDQ1377B25116C"}, {"title": "Get Your Monkey Off My Dog", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2007", "foreign_release_id":
+        "spotify:album:2Lt4RlVE8KuiUMSuvPVprC", "catalog": "spotify", "foreign_id":
+        "spotify:track:5FRfwLIuQFctVRu0ui0bFK", "album_name": "Get your Monkey off
+        my Dog", "id": "TRUJCAI144D17695FB"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOIKZQK13EFCC62ED4"}, {"title": "Nose to Nose", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1983", "foreign_release_id":
+        "spotify:album:7zUYuhkIfpCjA6KxYElX5K", "catalog": "spotify", "foreign_id":
+        "spotify:track:69QpXpaeA7PyQmifhXjrQq", "album_name": "The Bobs", "id": "TRXYZWC144D19DF23C"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOIQRTX1375BF0D66D"}, {"title":
+        "You Can''t Do That", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1988", "foreign_release_id": "spotify:album:0nIGY0WXXlv2m6atInv5dF",
+        "catalog": "spotify", "foreign_id": "spotify:track:3F3cwt1wPmUUb21DPnmxPj",
+        "album_name": "Songs for Tomorrow Morning", "id": "TRDDSLB144D11A556E"}, {"album_type":
+        "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:0h1VebqjRTWuOpSZml00hg",
+        "album_name": "Sing the Songs of...", "id": "TRMJZNR144D0ACED8B"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOIEWIT12AB018E41A"}, {"title": "Santa Ana Woman",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "1988", "foreign_release_id": "spotify:album:0nIGY0WXXlv2m6atInv5dF",
+        "catalog": "spotify", "foreign_id": "spotify:track:06PNL7iwd3dAN3fHyL4Jtu",
+        "album_name": "Songs for Tomorrow Morning", "id": "TRTAOAR144D0952103"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHAAYA136F0E13535"}, {"title":
+        "Plug (Original Mix)", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"foreign_release_id": "spotify:album:7sY09gpNiQolXYJdXEvfr9", "catalog":
+        "spotify", "foreign_id": "spotify:track:6qkxBWB9FzfbjJJHNnDaWe", "id": "TRRPVTX144D1BE3418"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOHQEYR13E8EE0F081"}, {"title":
+        "Temptation", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1991", "foreign_release_id": "spotify:album:76t0KICiXPOXCNjNKJB7fQ",
+        "catalog": "spotify", "foreign_id": "spotify:track:5Ymc7PJMunU2a29kNvxgPf",
+        "album_name": "Sing the Songs of...", "id": "TROBILA144D18514FC"}, {"foreign_release_id":
+        "spotify:album:4kmWuchfI06folQHiDrOJe", "catalog": "spotify", "foreign_id":
+        "spotify:track:1gTpktwgm01ujJQkNVAC9T", "id": "TRWYHXJ144D0D6A8C8"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOHXIAY12AB018E40F"}, {"title": "I.T.H.O.T.M.O.A.",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOITCBX12AF72A5901"}, {"title": "The Crow", "artist_name": "The Bobs",
+        "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1997", "foreign_release_id":
+        "spotify:album:2pZa5rnZKi7CX4bd6IHGMo", "catalog": "spotify", "foreign_id":
+        "spotify:track:6IYSZYWJixCV0EnCBYGBsy", "album_name": "I Brow Club", "id":
+        "TRFEDSP144D1A4CB11"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOIPYKV13167711EAE"},
+        {"title": "When We Start To Sing", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOIYHGP12AF72A11C7"},
+        {"title": "Johnny Ramone", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2013-11-19", "foreign_release_id":
+        "spotify:album:6CpIJywUo0zYpQIFltdiga", "catalog": "spotify", "foreign_id":
+        "spotify:track:13oAsM3EAAh6QdvocQI3yO", "album_name": "Biographies", "id":
+        "TRNUTWU144D0BC44FE"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOLFXMA14121B72E9A"},
+        {"title": "Christmas In LA", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOLCECJ12AF72A181F"},
+        {"title": "Unchain My Heart", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:4kmWuchfI06folQHiDrOJe",
+        "catalog": "spotify", "foreign_id": "spotify:track:5qjISMj8hCeiCOGWwgN2xl",
+        "id": "TRFAZYS144D191270F"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJWNRX13134387F47"},
+        {"title": "Shut Up & Sing", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:12hJPu9UjUpR2TfctvL0gQ", "album_name": "Shut Up and Sing!",
+        "id": "TRCJKUM144D0BB71A2"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOMBGUP131677125EC"},
+        {"title": "Lazy Susan", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1983", "foreign_release_id": "spotify:album:7zUYuhkIfpCjA6KxYElX5K",
+        "catalog": "spotify", "foreign_id": "spotify:track:4OifHfx7IZ7cSo2tJpFHKN",
+        "album_name": "The Bobs", "id": "TRIBZSP144D14E63B1"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOJNTST13759D1D56D"}, {"title": "Angels Of Mercy", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "1993", "foreign_release_id":
+        "spotify:album:6AisvGmCkiXGDH1TskgfuW", "catalog": "spotify", "foreign_id":
+        "spotify:track:5S8NTsxQsNIVUHrLicteyH", "album_name": "Shut Up and Sing!",
+        "id": "TRAKIQW144D1787EB0"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJRVGL13167714077"},
+        {"title": "I Dreamt That David Mamet", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2007", "foreign_release_id":
+        "spotify:album:2Lt4RlVE8KuiUMSuvPVprC", "catalog": "spotify", "foreign_id":
+        "spotify:track:0mVyXElBmKGym08KUuJVi4", "album_name": "Get your Monkey off
+        my Dog", "id": "TRIBANQ144D0B0A4DC"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOJMIDK13EFCD55347"}, {"title": "Sandwich Man", "artist_name": "The
+        Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"album_type": "unknown", "album_date": "2007", "foreign_release_id":
+        "spotify:album:2Lt4RlVE8KuiUMSuvPVprC", "catalog": "spotify", "foreign_id":
+        "spotify:track:0Vwu3YM5BUYnaDW8YU65gW", "album_name": "Get your Monkey off
+        my Dog", "id": "TRPLEFT144D0A5D492"}], "artist_id": "ARYI8XT1187B98C8AD",
+        "id": "SOJJIWA13EFCD55340"}, {"title": "Pajska (Original Mix)", "artist_name":
+        "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOJFYTE13E8EB1BEB3"},
+        {"title": "Untitled", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOKCQFP12AF729F01E"}, {"title":
+        "Naming The Band", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [{"album_type": "unknown", "album_date": "1993", "foreign_release_id": "spotify:album:6AisvGmCkiXGDH1TskgfuW",
+        "catalog": "spotify", "foreign_id": "spotify:track:4OCEGuBkAV9IlA53z3Yz5v",
+        "album_name": "Shut Up and Sing!", "id": "TRRAVYG144D14E62E1"}], "artist_id":
+        "ARYI8XT1187B98C8AD", "id": "SOJHWIE12AF729CD40"}, {"title": "Buddha Bakes",
+        "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog": "spotify", "foreign_id":
+        "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks": [{"album_type": "unknown",
+        "album_date": "2007", "foreign_release_id": "spotify:album:2Lt4RlVE8KuiUMSuvPVprC",
+        "catalog": "spotify", "foreign_id": "spotify:track:78v2XivN2QHycIyexPH14y",
+        "album_name": "Get your Monkey off my Dog", "id": "TRPASCX144D1CBD788"}],
+        "artist_id": "ARYI8XT1187B98C8AD", "id": "SOKYXJD13EFCD00CA7"}, {"title":
+        "Hexagon - Original Mix", "artist_name": "The Bobs", "artist_foreign_ids":
+        [{"catalog": "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}],
+        "tracks": [{"foreign_release_id": "spotify:album:5TrB7tpgyjP19zNl86MYPX",
+        "catalog": "spotify", "foreign_id": "spotify:track:453RwuHFUzbMeINP7iH3nz",
+        "id": "TRPJKDE14C085DFD60"}], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOKWLQL14C0D8BCA1B"},
+        {"title": "Bus Tours", "artist_name": "The Bobs", "artist_foreign_ids": [{"catalog":
+        "spotify", "foreign_id": "spotify:artist:4OEIQ1cT4G1hVf4UFRV1rz"}], "tracks":
+        [], "artist_id": "ARYI8XT1187B98C8AD", "id": "SOLDIZU12AF729E3D0"}]}}'
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:11 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/tracks?ids=7b5aiNvkvsCCdGfSZNInbJ,298aAwiM3lMxXXPUvaPKlu,3G8eHnIYQX6Gbjc5vulISf,2LDJ6VbpvrB0UPJI5qLrt7,1U8FoGXN2IzwMCrIgPkxNd,6dqlJIRMiPmQF3u4RNij5o,6k5eT6QS1Eihx1U2aIhFW2,7ctgvr9T6h2rLsPWjDmPNr,5nJA17gsMXvatiBrCKbFIF,7jxl11f4xFzJRz5dV9G77g,4GqJLEQWnk0AQrHSnOwwfd,0kLIcFT5VlzLDuVPYsOe5P,5Ca4StGLO1ymQyF7sAO9Ur,1TRi90cZtIWaxgBkW2J9zl,4pTIz76L3mHkXCkff5mjIS,4nlewuaN6CP7Cy0I0t4b5r,631TjNzWo3QZMxilqxPuma,2oaekQc71BQZqUaLsjsPzf,4Hr0HXZYXavTX3z8kKkVdo,7qwutNhgMYDhg6zYHnauGE,35w8fST1e3EqlXfWarCtuF,6Fr2iUfkrDZxigoHDsEuiI,4mJWN4m1XoVYfxzlW9OR2X,5GkOxtEn77mfWGKeWkjjuD,2diErWCyROsZO02Iayg8nv,6iTRRtTUO1H2hNoOJ4rpJt,2Mh72LS9w7Z8bZqOOx3KAP,7qL3QYzA1Iig4SoPRcZfLA,08bEPzOQisqOPogZrKOlry,7MZYWtc5MYezrII06WdFe4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQCF1YWDPfVcubP0gUPnXzMgvkFnRI-8pajuwJ-oiqXKl0xLOHwHUZuH7iicZmVpu_NOt9hd_I2HTicUsgUwCg
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAOydWVMbS7KA3+dX9PjlvJzBtS/n5QZmFatA7DdunKhVNGhz
+        S8LAxPz3W90GbGG1kJuGsMYV4WjbrSRVVHdlfpWVlfXvfyTJh1GmzPXwQ/JX
+        8r/Jv8ONcEt19Lib3/n6/8c7f4/uBi6//SDw59OnNyrtKN1xf3dVdu1GD9o+
+        LK9++DNcD4vrUXE9zq+f1orrRnHdL66FzMpycd0srjvFtfh05eun58X1Ir+u
+        FhpWt4trIbO2UlyL+2ut/LreKK7Fz258Kq5f/120ZLP42c294lq0qlH8bKP4
+        2UYhs1No2Pn670Jm5yS/7hbftVvc3z0rrkXb9gr5vaLle0Wr9orWNovfq1no
+        bxa/XbOQaRYamsXPHhbyrUKmVfRMq9DWKtrZKr73qGj/0Wl+PS7aeXz+Ifm/
+        p+fgbkcu66nO3+OsM/z++YXPhoP+KPV3xeO7HI0Gw78+fuwPXG/p4YMl0+9+
+        LJ7rR85GYLuxkp41989W9q72trc+cX/w4UHXf56+7jJzfkKfGqQT6m7gV43D
+        MpVPqlJbKHpRrKvabuJd/doQl7YvR/ltRsCf3+6HbphoX2idsb3QtI+Foo+K
+        eGuJ1YorhqFB2EohFLFKeAwQIEZLrDGFH77T+SW1o8uHr3rqkemNweCnGuO0
+        pJBqhQVG0mgiIMCIS6Kho8pwwhxUnIKpjQlf9UJjGPmZtmhLmFKOeOgwZIYi
+        zyA3xFGOkVE8/AHaOFbSMY9N+e7V7KnuV9PRSnvt5OjSJa1+rz1M9v3S0tK3
+        B1xmYcZZWtx+eLv+Kj7+a9aL+vCaflDZKB2Onr0zNYyUQu1Hsr/WOIDmiGzA
+        yxNPjtcPT2B2X3GofG1pmc7nY+Ulsacezzv7U18Pp/Vy8ZUzurn4/K9Zv+XT
+        Q45e4FfwAh9sOjR/98Zd7bK8/+Hj7XGmRmm/93e3eCyIcibxw2fudtBJTVqY
+        Ca86Q/d0/2GQpHZijHxIh5kp3pPj1uEmBBwhSPnksCsdYPMNrwJKPnJNVbp3
+        c30zXFmxG751sdfo6a3JL5pnZH1FnDJ1D4oeXdBMoe/M2GiUW7K0l+ykXd1/
+        FBj0B+OOytJR8Quix7uZu0ndl7+f293Bk93tDvC/HqQ+CgGwQ8BQoazEzGJA
+        naAWSeCQRsqGR8eZk/LxO4tf7/tn/vhgn8Z5IfEo/nyQFx/+Vd7XTx6lNi78
+        OsLDu1s/u7DldHiz0V25Ts82Vjfh0fC67cenr2KXEpXP7fGLYnWzi+ZIICsI
+        xRBz7wgwgRUsM1JLEzDGIQ845+/CLkJI4ywUWhCFOUVCQEKQpi7Qk+BMG2Is
+        gIi+B7tozxwNLAcwg2HcOEQAUQircKUwdIgFwnIIVRV2uRyPkuNBono2yTnm
+        n1XBZdZbGsHlVwGXH8zUvM41TB0Qq8O57iMZ3mMJ4Bs4VySFWv6S7uLO7u3Z
+        WfP4RjW3O+PKzrVE3aRznS309OBXs/QmPPq7ZKd/46Z71seu/0nPap2VNMyt
+        lHSEK0w5ld4rKYNDBZQSyDQGGutSz1rBsZb3c/2ONaL2QgZc8PHa2cFm1rlq
+        uZOLdP2MnsDt+5NXQUuJyue2+EWxeqEFUKUkVt4TpSBXFEkIMDWBAChQ+TBk
+        DGum7LtACwgwTYmUVmhMnBCYeOQhRUQG+y0Cf0uBFYTmXaCFcSsRoRphZDik
+        SgIuEWeQAWsD0QHrJPGCVICWw0s1GPbtXdLo5d60KrLMekcjsvwqyBIdwK8X
+        awkmjoAagi3joWlfgdxiibcItuAN4TZ7jfODM7ahrwy9GXcaLV+ZB0vUTfLg
+        bKHpJqwzrhUJCXIMKQGxoZI66SEKiIgVMSrMHy3TSFhIgfFlSMgrIGF5V0ck
+        XGiLUB8Skuvu6dhc+gZgvt852ExXs/0t9yokLFH5g697SaxeJIRIKG2cFBJi
+        bDUzXghArSDGSAWYpQZQbu300FHdSBjwFAvDpdKaCiIA10QbysKckCtphNYS
+        aKC1fw8kZEAb4Ij2lBAYegQHIwW4sIEDDXeBoC3CYe7qKiDh0tLS19W35VGy
+        3LtLWgPnbFUwnPWmRjCMYPgbuoF544QQM1oHF152JRCQQMneIk64s7rFTvTg
+        JvsEjptbDfp5Jxvx6nHC6eqexQlnCj0Nql03HCa7Lg/JL7dV2quTC7FWHNlg
+        +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
+        V8jTIAEA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:12 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"Boss - Soriee","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQAAQ8-aXwdtiNJQRQJ6ulJr8rEAWuAVD0yeqaQKoE0km-z441BgAubrXvKDsgZL6Ad7uPRCXR_toj78php4u5ekqQPzAEKdWOH-FCeFnl-qPZU8m2TZo8PdK9sxI0Y4k_Oz_FaEunTL63oBdkIxbM0iVsB2BBx7eTqD4VizCyJo9kjja3aKB2Idx65-Bz4-_vi9tqAmi8pSmn9UiDKSMOJ6FhvKIGN1dy3nVlEui1sQYxJ2yTXhj8jWE9SUDA8Beh8ntzTSujTXa_YJXCtgV7wAerHFtDITlffACbtg4cEsJ4nA
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Www-Authenticate:
+      - Bearer realm="spotify", error="invalid_token", error_description="The access
+        token expired"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQSi0qyi9SslKoBnKA3OKSxJLSYiDfxMBQByKUm1pc
+        nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
+        BolRAAAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:12 GMT
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:13 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3NTQuCMBgA4P+yc4JDs9WtkCIEbYasvIw1Xml+ZdvKNPrv
+        Wdfn8ryRkBKM4fZWQYtWaEPXKnk6eCwPVXJ6YNzSeVQsCIj+OFZ1z3Zt7Mh6
+        yBVm0TL3/fh63qcB4XdLTRPStNxykXmkaDJ1GY3mIXPLHs3QP+B26OC3gNCg
+        J4VXpzQYrqbbC1z38wWQiudWkQAAAA==
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:12 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"Boss - Soriee","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQAAQ8-aXwdtiNJQRQJ6ulJr8rEAWuAVD0yeqaQKoE0km-z441BgAubrXvKDsgZL6Ad7uPRCXR_toj78php4u5ekqQPzAEKdWOH-FCeFnl-qPZU8m2TZo8PdK9sxI0Y4k_Oz_FaEunTL63oBdkIxbM0iVsB2BBx7eTqD4VizCyJo9kjja3aKB2Idx65-Bz4-_vi9tqAmi8pSmn9UiDKSMOJ6FhvKIGN1dy3nVlEui1sQYxJ2yTXhj8jWE9SUDA8Beh8ntzTSujTXa_YJXCtgV7wAerHFtDITlffACbtg4cEsJ4nA
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:13 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Www-Authenticate:
+      - Bearer realm="spotify", error="invalid_token", error_description="The access
+        token expired"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQSi0qyi9SslKoBnKA3OKSxJLSYiDfxMBQByKUm1pc
+        nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
+        BolRAAAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:12 GMT
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=refresh_token&refresh_token=AQBpV0OIex2KT2UmdFavA62t92Q5zE9n_XSvkMW27w-DJVre7ETwbHcun8ebdhwr9hFyFFmFYZ4LGBhw-98axqL26zIcYEAG5NxJykKOYM1R_0GcSNXi5LlTRt6BIS-W4YA
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '170'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:13 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3QyW6CQAAA0H/hXBIWwdAbgyP7Vh0YvRAcxrDvItj032t7
+        fcf3zaSE0GlK5q6iLfPJgFBt9nXPE5P4tTnTftWPAQ31/SBxRXGtlZgO2EWe
+        1L1kabFi2xmn+Zhv6Di2vWe/ugbwgfGARp5lKTKCALpV3kAQn0R1EMphG9DX
+        NH45+OIDa2Gr1EDZvJxPqq8DvyZAv0Et9KpIJkvI3SkneaXyjGHU7m6O5dK4
+        KFUMAFH5jlUl2nmLkgsUXL3rBdsmrErnzOHnQzy0TR4K7n2Gug9RaEfdqXwq
+        c4P1EZNVN9FMq9UQY6085MG0Eyy2F8RVzUCiK8Yj01YcZtp+ENBmtI8sqauL
+        bXrmPQU16c+y4UVoHXYhivgXYAPmg/nvS+atp3+HNB3p+Fa69sVIp6R4z4oy
+        x/38AjCqDvlvAQAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:13 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"Boss - Soriee","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQAm7lp1cIcOlItepxGFPeQG7q50iiZl9WeqXMUN5oz65vJWKLrstFhyUFrnpNKzomB1PHuEHhddaUHPPEMkhmEBWS3Aq2jqyqURsrRLXYOBJv-kaHUdtvTSAOGBOlcBGbECQNkV6cvQ0fe05Nj9wWEVn4bLJMeWijAXBBcA1o-A5eoNv9h2eBZNZYXKIEkjLT0Xwu3DnmhQ2MftEGOEUQKVoSjw9tmXGrXcxGIUtekxH3WCjDhPs42J-p23xAdB_G9HudCxXQdC7q2UyHnud_lkYKINIfaBlcpT6HNVUxq4QUV1zB-P
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '38'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Location:
+      - https://api.spotify.com/v1/users/1247992398/playlists/2LKFu0JF2VgURixwJdLtKe
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKyTXU/CMBSG7/0Vy25FNxA/tktISETQRIKIxpA6Oqh0bdPT
+        DpDw3127jYCCRuPtc77evud0deQ4bsQpRa9cIkVS7DqhEyMKuGJCYwyRJEIR
+        zkyAaUotxwuFJUN0pCUFE1llNOMguCLx0hB3qpQIPY8LzE4LfhrxxNOApVet
+        1S+DoHYWXHmCoiUloLxa56al/Xar9jDp35PFvD3uqBvsZp3Xdmic6eRzLLcH
+        TiWOt5VlSHGFqGH+prLMspogE4UE2dGUVq0s2KcLDgmzrcnYNv42JUETbEU/
+        Oy+WMJRYo90GB3BOnB6XBBfZfM6w3HrhAav/ZrZra9eVXfN+Y4tb1Bbv/hpQ
+        S5G/zVSWUEtiWdE8NLFwV1a+KaFfKYlMrpI6v0FgSMCUq1ExchDdsYt+47xe
+        fQya8/4QZoPrh5T7Hf0YNxtvt0EfeHfZ7aZnw/vb1vEkiAZPPRn1prPmovNe
+        R7nNSqJotu+S/vVGvGJMaZrCyfYhZIiShCiDqr5fIJat/NNN8zgGbGGZJCRO
+        Cdfw8/FvFlKKzQ34YSVhmR0e+pbrDwAAAP//AwCsmACRPQQAAA==
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:13 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1247992398/playlists/2LKFu0JF2VgURixwJdLtKe/tracks?uris=spotify:track:7b5aiNvkvsCCdGfSZNInbJ,spotify:track:298aAwiM3lMxXXPUvaPKlu,spotify:track:3G8eHnIYQX6Gbjc5vulISf,spotify:track:2LDJ6VbpvrB0UPJI5qLrt7,spotify:track:1U8FoGXN2IzwMCrIgPkxNd,spotify:track:6dqlJIRMiPmQF3u4RNij5o,spotify:track:6k5eT6QS1Eihx1U2aIhFW2,spotify:track:7ctgvr9T6h2rLsPWjDmPNr,spotify:track:5nJA17gsMXvatiBrCKbFIF,spotify:track:7jxl11f4xFzJRz5dV9G77g,spotify:track:4GqJLEQWnk0AQrHSnOwwfd,spotify:track:0kLIcFT5VlzLDuVPYsOe5P,spotify:track:5Ca4StGLO1ymQyF7sAO9Ur,spotify:track:1TRi90cZtIWaxgBkW2J9zl,spotify:track:4pTIz76L3mHkXCkff5mjIS,spotify:track:4nlewuaN6CP7Cy0I0t4b5r,spotify:track:631TjNzWo3QZMxilqxPuma,spotify:track:2oaekQc71BQZqUaLsjsPzf,spotify:track:4Hr0HXZYXavTX3z8kKkVdo,spotify:track:7qwutNhgMYDhg6zYHnauGE,spotify:track:35w8fST1e3EqlXfWarCtuF,spotify:track:6Fr2iUfkrDZxigoHDsEuiI,spotify:track:4mJWN4m1XoVYfxzlW9OR2X,spotify:track:5GkOxtEn77mfWGKeWkjjuD,spotify:track:2diErWCyROsZO02Iayg8nv,spotify:track:6iTRRtTUO1H2hNoOJ4rpJt,spotify:track:2Mh72LS9w7Z8bZqOOx3KAP,spotify:track:7qL3QYzA1Iig4SoPRcZfLA,spotify:track:08bEPzOQisqOPogZrKOlry,spotify:track:7MZYWtc5MYezrII06WdFe4
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQAm7lp1cIcOlItepxGFPeQG7q50iiZl9WeqXMUN5oz65vJWKLrstFhyUFrnpNKzomB1PHuEHhddaUHPPEMkhmEBWS3Aq2jqyqURsrRLXYOBJv-kaHUdtvTSAOGBOlcBGbECQNkV6cvQ0fe05Nj9wWEVn4bLJMeWijAXBBcA1o-A5eoNv9h2eBZNZYXKIEkjLT0Xwu3DnmhQ2MftEGOEUQKVoSjw9tmXGrXcxGIUtekxH3WCjDhPs42J-p23xAdB_G9HudCxXQdC7q2UyHnud_lkYKINIfaBlcpT6HNVUxq4QUV1zB-P
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Content-Length:
+      - '0'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 07 Mar 2016 01:40:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQKs5LLCjOyC+Jz0xRUrBSUPIINCpMK0k1cjb2DEwz
+        9bOwCI7ysvDxC3A0SgwPyTHxNfJJNQ0r98srcClILjEvCjUvywj1zcx2NYz0
+        yPIMDfJW4qoFAAAA//8DAKSpmFdYAAAA
+    http_version: 
+  recorded_at: Mon, 07 Mar 2016 01:40:13 GMT
+recorded_with: VCR 3.0.1

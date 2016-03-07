@@ -25,7 +25,7 @@ RSpec.describe Playlist, type: :model do
   it "sends back 30 song " do
     VCR.use_cassette("returns songs") do
       playlist = Playlist.create(preferences: {'type'=> 'personal', 'genre'=> 'rap'})
-    expect(playlist.spotify_split.count).to eq 77
+    expect(playlist.fetch_spotify_songs.count).to eq 77
     end
   end
 
