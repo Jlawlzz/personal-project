@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#destroy'
 
   namespace :group do
-    resources :playlists, only: [:new, :create, :show]
+    resources :playlists, only: [:new, :create, :show, :destroy]
   end
 
   namespace :personal do
     resources :playlists, only: [:new, :create, :show, :destroy]
-    resources :invites, only: [:index, :update]
+    resources :invites, only: [:index, :update, :destroy]
   end
 end

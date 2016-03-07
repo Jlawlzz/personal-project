@@ -21,4 +21,10 @@ class Personal::InvitesController < ApplicationController
     redirect_to group_playlist_path(playlist.id)
   end
 
+  def destroy
+    invite = Invite.find(params[:id])
+    invite.destroy
+    redirect_to dashboard_path
+  end
+
 end
