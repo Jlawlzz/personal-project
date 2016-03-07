@@ -28,6 +28,7 @@ class PermissionService
     return true if controller == "spotify"
     return true if controller == "personal/playlists"
     return true if controller == "group/playlists"
+    return true if controller == "home"
   end
 
   def guest_user_permissions
