@@ -34,4 +34,11 @@ class User < ActiveRecord::Base
 
   end
 
+  def grab_liked_songs(user_auth)
+    saved_songs = SpotifyService.new.retrieve_saved(user_auth)
+    echo_tracks = EchonestService.find_by_spotify(saved_songs)
+    tracks = EchonestService.retrieve_playlist_from_likes(echo_tracks)
+    tracks
+  end
+
 end

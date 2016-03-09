@@ -8,7 +8,8 @@ class Personal::PlaylistsController < ApplicationController
     playlist = Playlist.create(playlist(params))
     current_user.playlists << playlist
     playlist.platform_create(spotify_user)
-    playlist.personal_populate(spotify_user)
+    songs = current_user.grab_liked_songs(spotify_user)
+    playlist.populate(spotify_user, songs)
     current_user.playlists << playlist
 
     redirect_to personal_playlist_path(playlist.id)

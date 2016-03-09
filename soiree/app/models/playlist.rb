@@ -29,10 +29,7 @@ class Playlist < ActiveRecord::Base
     self.update_attribute(:service_playlist_id, playlist.id)
   end
 
-  def personal_populate(user_auth)
-    saved_songs = user_tracks_saved_by_platform(user_auth)
-    echo_tracks = retrieve_echonest_tracks(saved_songs)
-    tracks = retrieve_playlist_from_likes(echo_tracks)
+  def populate(user_auth, tracks)
     sanitized_songs = sanitize_songs(tracks)
     tracks = save_songs_by_platform(sanitized_songs, user_auth)
     save_songs_to_db(tracks)
@@ -69,12 +66,15 @@ class Playlist < ActiveRecord::Base
   def save_songs_by_platform(sanitized_songs, user_auth)
     platform = Platform.find(self.platform_id)
     case platform.name
-    when "spotify" then tracks = @spotify_service.save_playlist(sanitized_songs, user_auth, self)
+    when "spotify"
+      @spotify_service = SpotifyService.new
+      tracks = @spotify_service.save_playlist(sanitized_songs, user_auth, self)
     end
     tracks
   end
 
   def save_songs_to_db(tracks)
+    self.playlist_songs.destroy_all
     tracks.each do |song|
       artists = song.artists.map {|artist| artist.name}.join(', ')
       self.songs << Song.create(title: song.name,
@@ -84,7 +84,7 @@ class Playlist < ActiveRecord::Base
                                 image: song.album.images[2]['url'],
                                 album: song.album.name,
                                 link: song.external_urls["spotify"])
-                              end
+    end
   end
 
   def create_playlist_by_platform(user_auth)
@@ -97,8 +97,4 @@ class Playlist < ActiveRecord::Base
     playlist
   end
 
-  def group_populate(users)
-
-
-  end
 end
