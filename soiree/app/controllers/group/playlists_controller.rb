@@ -14,7 +14,6 @@ class Group::PlaylistsController < ApplicationController
     group.users <<  users
     group.send_invites
     group.users << current_user
-    current_user.find_token(params[:post][:platform_id])
     playlist = Playlist.create(playlist_params(params))
     group.playlists << playlist
     current_user.playlists << playlist
