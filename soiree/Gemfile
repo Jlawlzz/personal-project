@@ -20,6 +20,7 @@ gem 'omniauth-oauth2'
 gem 'simple_form'
 gem 'echowrap'
 gem 'simplecov', :require => false, :group => :test
+gem 'responders'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

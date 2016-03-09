@@ -26,7 +26,6 @@ class Group < ActiveRecord::Base
       spotify_user = RSpotify::User.new(JSON.parse(user_auth))
       playlist.populate(spotify_user, saved_songs)
     end
-    playlist.populate(spotify_group_user, controller)
   end
 
 end

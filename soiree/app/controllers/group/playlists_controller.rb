@@ -16,9 +16,6 @@ class Group::PlaylistsController < ApplicationController
     playlist = Playlist.create(playlist_params(params))
     group.playlists << playlist
     current_user.playlists << playlist
-    playlist.platform_create(spotify_user)
-    saved_songs = group.grab_liked_songs
-    group.group_populate(saved_songs)
 
     redirect_to group_playlist_path(playlist.id)
   end

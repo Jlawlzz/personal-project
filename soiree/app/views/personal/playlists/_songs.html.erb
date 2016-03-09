@@ -1,0 +1,26 @@
+<table class="table table-hover">
+  <tr>
+    <th>#</th>
+    <th></th>
+    <th>Song Title</th>
+    <th>Artist</th>
+    <th>Album</th>
+    <th></th>
+  </tr>
+  <% count = 0 %>
+
+    <% playlist.songs.each do |song| %>
+    <% count += 1 %>
+    <tr>
+      <td><%= count %></td>
+      <% cache('album-image') do %>
+      <td><%= image_tag song.image, class:"img-circle" %></td>
+      <% end %>
+      <td><%= song.truncate('title') %></td>
+      <td><%= song.truncate('artist') %></td>
+      <td><%= song.truncate('album') %></td>
+      <td>
+        <a href="<%= song.link %>" class="provider"><%= image_tag 'spotify_button' %></a>
+      </td>
+    </tr>
+  <% end %>
