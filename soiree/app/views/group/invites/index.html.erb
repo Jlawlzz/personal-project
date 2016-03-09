@@ -1,0 +1,7 @@
+<% current_user.invites.each do |invite| %>
+
+  <h1 style="color:white;"><%= invite.group.playlists.first.name %>
+  - <%= link_to "Accept", group_invite_path(invite.id), method: :patch %></h1>
+  <h1>- <%= link_to "Decline", group_invite_path(invite.id), method: :delete %></h1>
+
+<% end %>

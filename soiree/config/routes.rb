@@ -7,11 +7,11 @@ Rails.application.routes.draw do
 
   namespace :group do
     resources :playlists, only: [:new, :create, :show, :destroy]
+    resources :invites, only: [:index, :update, :destroy]
   end
 
   namespace :personal do
     resources :playlists, only: [:new, :create, :show, :destroy]
-    resources :invites, only: [:index, :update, :destroy]
   end
 
   namespace :api, default: {format: :json} do
