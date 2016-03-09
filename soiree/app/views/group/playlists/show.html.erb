@@ -8,6 +8,14 @@
     </div>
 
     <!-- Table -->
+    <% if @playlist.songs.empty? %>
+      <div class="playlistId" id="<%= @playlist.id %>">
+      </div>
+    <% end %>
+    <% if @playlist.songs.empty? %>
+      <div id="songs">
+      </div>
+    <% else %>
     <table class="table table-hover">
       <tr>
         <th>#</th>

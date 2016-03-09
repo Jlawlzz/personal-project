@@ -8,7 +8,12 @@ class EchonestService
 
   def self.retrieve_playlist_from_likes(echo_songs)
     echo_ids = echo_songs.compact.map {|song| song.id }
-    playlist = Echowrap.playlist_static(song_id: echo_ids[0..4], type: "artist-radio", bucket: ['id:spotify', 'tracks'], results: 30)
+    playlist = Echowrap.playlist_static(song_id: echo_ids[0..4],
+                                        type: "artist-radio",
+                                        bucket: ['id:spotify', 'tracks'],
+                                        results: 30,
+                                        :variety => 1,
+                                        :song_selection => "song_discovery-top")
     playlist = playlist.map do |song|
       song.attrs[:tracks][0][:foreign_id].split(':')[2]
     end

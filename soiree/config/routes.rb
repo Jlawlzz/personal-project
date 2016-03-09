@@ -13,4 +13,12 @@ Rails.application.routes.draw do
     resources :playlists, only: [:new, :create, :show, :destroy]
     resources :invites, only: [:index, :update, :destroy]
   end
+
+  namespace :api, default: {format: :json} do
+    namespace :v1 do
+      namespace :personal do
+        post 'platform_playlists', to: 'platform_playlists#create'
+      end
+    end
+  end
 end
