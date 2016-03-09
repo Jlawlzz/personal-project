@@ -36,7 +36,7 @@ RSpec.describe "User can create a group" do
       #SELECT GROUP MEMEBERS
       fill_in 'name:', with: "Boss"
       fill_in 'description:', with: "Coolio"
-      expect(page).to have_content "preferences:"
+      # expect(page).to have_content "preferences:"
 
       find(:css, "#Stinnette").set(false)
       #only show friends that are in spotify
@@ -50,10 +50,7 @@ RSpec.describe "User can create a group" do
 
     expect(current_path).to eq "/group/playlists/#{playlist.id}"
 
-    30.times do |t|
-      expect(page).to have_content(playlist.songs[t].title)
-      expect(page).to have_content(playlist.songs[t].album)
-      expect(page).to have_content(playlist.songs[t].artist)
-    end
+    expect(page).to have_content "fresh tracks coming your way, hang tight!"
+
   end
 end

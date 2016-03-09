@@ -1,7 +1,7 @@
 class EchonestService
 
   def self.find_by_spotify(tracks)
-    tracks.map do |track|
+    tracks[0..4].map do |track|
       Echowrap.song_profile(track_id: "spotify:track:#{track}")
     end
   end
