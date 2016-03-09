@@ -28,6 +28,7 @@ function renderAllSongs(){
     , hwaccel: false // Whether to use hardware acceleration
     , position: 'absolute' // Element positioning
   }
+  
   var target = document.getElementById('songs')
   // var spinner = new Spinner(opts).spin(target);
 
@@ -43,5 +44,3 @@ function renderAllSongs(){
     }
   })
 }
-
-// http://spin.js.org/#v2.3.2

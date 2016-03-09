@@ -15,6 +15,7 @@ class Personal::InvitesController < ApplicationController
     current_user.playlists << playlist
     group.users << current_user
     group.playlists << playlist
+    
     playlist.platform_create(spotify_user)
     saved_songs = group.grab_liked_songs
     group.group_populate(saved_songs)
