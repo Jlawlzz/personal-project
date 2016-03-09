@@ -13,10 +13,13 @@ class Personal::InvitesController < ApplicationController
                                preferences: playlist_clone.preferences,
                                platform_id: playlist_clone.platform_id)
     current_user.playlists << playlist
+    group.users << current_user
     group.playlists << playlist
-    playlist.create(spotify_user)
-    group.update_playlists(params['controller'])
+    playlist.platform_create(spotify_user)
+    saved_songs = group.grab_liked_songs
+    group.group_populate(saved_songs)
     invite.destroy
+
     redirect_to group_playlist_path(playlist.id)
   end
 

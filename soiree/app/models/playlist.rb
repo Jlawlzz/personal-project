@@ -24,62 +24,57 @@ class Playlist < ActiveRecord::Base
       "Jazz", "Alternative", "Rock", "Punk"].sort
   end
 
-  def create(user_auth)
-    songs = fetch_songs_by_platform
-    sanitized_songs = sanitize(songs)
+  def platform_create(user_auth)
     playlist = create_playlist_by_platform(user_auth)
     self.update_attribute(:service_playlist_id, playlist.id)
+  end
+
+  def populate(user_auth, tracks)
+    sanitized_songs = sanitize_songs(tracks)
     tracks = save_songs_by_platform(sanitized_songs, user_auth)
-    save_songs(tracks)
+    save_songs_to_db(tracks)
   end
 
-  def populate(user_auth, controller)
-    songs = fetch_songs_by_platform
-    songs = sanitize(songs) if controller != "personal/invites"
-    tracks = save_songs_by_platform(songs, user_auth)
-    save_songs(tracks)
-  end
-
-  def platform_type
-    self.platform.name
-  end
-
-  def fetch_songs_by_platform
+  def user_tracks_saved_by_platform(user_auth)
     platform = Platform.find(self.platform_id)
     case platform.name
-    when "spotify" then songs = fetch_spotify_songs
+    when "spotify"
+      @spotify_service = SpotifyService.new
+      saved_songs = @spotify_service.retrieve_saved(user_auth)
     end
-    songs
+    saved_songs
   end
 
-  def create_playlist_by_platform(user_auth)
-    platform = Platform.find(self.platform_id)
+  def retrieve_echonest_tracks(saved_songs)
     case platform.name
-    when "spotify" then playlist = @spotify_service.create_playlist(self.name, user_auth)
+    when "spotify" then echo_tracks = EchonestService.find_by_spotify(saved_songs)
     end
-    playlist
+    echo_tracks
   end
 
-  def fetch_spotify_songs
-    @spotify_service = SpotifyService.new
-    @spotify_service.return_playlist(self.preferences)
+  def retrieve_playlist_from_likes(echo_tracks)
+    EchonestService.retrieve_playlist_from_likes(echo_tracks)
+  end
+
+  def sanitize_songs(tracks)
+    # songs.map do |song|
+    #   song if !(self.songs.find_by(track_id: song))
+    # end.compact
+    tracks
   end
 
   def save_songs_by_platform(sanitized_songs, user_auth)
     platform = Platform.find(self.platform_id)
     case platform.name
-    when "spotify" then tracks = @spotify_service.save_playlist(sanitized_songs, user_auth, self)
+    when "spotify"
+      @spotify_service = SpotifyService.new
+      tracks = @spotify_service.save_playlist(sanitized_songs, user_auth, self)
     end
     tracks
   end
 
-  def sanitize(songs)
-    songs.map do |song|
-      song if !(self.songs.find_by(track_id: song))
-    end.compact
-  end
-
-  def save_songs(tracks)
+  def save_songs_to_db(tracks)
+    self.playlist_songs.destroy_all
     tracks.each do |song|
       artists = song.artists.map {|artist| artist.name}.join(', ')
       self.songs << Song.create(title: song.name,
@@ -90,6 +85,16 @@ class Playlist < ActiveRecord::Base
                                 album: song.album.name,
                                 link: song.external_urls["spotify"])
     end
+  end
+
+  def create_playlist_by_platform(user_auth)
+    platform = Platform.find(self.platform_id)
+    case platform.name
+    when "spotify"
+      @spotify_service = SpotifyService.new
+      playlist = @spotify_service.create_playlist(self.name, user_auth)
+    end
+    playlist
   end
 
 end

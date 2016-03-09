@@ -4,6 +4,17 @@ class SpotifyService
     RSpotify::authenticate(ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET'])
   end
 
+  def retrieve_saved(user_auth)
+    tracks = user_auth.saved_tracks(limit: 30)
+    artist_dump = []
+    unique_songs = []
+    tracks.each do |track|
+      unique_songs << track.id if !artist_dump.include?(track.artists[0].id)
+      artist_dump << track.artists[0].id
+    end
+    unique_songs
+  end
+
   def self.login(auth, current_user)
     spotify = Platform.find_by(name: 'spotify')
     if !current_user.platforms.where(name: 'spotify').empty?
@@ -17,13 +28,6 @@ class SpotifyService
 
   def return_playlist(preferences)
     playlist_type(preferences)
-  end
-
-  def playlist_type(preferences)
-    case preferences['type']
-    when "personal" then Personal::SpotifyLogic.find_songs(preferences)
-    when "group" then Group::SpotifyLogic.find_songs(preferences)
-    end
   end
 
   def save_playlist(sanitized_songs, user_auth, playlist)

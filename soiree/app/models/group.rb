@@ -5,21 +5,26 @@ class Group < ActiveRecord::Base
   has_many :playlists, through: :group_playlists
   has_many :invites
 
-
-  def send_invites
-    self.users.each do |user|
-      invite = Invite.create(status: 'pending')
-      user.invites << invite
-      self.invites << invite
+  def grab_liked_songs
+    saved_songs = self.users.map do |user|
+      platform = self.playlists.first.platform
+      user_auth = user.find_token(platform).auth
+      spotify_user = RSpotify::User.new(JSON.parse(user_auth))
+      SpotifyService.new.retrieve_saved(spotify_user)
     end
+    # echo_tracks = EchonestService.find_by_spotify(saved_songs.flatten)
+    # binding.pry
+    # tracks = EchonestService.retrieve_playlist_from_likes(echo_tracks.compact)
+    saved_songs
   end
 
-  def update_playlists(controller)
+  def group_populate(saved_songs)
     self.users.each do |user|
       platform = self.playlists.first.platform
       playlist = self.playlists.find_by(user_id: user.id)
-      token = user.find_token(platform)
-      spotify_group_user = RSpotify::User.new(JSON.parse(token.auth))
+      user_auth = user.find_token(platform).auth
+      spotify_user = RSpotify::User.new(JSON.parse(user_auth))
+      playlist.populate(spotify_user, saved_songs)
     end
     playlist.populate(spotify_group_user, controller)
   end
