@@ -7,7 +7,6 @@ class Personal::InvitesController < ApplicationController
   def update
     invite = Invite.find(params[:id])
     group = invite.group
-    current_user.tokens.find_by(platform_id: group.playlists.first.platform)
     playlist_clone = group.playlists.first
     playlist = Playlist.create(name: playlist_clone.name,
                                description: playlist_clone.description,

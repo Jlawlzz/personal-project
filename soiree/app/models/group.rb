@@ -20,8 +20,8 @@ class Group < ActiveRecord::Base
       playlist = self.playlists.find_by(user_id: user.id)
       token = user.find_token(platform)
       spotify_group_user = RSpotify::User.new(JSON.parse(token.auth))
-      playlist.populate(spotify_group_user, controller)
     end
+    playlist.populate(spotify_group_user, controller)
   end
 
 end
