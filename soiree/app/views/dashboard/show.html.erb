@@ -1,7 +1,7 @@
 <div class="user-dash-info pull-left">
   <% if current_user.invites.count > 0 %>
     <button type="button" class="btn btn-primary btn-lg active logout-button">
-      <%= link_to "Invites: #{current_user.invites.count}", '/personal/invites', class:"logout" %>
+      <%= link_to "Invites: #{current_user.invites.count}", '/group/invites', class:"logout" %>
     </button>
   <% end %>
   <% if !spotify_user %>

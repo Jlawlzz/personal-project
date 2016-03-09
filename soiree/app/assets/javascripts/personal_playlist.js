@@ -28,8 +28,8 @@ function renderAllSongs(){
     , hwaccel: false // Whether to use hardware acceleration
     , position: 'absolute' // Element positioning
   }
-  
-  var target = document.getElementById('songs')
+
+  var target = document.getElementById('personalSongs')
   // var spinner = new Spinner(opts).spin(target);
 
   var spinner = new Spinner().spin()

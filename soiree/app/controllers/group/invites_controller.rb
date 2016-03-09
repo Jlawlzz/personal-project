@@ -1,4 +1,4 @@
-class Personal::InvitesController < ApplicationController
+class Group::InvitesController < ApplicationController
 
   def index
     @invites = current_user.invites
@@ -15,11 +15,12 @@ class Personal::InvitesController < ApplicationController
     current_user.playlists << playlist
     group.users << current_user
     group.playlists << playlist
-    
-    playlist.platform_create(spotify_user)
-    saved_songs = group.grab_liked_songs
-    group.group_populate(saved_songs)
     invite.destroy
+
+    # playlist.platform_create(spotify_user)
+    # saved_songs = group.grab_liked_songs
+    # group.group_populate(saved_songs)
+    # invite.destroy
 
     redirect_to group_playlist_path(playlist.id)
   end
