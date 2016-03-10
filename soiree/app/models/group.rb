@@ -12,9 +12,6 @@ class Group < ActiveRecord::Base
       spotify_user = RSpotify::User.new(JSON.parse(user_auth))
       SpotifyService.new.retrieve_saved(spotify_user)
     end
-    # echo_tracks = EchonestService.find_by_spotify(saved_songs.flatten)
-    # binding.pry
-    # tracks = EchonestService.retrieve_playlist_from_likes(echo_tracks.compact)
     saved_songs
   end
 

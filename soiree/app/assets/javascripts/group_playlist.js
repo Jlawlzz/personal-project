@@ -6,12 +6,11 @@ $(document).ready(function(){
 function renderGroupSongs(){
 
   var groupTarget = document.getElementById('groupSongs')
-  // var spinner = new Spinner(opts).spin(target);
 
   if (groupTarget != null) {
     var groupSpinner = new Spinner().spin()
     groupTarget.appendChild(groupSpinner.el)
-  
+
     $.ajax({
       url: "/api/v1/group/platform_playlists",
       type: "POST",

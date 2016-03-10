@@ -15,7 +15,9 @@ class EchonestService
                                         :variety => 1,
                                         :song_selection => "song_discovery-top")
     playlist = playlist.map do |song|
-      song.attrs[:tracks][0][:foreign_id].split(':')[2]
+      if song.attrs[:tracks][0][:foreign_id]
+        song.attrs[:tracks][0][:foreign_id].split(':')[2]
+      end
     end
     playlist
   end
