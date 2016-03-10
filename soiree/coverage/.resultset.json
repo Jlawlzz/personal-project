@@ -3,6 +3,14 @@
     "coverage": {
       "/Users/JordanLawler/turing/3module/projects/soiree/app/helpers/application_helper.rb": [
         1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/api/v1/personal/platform_playlists_controller.rb": [
@@ -112,6 +120,13 @@
         1,
         1,
         1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
         null,
         1,
         2,
@@ -684,9 +699,6 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
         0
       ],
       "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/group/invites_controller.rb": [
@@ -718,14 +730,9 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ]
     },
-    "timestamp": 1457596347
+    "timestamp": 1457596880
   }
 }
