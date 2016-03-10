@@ -11,14 +11,14 @@ class Worker
   end
 
   def self.find_expired_playlists
-    time = Time.now - 60
+    time = Time.now - 7.days
     time2 = time - 7.days
 
     Playlist.where({updated_at: time2..time})
   end
 
   def self.find_expired_groups
-    time = Time.now - 60
+    time = Time.now - 7.days
     time2 = time - 7.days
 
     Group.where({updated_at: time2..time})
