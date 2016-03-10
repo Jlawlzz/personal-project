@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://graph.facebook.com/me/friends
+    uri: https://graph.facebook.com/me/friends?access_token=CAAKC85ZBVS88BAM6PZAyhDVQiJbYrT9fx6JwslRvpnLW1u4q4jbLV1Ey2ePfbhlrjyYfGqkNRFgN4ljkYYTs2xSPr52RSq4PBqp6ZAS2CJrmq4Ds4Pj759cOYsbDXB8tRQq5H7AnrF253DBe6nJdOGaFmhIsA5ouuC5iYth7pVPUIjlXxAjIuxTEfHr1LkZD
     body:
       encoding: US-ASCII
       string: ''
@@ -15,42 +15,42 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
-      Www-Authenticate:
-      - OAuth "Facebook Platform" "invalid_request" "An active access token must be
-        used to query information about the current user."
       Access-Control-Allow-Origin:
       - "*"
       Content-Type:
       - application/json; charset=UTF-8
       X-Fb-Trace-Id:
-      - E7G3iiBQidv
+      - CLsNkJ2MZzA
       X-Fb-Rev:
       - '2222534'
+      Etag:
+      - '"8e93213bcb7239f4819c1c06387d056c0d1a2725"'
       Pragma:
       - no-cache
       Cache-Control:
-      - no-store
+      - private, no-cache, no-store, must-revalidate
       Facebook-Api-Version:
-      - v2.0
+      - v2.5
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
       Vary:
       - Accept-Encoding
       X-Fb-Debug:
-      - "+7/nWDE6+qKH7UuwfShwTh3gvmy5z88d4s4E0gbDMvQfwVyRf2/wuW1KKJ08hfRhb6mdXkcwMJwDbpsJRsQGHw=="
+      - IhjYuJ26G/H6His0VwhOTTMK5Tll+06rSXyZRZ3KadO3Lm62vjLf7kC4msdzEAgD8nqWv2Dzgxn7SD38H21Hxg==
       Date:
-      - Thu, 10 Mar 2016 03:00:39 GMT
+      - Thu, 10 Mar 2016 08:55:14 GMT
       Connection:
       - keep-alive
       Content-Length:
-      - '156'
+      - '508'
     body:
       encoding: ASCII-8BIT
-      string: '{"error":{"message":"An active access token must be used to query information
-        about the current user.","type":"OAuthException","code":2500,"fbtrace_id":"E7G3iiBQidv"}}'
+      string: '{"data":[{"name":"David Stinnette","id":"10106046331295548"},{"name":"Steve
+        Oscar","id":"788634289194"},{"name":"Jordan Lawler","id":"10153958223763622"},{"name":"Aaron
+        Greenspan","id":"3393381960832"}],"paging":{"next":"https:\/\/graph.facebook.com\/v2.5\/10156565555460075\/friends?access_token=CAAKC85ZBVS88BAM6PZAyhDVQiJbYrT9fx6JwslRvpnLW1u4q4jbLV1Ey2ePfbhlrjyYfGqkNRFgN4ljkYYTs2xSPr52RSq4PBqp6ZAS2CJrmq4Ds4Pj759cOYsbDXB8tRQq5H7AnrF253DBe6nJdOGaFmhIsA5ouuC5iYth7pVPUIjlXxAjIuxTEfHr1LkZD&limit=25&offset=25&__after_id=enc_AdDVPGnMebqs1e2i7Pezz6jPFCS3CYxBZAJT0ZC47gP6zMD5hNNgZAnFwZCKQcJxuPuDHIUZD"},"summary":{"total_count":1257}}'
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 03:00:38 GMT
+  recorded_at: Thu, 10 Mar 2016 08:55:14 GMT
 recorded_with: VCR 3.0.1
