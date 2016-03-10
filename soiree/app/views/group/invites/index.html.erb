@@ -2,6 +2,7 @@
   <p>
     Current Invites
   </p>
+  <% binding.pry %>
   <% current_user.invites.each do |invite| %>
       <h1><%= invite.group.playlists.first.name %>
         - <%= link_to "Accept", group_invite_path(invite.id), method: :patch %>
