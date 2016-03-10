@@ -5,6 +5,13 @@ class Group < ActiveRecord::Base
   has_many :playlists, through: :group_playlists
   has_many :invites
 
+  def self.create_group_playlist(playlist, spotify_user)
+    group = playlist.groups[0]
+    playlist.platform_create(spotify_user)
+    saved_songs = group.grab_liked_songs
+    group.group_populate(saved_songs)
+  end
+
   def grab_liked_songs
     saved_songs = self.users.map do |user|
       platform = self.playlists.first.platform
