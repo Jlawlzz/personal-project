@@ -5,9 +5,9 @@ class Personal::PlaylistsController < ApplicationController
   end
 
   def create
-    @playlist = Playlist.new(playlist(params))
+    @playlist = Playlist.new(playlist_params(params))
     if @playlist.save
-      current_user.playlists << playlist
+      current_user.playlists << @playlist
 
       redirect_to personal_playlist_path(playlist.id)
     else
@@ -29,8 +29,8 @@ class Personal::PlaylistsController < ApplicationController
 
   private
 
-  def playlist(params)
-    playlist_params = params.require(:post).permit( :name,
+  def playlist_params(params)
+    playlist_params = params.require(:post).permit(:name,
                                       :description,
                                       :platform_id)
 
