@@ -25,6 +25,7 @@ RSpec.describe "User can create a playlist" do
     click_on "Create Playlist"
 
     playlist = Playlist.first
+
     expect(current_path).to eq "/personal/playlists/#{playlist.id}"
 
     expect(page).to have_content "fresh tracks coming your way, hang tight!"
