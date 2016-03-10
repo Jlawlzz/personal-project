@@ -31,10 +31,6 @@ RSpec.describe Group::InvitesController, type: :controller do
 
       click_link 'Invites: 1'
       expect(current_path).to eq '/group/invites'
-      # visit '/group/invites'
-      #
-      # expect(page).to have_content "Accept"
-      # expect(page).to have_content "Decline"
 
     end
   end
