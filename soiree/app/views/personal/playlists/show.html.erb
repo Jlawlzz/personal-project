@@ -35,8 +35,7 @@
           <th></th>
         </tr>
         <% count = 0 %>
-
-        <% cache('album-image') do %>
+        <% cache cache_key_for(Playlist, "#{@playlist.id}") do %>
           <% @playlist.songs.last(30).each do |song| %>
           <% count += 1 %>
           <tr>
