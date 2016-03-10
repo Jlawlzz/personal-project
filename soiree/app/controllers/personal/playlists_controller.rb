@@ -6,13 +6,8 @@ class Personal::PlaylistsController < ApplicationController
 
   def create
     @playlist = Playlist.new(playlist_params(params))
-    if @playlist.save
-      current_user.playlists << @playlist
 
-      redirect_to personal_playlist_path(@playlist.id)
-    else
-      render :new
-    end
+    create_redirect
   end
 
   def show
@@ -21,10 +16,8 @@ class Personal::PlaylistsController < ApplicationController
 
   def destroy
     playlist = Playlist.find(params['id'])
-    playlist.playlist_songs.delete_all
-    playlist.destroy
 
-    redirect_to dashboard_path
+    delete_redirect(playlist)
   end
 
   private
@@ -36,5 +29,21 @@ class Personal::PlaylistsController < ApplicationController
 
     playlist_params[:preferences] = {genre: params[:post][:genre], type: 'personal'}
     playlist_params
+  end
+
+  def create_redirect
+    if @playlist.save
+      current_user.playlists << @playlist
+      redirect_to personal_playlist_path(@playlist.id)
+    else
+      render :new
+    end
+  end
+
+  def delete_redirect(playlist)
+    playlist.playlist_songs.delete_all
+    playlist.destroy
+
+    redirect_to dashboard_path
   end
 end
