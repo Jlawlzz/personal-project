@@ -15,7 +15,7 @@ RSpec.describe Group::InvitesController, type: :controller do
 
        user = User.last
 
-       ApplicationController.any_instance.stub(:current_user).and_return(user)
+     ApplicationController.any_instance.stub(:current_user).and_return(user)
 
       group = Group.create
       playlist = Playlist.create(name: "thing")
@@ -24,8 +24,6 @@ RSpec.describe Group::InvitesController, type: :controller do
       user.invites << invite
 
       get :index
-
-      save_and_open_page
 
       expect(page).to have_content "Accept"
       expect(page).to have_content "Decline"
