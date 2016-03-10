@@ -1,8 +1,5 @@
 <%= render partial: "/layouts/logout_button" %>
-<div class="text-center login-content">
-<h1 class="title-text">tango</h1>
-<h5 class='title-description'>personalized weekly playlists for you.</br>delivered directly to your streaming service.</h5>
-</div>
+
 <div class="user-dash-info pull-left">
   <% if current_user.invites.count > 0 %>
     <button type="button" class="btn btn-primary btn-lg active logout-button">
@@ -16,5 +13,8 @@
     </button>
   <% end %>
 </div>
+<div class="text-center login-content">
+<h1 class="title-text">tango</h1>
+<h5 class='title-description'>personalized weekly playlists for you.</br>delivered directly to your streaming service.</h5>
 </div>
 <div class="text-center login-content">
