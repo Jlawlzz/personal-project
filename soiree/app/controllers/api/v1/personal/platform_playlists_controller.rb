@@ -1,7 +1,9 @@
 class Api::V1::Personal::PlatformPlaylistsController < Api::ApiController
-  respond_to :json
+
+  respond_to :json, :js
 
   def create
+    binding.pry
     playlist = Playlist.find(params[:id])
     playlist.platform_create(spotify_user)
     songs = current_user.grab_liked_songs(spotify_user)
