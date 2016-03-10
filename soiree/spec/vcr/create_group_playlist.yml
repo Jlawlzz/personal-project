@@ -1,0 +1,427 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 10 Mar 2016 10:03:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3NTQuCMBgA4P+yc8H8aEbHQSJR2WhpnoZbrzQGU7YJWvTf
+        s67P5XmjVinwXoTegEU7RBndsvWBjq5KDZdcPwOIuGRcTTRio8E3nzekudyv
+        +5kVVHW17fqkDL4YpTxtejCvJI4bUlN7lmmUHbPKPxhaoX8gwjzAb4HWgVsU
+        pkE78EIvd0Iw/nwBdJV0y5EAAAA=
+    http_version: 
+  recorded_at: Thu, 10 Mar 2016 10:03:43 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1232734959/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"jordans jamz - Tango","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQDfbDWGUcGOLdsSUj9KLwy8k22acBfn28CKYAhi4-W8bjz8yqfnhxLpry0d5zhqT297NLD4pO5-tSIjGsxH56WdjXVPW56kM_AQeG2ARAzjbtFSRYGmRcj_DRYkNcQUmNcAGDQWfRM-bsEu0upSutzQLa9nyx8jwI2haC1jOvUXCtydi6TqPvM57RgY-xqBJsd8mattIeI9fpYUnSnIrRY8ugbLsFnMtxPdjREGUpW7QAehcBibcIzr5NZxWBV37H9kyBoJ2I_j0JJKH7hEyZoYqC_LkqbDzIeM7tph7I7-E2QOAVau
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '45'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 10 Mar 2016 10:03:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Www-Authenticate:
+      - Bearer realm="spotify", error="invalid_token", error_description="The access
+        token expired"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQSi0qyi9SslKoBnKA3OKSxJLSYiDfxMBQByKUm1pc
+        nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
+        BolRAAAA
+    http_version: 
+  recorded_at: Thu, 10 Mar 2016 10:03:43 GMT
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=client_credentials
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '29'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 10 Mar 2016 10:03:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3NTQuCMBgA4P+yc4LOPqybH1AQKJrC5mXM9QbLcLoJa0X/
+        Pev6XJ434kKAMWxWPQzogJIyKTekfV2prqLcBl7W3O4yoO4Uq6kbyQC15tSk
+        vK4KHIW9bbNcdrt1cWk6gpkQtA8sPZ6j2BswUeEDu/1k0Qr9Aza7EX4LcA16
+        UXiOUoNhcrnDre9/vklJNpuRAAAA
+    http_version: 
+  recorded_at: Thu, 10 Mar 2016 10:03:43 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1232734959/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"jordans jamz - Tango","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQDfbDWGUcGOLdsSUj9KLwy8k22acBfn28CKYAhi4-W8bjz8yqfnhxLpry0d5zhqT297NLD4pO5-tSIjGsxH56WdjXVPW56kM_AQeG2ARAzjbtFSRYGmRcj_DRYkNcQUmNcAGDQWfRM-bsEu0upSutzQLa9nyx8jwI2haC1jOvUXCtydi6TqPvM57RgY-xqBJsd8mattIeI9fpYUnSnIrRY8ugbLsFnMtxPdjREGUpW7QAehcBibcIzr5NZxWBV37H9kyBoJ2I_j0JJKH7hEyZoYqC_LkqbDzIeM7tph7I7-E2QOAVau
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '45'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 10 Mar 2016 10:03:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Www-Authenticate:
+      - Bearer realm="spotify", error="invalid_token", error_description="The access
+        token expired"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQSi0qyi9SslKoBnKA3OKSxJLSYiDfxMBQByKUm1pc
+        nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
+        BolRAAAA
+    http_version: 
+  recorded_at: Thu, 10 Mar 2016 10:03:44 GMT
+- request:
+    method: post
+    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    body:
+      encoding: US-ASCII
+      string: grant_type=refresh_token&refresh_token=AQAr6B-sK3BzM88sxISAmGbiMBC7VWXumfjIxLCi79TcO3f9luNT6YiZJObLHEb5L2GDRkZPDXQgnRSoF1aR0BBjhqJDgAGQ7UKZu18lg04iVXdWEhdgHYJE54ZFi06Kqxg
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Length:
+      - '170'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 10 Mar 2016 10:03:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=10
+      Vary:
+      - Accept-Encoding
+      X-Ua-Compatible:
+      - IE=edge
+      X-Frame-Options:
+      - deny
+      Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      X-Content-Security-Policy:
+      - 'default-src ''self''; script-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://www.google-analytics.com; img-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net
+        https://i.imgur.com https://d2mv8tnci56s9d.cloudfront.net https://aci.scdn.co
+        https://graph.facebook.com https://fbcdn-profile-a.akamaihd.net https://scontent.xx.fbcdn.net
+        https://www.google-analytics.com https://stats.g.doubleclick.net data: d2d1dxiu3v1f2i.cloudfront.net;
+        font-src ''self'' https://d2d1dxiu3v1f2i.cloudfront.net https://sp-bootstrap.global.ssl.fastly.net;
+        style-src ''self'' ''unsafe-inline'' https://d2d1dxiu3v1f2i.cloudfront.net;
+        frame-src ''self'' https://www.spotify.com;'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAx3QS3KCMAAA0LuwLjMhVoLdGUDko4ASQTZMjBEEPwRQkE7v
+        XtvtW75viTLG2zbr7hW/SV8SDufl5HTBgtWW3C095pZxnGGe5KHFtJlASrLp
+        N7rctM5EtTYsSnIf7mpSJT7V3OIaXMJpTFkg1nZCnXaYdlFT7R/MRQfbnCuV
+        jW3gmQie+hHL/nM7jTareBSWfR2wVqF1n2+JKF+6sM2VeZKBFy6i1awgM1BX
+        Wg3J4lOk9BELV10rYfG4+S+loSgxq8BtZq3Rhki7mbv4jg5buEDxxCsgTS08
+        ZTwHz0F5hrdGV48lGMchC8nYn2V82QeWDwNZlcn1pWOS9EuUp4OuMJJ2wqBF
+        tlKdvC2X0ADGvd7dwfOxpabhHCOYQ+Jx6UP678u6V83/DjltePNWPtTnhrfZ
+        +T07UQH4+QUipzY1bwEAAA==
+    http_version: 
+  recorded_at: Thu, 10 Mar 2016 10:03:44 GMT
+- request:
+    method: post
+    uri: https://api.spotify.com/v1/users/1232734959/playlists
+    body:
+      encoding: UTF-8
+      string: '{"name":"jordans jamz - Tango","public":true}'
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - Bearer BQAj3flBqcpG-tHLcKjWW_BeXgQGc89q71XRwRC-rsJ36GRcTXgO2VpUkXOa8KhmPlQ5WacPqNIXaJsx5tTrkYucK7bIEA1kIBI0LE72fwzB-OvS5TRMWzqGImxB8k7NwgSUqjyCqIEMEf-0LQFTM9hU90pk8p2UF4qZauWqK6N1QhunOy1ra7XEkPKr9sDsQ78nEVWo7bS2F7W3Lh2aZGB5ceg0vx1vQnrC6dj0zzx_QUzwi-BlYPGO2P-6-UmyCBUXwH7gZxC1cUZtqDah_M6JgsjH2D0DopVo0vuSaEDJdT2g2ULe
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '45'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 10 Mar 2016 10:03:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - private, max-age=0
+      Location:
+      - https://api.spotify.com/v1/users/1232734959/playlists/40HnAjdz2SoOWVmY9yZ08e
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKyTXU/CMBSG7/0Vy67VbYDR7U4jHyZ+kGhUMMaU0UGh7Slt
+        NwXCf3ftNgIqGo23z/l6+57T5Z7juDFQigYgkSYZdp3ISRBVeN+EhljFkghN
+        gJsATym1HL9pLDmiL6mkykSWOc25EqBJMjfEHWstIs8DgflhyQ9jYF6qsPSC
+        Wr12XG+ER6EnKJpTorTX8Dv8dDJc1G7h5uGe9cJ53z/Bbt55ZYcmuU54xXJz
+        4FjiZFNZjjRoRA3z15VVltWkclFIkC1NWWBlqa90qV3CbGsytI2/TWFohK3o
+        J+fZEo6YNdqdgBwirpwJYgvnwLlDfARFEbxyLDceusPxv3nu2trV/raHv3HH
+        LWvL538O6LkonmgqK5hKYlnZPDKxaFtWsTCRDiiJTa6WaXGKiiOhxqBfypHj
+        SyJCDG0lZtMm7d62vfPm4+CN9NvdM2h1GkFYlxc+G7Tu1KLVZJfXSVZfdOIr
+        lDWavZkMCpu1RPH0q4P611PxyjGVaRqzzXvIESWMaIMC3y8Rz1f+4bQhSRS2
+        sEoSEmcEUvXzH1gvpBJbGPDDSqIqO9r1O1fvAAAA//8DACt38NBEBAAA
+    http_version: 
+  recorded_at: Thu, 10 Mar 2016 10:03:44 GMT
+recorded_with: VCR 3.0.1
