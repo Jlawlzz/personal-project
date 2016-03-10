@@ -32,7 +32,7 @@
     <div class="form-group">
       <div class="checkbox">
         <% @friends.each do |friend| %>
-        <%= check_box_tag 'fb_ids', friend['id'], :false, id:"#{friend['name'].split[1]}" %>
+        <%= check_box_tag 'fb_ids', friend['id'], false, id:"#{friend['name'].split[1]}" %>
         <%= f.label friend['name'] %> <br>
         <% end %>
       </div>
