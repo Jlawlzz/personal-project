@@ -37,18 +37,18 @@ class Worker
     end
   end
 
-  def self.group_populate(group)
+  def self.group_populate(group, env="dev")
     songs = group.grab_liked_songs
     group.group_populate(songs)
-    sleep(30)
+    sleep(30) if env == "dev"
   end
 
-  def self.personal_populate(playlist)
+  def self.personal_populate(playlist, env="dev")
     user = playlist.user.tokens.find_by(platform_id: Platform.find_by(name: "spotify"))
     user = RSpotify::User.new(JSON.parse(user.auth))
     songs = playlist.user.grab_liked_songs(user)
     playlist.populate(user, songs)
-    sleep(60)
+    sleep(60) if env == "dev"
   end
 
 end
