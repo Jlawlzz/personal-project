@@ -44,7 +44,8 @@
   end
 
   def self.personal_populate(playlist, env="dev")
-    user = playlist.user.tokens.find_by(platform_id: Platform.find_by(name: "spotify"))
+    platform = Platform.where(name: "spotify").last
+    user = playlist.user.tokens.find_by(platform_id: platform.id)
     user = RSpotify::User.new(JSON.parse(user.auth))
     songs = playlist.user.grab_liked_songs(user)
     playlist.populate(user, songs)
