@@ -12,6 +12,26 @@ class Group < ActiveRecord::Base
     group.group_populate(saved_songs)
   end
 
+  def create_group(user, params, playlist)
+    Invite.send_invite(params['fb_ids'], self)
+    self.users << user
+    self.playlists << playlist
+    user.playlists << playlist
+  end
+
+  def update_group(invite, user)
+    playlist_clone = self.playlists.first
+    playlist = Playlist.create(name: playlist_clone.name,
+                               description: playlist_clone.description,
+                               preferences: playlist_clone.preferences,
+                               platform_id: playlist_clone.platform_id)
+    user.playlists << playlist
+    self.users << user
+    self.playlists << playlist
+    invite.destroy
+    playlist
+  end
+
   def grab_liked_songs
     saved_songs = self.users.map do |user|
       platform = self.playlists.first.platform

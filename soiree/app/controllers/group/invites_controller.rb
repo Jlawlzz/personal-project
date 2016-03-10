@@ -7,15 +7,7 @@ class Group::InvitesController < ApplicationController
   def update
     invite = Invite.find(params[:id])
     group = invite.group
-    playlist_clone = group.playlists.first
-    playlist = Playlist.create(name: playlist_clone.name,
-                               description: playlist_clone.description,
-                               preferences: playlist_clone.preferences,
-                               platform_id: playlist_clone.platform_id)
-    current_user.playlists << playlist
-    group.users << current_user
-    group.playlists << playlist
-    invite.destroy
+    playlist = group.update_group(invite, current_user)
 
     redirect_to group_playlist_path(playlist.id)
   end
