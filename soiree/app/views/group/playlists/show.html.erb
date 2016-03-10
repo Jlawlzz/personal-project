@@ -33,7 +33,7 @@
         <th></th>
       </tr>
       <% count = 0 %>
-      <% @playlist.songs.each do |song| %>
+      <% @playlist.songs.last(30).each do |song| %>
       <% count += 1 %>
       <tr>
         <td><%= count %></td>

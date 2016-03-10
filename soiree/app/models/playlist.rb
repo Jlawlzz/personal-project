@@ -25,8 +25,8 @@ class Playlist < ActiveRecord::Base
   end
 
   def platform_create(user_auth)
-    playlist = create_playlist_by_platform(user_auth)
-    self.update_attribute(:service_playlist_id, playlist.id)
+    playlist = create_playlist_by_platform(user_auth).id
+    self.update_attribute(:service_playlist_id, playlist)
   end
 
   def populate(user_auth, tracks)
@@ -92,9 +92,8 @@ class Playlist < ActiveRecord::Base
     case platform.name
     when "spotify"
       @spotify_service = SpotifyService.new
-      playlist = @spotify_service.create_playlist(self.name, user_auth)
+      @spotify_service.create_playlist(self.name, user_auth)
     end
-    playlist
   end
 
 end
