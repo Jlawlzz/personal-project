@@ -32,11 +32,9 @@ RSpec.describe "User can create a group" do
 
       expect(current_path).to eq '/group/playlists/new'
 
-      #SELECT GROUP MEMEBERS
       fill_in 'name:', with: "Boss"
       fill_in 'description:', with: "Coolio"
       find(:css, "#Lawler").set(true)
-      # only show friends that are in spotify
     end
 
     VCR.use_cassette("spotify#client_auth") do
