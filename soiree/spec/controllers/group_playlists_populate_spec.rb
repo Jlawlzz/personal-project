@@ -23,7 +23,7 @@ RSpec.describe Api::V1::Personal::PlatformPlaylistsController, type: :controller
  )
 
     user.tokens << token
-    
+
      playlist = Playlist.create(name: "jordans jamz",
                                 description: "yellow!",
                                 platform_id: spotify.id
