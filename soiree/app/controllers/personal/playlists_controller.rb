@@ -9,7 +9,7 @@ class Personal::PlaylistsController < ApplicationController
     if @playlist.save
       current_user.playlists << @playlist
 
-      redirect_to personal_playlist_path(playlist.id)
+      redirect_to personal_playlist_path(@playlist.id)
     else
       render :new
     end
