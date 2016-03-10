@@ -45,19 +45,19 @@
         <th></th>
       </tr>
       <% count = 0 %>
-      <% @playlist.songs.last(30).each do |song| %>
-      <% count += 1 %>
-      <tr>
-        <td><%= count %></td>
         <% cache('album-image') do %>
-        <td><%= image_tag song.image, class:"img-circle" %></td>
+          <% @playlist.songs.last(30).each do |song| %>
+            <% count += 1 %>
+            <tr>
+              <td><%= count %></td>
+              <td><%= image_tag song.image, class:"img-circle" %></td>
+              <td><%= song.title %></td>
+              <td><%= song.artist %></td>
+              <td><%= song.album %></td>
+              <td><a href="#{link}" class="provider"><%= image_tag 'spotify_button' %></a></td>
+            </tr>
+          <% end %>
         <% end %>
-        <td><%= song.title %></td>
-        <td><%= song.artist %></td>
-        <td><%= song.album %></td>
-        <td><a href="#{link}" class="provider"><%= image_tag 'spotify_button' %></a></td>
-      </tr>
-      <% end %>
       <% end %>
     </table>
   </div>

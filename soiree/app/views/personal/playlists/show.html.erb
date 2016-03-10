@@ -36,13 +36,12 @@
         </tr>
         <% count = 0 %>
 
+        <% cache('album-image') do %>
           <% @playlist.songs.last(30).each do |song| %>
           <% count += 1 %>
           <tr>
             <td><%= count %></td>
-            <% cache('album-image') do %>
             <td><%= image_tag song.image, class:"img-circle" %></td>
-            <% end %>
             <td><%= song.truncate('title') %></td>
             <td><%= song.truncate('artist') %></td>
             <td><%= song.truncate('album') %></td>
@@ -51,6 +50,7 @@
             </td>
           </tr>
           <% end %>
+        <% end %>
       <% end %>
     </table>
   </div>
