@@ -5,13 +5,12 @@ RSpec.describe "User can create a group" do
   scenario "create a 30 long song playlist" do
 
     platform = Platform.create(name: 'spotify')
-    
-    friend = User.create(token: ENV['FRIEND_SECRET'],
-                         uid: ENV['FACEBOOK_APP_ID'],
+
+    friend = User.create!(token: ENV['FRIEND_SECRET'],
+                         uid: ENV['FRIEND_APP_ID'],
                          name: "Jordan Lawler",
                          provider: "facebook"
                          )
-
     token = Token.create(auth: spotify_friend_user_token)
     friend.tokens << token
     platform.tokens << token
@@ -41,7 +40,6 @@ RSpec.describe "User can create a group" do
     end
 
     VCR.use_cassette("spotify#client_auth") do
-      save_and_open_page
       click_on "Create Playlist"
     end
     playlist = Playlist.find_by(user_id: User.all.last)
@@ -49,6 +47,5 @@ RSpec.describe "User can create a group" do
     expect(current_path).to eq "/group/playlists/#{playlist.id}"
 
     expect(page).to have_content "fresh tracks coming your way, hang tight!"
-
   end
 end
