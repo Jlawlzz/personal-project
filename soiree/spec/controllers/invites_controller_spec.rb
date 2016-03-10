@@ -15,16 +15,23 @@ RSpec.describe Group::InvitesController, type: :controller do
 
        user = User.last
 
-       ApplicationController.any_instance.stub(:current_user).and_return(user)
+      ApplicationController.any_instance.stub(:current_user).and_return(user)
+      # allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
       group = Group.create
       playlist = Playlist.create(name: "thing")
-      invite = Invite.create
+      group.playlists << playlist
+      invite = Invite.create(status: "pending")
       group.invites << invite
       user.invites << invite
 
-      get :index
+      visit '/'
 
+      expect(page).to has_link "Invites: 1"
+
+      save_and_open_page
+      click_link 'Invites: 1'
+      visit '/group/invites'
       save_and_open_page
 
       expect(page).to have_content "Accept"
