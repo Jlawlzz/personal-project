@@ -1,11 +1,11 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/helpers/application_helper.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/api/v1/personal/platform_playlists_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/api/v1/personal/platform_playlists_controller.rb": [
         1,
         1,
         null,
@@ -24,13 +24,13 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/api/api_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/api/api_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/application_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -74,13 +74,13 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/group_playlist.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/group_playlist.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/group.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/group.rb": [
         1,
         1,
         1,
@@ -113,7 +113,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/group_user.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/group_user.rb": [
         1,
         1,
         1,
@@ -124,7 +124,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/invite.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/invite.rb": [
         1,
         1,
         1,
@@ -141,24 +141,24 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/platform.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/platform.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/playlist_song.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/playlist_song.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/service_playlist.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/service_playlist.rb": [
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/song.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/song.rb": [
         1,
         1,
         1,
@@ -172,13 +172,13 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/token.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/token.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/user.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/user.rb": [
         1,
         1,
         1,
@@ -224,7 +224,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/home_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/home_controller.rb": [
         1,
         null,
         1,
@@ -233,7 +233,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/permission_service.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/services/permission_service.rb": [
         1,
         1,
         null,
@@ -277,7 +277,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/sessions_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/sessions_controller.rb": [
         1,
         null,
         1,
@@ -293,7 +293,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/facebook_service.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/services/facebook_service.rb": [
         1,
         null,
         1,
@@ -310,7 +310,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/dashboard_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/dashboard_controller.rb": [
         1,
         null,
         1,
@@ -318,7 +318,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/playlist.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/playlist.rb": [
         1,
         1,
         1,
@@ -421,7 +421,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/spotify_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/spotify_controller.rb": [
         1,
         null,
         1,
@@ -432,7 +432,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/spotify_service.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/services/spotify_service.rb": [
         1,
         null,
         1,
@@ -485,7 +485,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/personal/playlists_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/personal/playlists_controller.rb": [
         1,
         null,
         1,
@@ -528,7 +528,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/group/playlists_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/group/playlists_controller.rb": [
         1,
         1,
         1,
@@ -576,7 +576,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/api/v1/group/platform_playlists_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/api/v1/group/platform_playlists_controller.rb": [
         0,
         0,
         0,
@@ -602,7 +602,7 @@
         0,
         0
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/group/invites_controller.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/controllers/group/invites_controller.rb": [
         0,
         0,
         0,
@@ -638,7 +638,7 @@
         0,
         0
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/group/spotify_logic.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/group/spotify_logic.rb": [
         0,
         0,
         0,
@@ -651,7 +651,7 @@
         0,
         0
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/personal/spotify_logic.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/models/personal/spotify_logic.rb": [
         0,
         0,
         0,
@@ -664,7 +664,7 @@
         0,
         0
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/echonest_service.rb": [
+      "/Users/JordanLawler/turing/3module/projects/tango/app/services/echonest_service.rb": [
         0,
         0,
         0,

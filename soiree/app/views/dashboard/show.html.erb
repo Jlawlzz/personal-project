@@ -1,3 +1,4 @@
+<%= render partial: "/layouts/logout_button" %>
 <div class="user-dash-info pull-left">
   <% if current_user.invites.count > 0 %>
     <button type="button" class="btn btn-primary btn-lg active logout-button">
@@ -11,21 +12,12 @@
     </button>
   <% end %>
 </div>
-
-<div class="user-dash-info pull-right">
-  <button type="button" class="btn btn-primary btn-lg active blue-button">
-    <%= image_tag current_user.image, class: "img-circle user-img" %>
-
-    <%= link_to 'Logout', logout_path, method: :delete, class:"logout", role:'button' %>
-  </button>
-</div>
-
 <div class="col-md-10 col-md-offset-1 home-stats">
-<h1 class="main-content">playlists of the week:</h1>
-<div class="suggest-divide">
-</div>
-<div class="col-md-6 main-content-secondary"><h1>top playlist of the week:</h1></div>
-<div class="col-md-6 main-content-secondary"><h1>recomended for you:</h1></div>
-<div class="col-md-6 bord-right"></div>
-<div class="col-md-6 bord-left"></div>
+  <h1 class="main-content">playlists of the week:</h1>
+  <div class="suggest-divide">
+  </div>
+  <div class="col-md-6 main-content-secondary"><h1>top playlist of the week:</h1></div>
+  <div class="col-md-6 main-content-secondary"><h1>recomended for you:</h1></div>
+  <div class="col-md-6 bord-right"></div>
+  <div class="col-md-6 bord-left"></div>
 </div>

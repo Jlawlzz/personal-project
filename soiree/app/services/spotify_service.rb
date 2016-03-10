@@ -41,7 +41,7 @@ class SpotifyService
   end
 
   def create_playlist(playlist_name, user_auth)
-    user_auth.create_playlist!(playlist_name + ' - Soriee')
+    user_auth.create_playlist!(playlist_name + ' - tango')
   end
 
   def refresh_playlist(playlist, tracks)

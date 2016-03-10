@@ -1,4 +1,5 @@
 class Group::PlaylistsController < ApplicationController
+
   def new
     @playlist = Playlist.new
     @friends = facebook_user.get_connections('me', 'friends')
@@ -6,18 +7,24 @@ class Group::PlaylistsController < ApplicationController
 
   def show
     @playlist = playlist_owner?
+    @users = @playlist.groups.first.users
   end
 
   def create
-    group = Group.create
-    ids = group_users_params['fb_ids']
-    Invite.send_invite(ids, group)
-    group.users << current_user
-    playlist = Playlist.create(playlist_params(params))
-    group.playlists << playlist
-    current_user.playlists << playlist
+    @playlist = Playlist.new(playlist_params(params))
+    if @playlist.save
+      group = Group.create
+      ids = group_users_params['fb_ids']
+      Invite.send_invite(ids, group)
+      group.users << current_user
+      group.playlists << @playlist
+      current_user.playlists << @playlist
 
-    redirect_to group_playlist_path(playlist.id)
+      redirect_to group_playlist_path(@playlist.id)
+    else
+      @friends = facebook_user.get_connections('me', 'friends')
+      render :new
+    end
   end
 
   def destroy

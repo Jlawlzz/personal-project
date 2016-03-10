@@ -358,7 +358,7 @@ http_interactions:
     uri: https://api.spotify.com/v1/users/1247992398/playlists
     body:
       encoding: UTF-8
-      string: '{"name":"Boss - Soriee","public":true}'
+      string: '{"name":"Boss - tango","public":true}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -494,7 +494,7 @@ http_interactions:
     uri: https://api.spotify.com/v1/users/1247992398/playlists
     body:
       encoding: UTF-8
-      string: '{"name":"Boss - Soriee","public":true}'
+      string: '{"name":"Boss - tango","public":true}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -634,7 +634,7 @@ http_interactions:
     uri: https://api.spotify.com/v1/users/1247992398/playlists
     body:
       encoding: UTF-8
-      string: '{"name":"Boss - Soriee","public":true}'
+      string: '{"name":"Boss - tango","public":true}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -1120,7 +1120,7 @@ http_interactions:
     uri: https://api.spotify.com/v1/users/1247992398/playlists
     body:
       encoding: UTF-8
-      string: '{"name":"Boss - Soriee","public":true}'
+      string: '{"name":"Boss - tango","public":true}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -1256,7 +1256,7 @@ http_interactions:
     uri: https://api.spotify.com/v1/users/1247992398/playlists
     body:
       encoding: UTF-8
-      string: '{"name":"Boss - Soriee","public":true}'
+      string: '{"name":"Boss - tango","public":true}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -1396,7 +1396,7 @@ http_interactions:
     uri: https://api.spotify.com/v1/users/1247992398/playlists
     body:
       encoding: UTF-8
-      string: '{"name":"Boss - Soriee","public":true}'
+      string: '{"name":"Boss - tango","public":true}'
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
