@@ -5,7 +5,7 @@
 #
 #   describe "#create" do
 #    it "responds with playlist" do
-# 
+#
 #      spotify = Platform.create(name: 'spotify')
 #      Platform.create(name: 'soundcloud')
 #
