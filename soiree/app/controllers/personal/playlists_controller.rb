@@ -30,7 +30,7 @@ class Personal::PlaylistsController < ApplicationController
   private
 
   def playlist_params(params)
-    playlist_params = params.require(:post).permit( :name,
+    playlist_params = params.require(:post).permit(:name,
                                       :description,
                                       :platform_id)
 
