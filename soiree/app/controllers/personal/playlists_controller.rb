@@ -9,7 +9,6 @@ class Personal::PlaylistsController < ApplicationController
     current_user.playlists << playlist
 
     @playlist = playlist
-    binding.pry
     redirect_to personal_playlist_path(playlist.id)
   end
 

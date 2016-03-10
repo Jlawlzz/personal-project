@@ -41,7 +41,6 @@ class SpotifyService
   end
 
   def create_playlist(playlist_name, user_auth)
-    binding.pry
     user_auth.create_playlist!(playlist_name + ' - Soriee')
   end
 
