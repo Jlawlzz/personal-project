@@ -25,8 +25,9 @@
 #
 #      user.playlists << playlist
 #
-#     post :create, format: :json, id: playlist.id
-#
+#      VCR.use_cassette("create_personal_playlist") do
+#        post :create, format: :json, id: playlist.id
+#      end
 #
 #      expect(response).to be_success
 #

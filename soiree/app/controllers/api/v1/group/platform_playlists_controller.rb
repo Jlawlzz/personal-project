@@ -1,5 +1,6 @@
 class Api::V1::Group::PlatformPlaylistsController < Api::ApiController
-  respond_to :json
+
+  respond_to :json, :js
 
   def create
     playlist = Playlist.find(params[:id])
