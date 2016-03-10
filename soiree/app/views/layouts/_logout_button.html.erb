@@ -1,0 +1,7 @@
+<div class="user-dash-info">
+  <button type="button" class="btn btn-primary btn-lg active blue-button">
+    <%= image_tag current_user.image, class: "img-circle user-img" %>
+
+    <%= link_to 'Logout', logout_path, method: :delete, class:"logout", role:'button' %>
+  </button>
+</div>
