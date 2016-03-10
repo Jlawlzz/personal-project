@@ -5,11 +5,14 @@ class Personal::PlaylistsController < ApplicationController
   end
 
   def create
-    playlist = Playlist.create(playlist(params))
-    current_user.playlists << playlist
+    @playlist = Playlist.new(playlist(params))
+    if @playlist.save
+      current_user.playlists << playlist
 
-    @playlist = playlist
-    redirect_to personal_playlist_path(playlist.id)
+      redirect_to personal_playlist_path(playlist.id)
+    else
+      render :new
+    end
   end
 
   def show

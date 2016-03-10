@@ -18,6 +18,10 @@
   margin-top: 3vh;
 }
 
+.errors {
+  color: white;
+}
+
 .spotify-last:before{
   content: "•";
   margin-right: 10px;
@@ -28,6 +32,7 @@
 .panel {
   background-color: inherit !important;
   overflow: scroll;
+  overflow-x: hidden;
   height: 90vh;
   color: white;
   width: auto;
@@ -43,6 +48,7 @@
     text-align: center;
     padding-bottom: 0px;
     padding-top: 4px;
+    font-size: 50px;
   }
   .panel-body {
     text-align: center;
@@ -50,6 +56,16 @@
   table td{
     vertical-align: middle !important;
   }
+  .friends {
+    float: right;
+    padding-right: 30px;
+  }
+  .remove {
+    float: right;
+  }
+}
+.fb_image {
+  border-radius: 50%;
 }
 
 .provider {
@@ -140,13 +156,12 @@ h1{
   background: none;
 }
 
-.remove {
-  margin-left: 85%;
-}
 
 .user-dash-info {
   padding-right: 3vw;
   padding-top: 3vh;
+  float: right;
+  padding-right: 13px;
 }
 
 .btn-primary.fb-login {
@@ -202,6 +217,7 @@ h1{
    border-right: 0px;
    padding-right: 0px;
    overflow: scroll;
+   overflow-x: hidden;
  }
 
  .title-description{
@@ -221,7 +237,15 @@ h1{
   .checkbox {
     color: white;
   }
+}
 
+.invites {
+  text-align: center;
+  color: white;
+  p {
+    text-decoration: underline;
+    font-size: 60px;
+  }
 }
 
 select#post_platform_id{

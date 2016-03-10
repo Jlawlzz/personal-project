@@ -3,6 +3,8 @@
   <h1>Create Personal Playlist</h1>
   <%= simple_form_for :post, url: personal_playlists_path, method: :post do |f| %>
 
+    <%= render partial: "/shared/errors", locals: {target: @playlist} %>
+
     <div class="form-group">
     <h2 class="form-text">name:</h2>
     <%= f.text_field :name, class: "form-control", id: "personal_name"%>
