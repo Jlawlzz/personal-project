@@ -21,7 +21,6 @@ RSpec.describe "User can create a playlist" do
     expect(current_path).to eq '/personal/playlists/new'
     find(:xpath, "//input[@id='personal_name']").set "Boss"
     find(:xpath, "//input[@id='personal_description']").set "Coolio"
-    # expect(page).to have_content "Preferences"
     click_on "Create Playlist"
 
     playlist = Playlist.first

@@ -40,7 +40,7 @@ RSpec.describe Worker, type: :model do
       @playlist = playlist.populate(@user_auth, @songs)
     end
 
-    VCR.use_cassette("playlist_updates_via_worker") do
+    VCR.use_cassette("playlists_updates_via_worker") do
       Worker.personal_populate(playlist, "test")
     end
 
