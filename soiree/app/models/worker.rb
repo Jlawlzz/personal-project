@@ -1,4 +1,4 @@
-class Worker
+  class Worker
 
   def self.update_personal_playlists
     playlists = find_expired_playlists

@@ -17,11 +17,6 @@ class Group::InvitesController < ApplicationController
     group.playlists << playlist
     invite.destroy
 
-    # playlist.platform_create(spotify_user)
-    # saved_songs = group.grab_liked_songs
-    # group.group_populate(saved_songs)
-    # invite.destroy
-
     redirect_to group_playlist_path(playlist.id)
   end
 
