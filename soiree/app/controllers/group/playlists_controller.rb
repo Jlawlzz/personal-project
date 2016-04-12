@@ -11,8 +11,7 @@ class Group::PlaylistsController < ApplicationController
   end
 
   def create
-    @playlist = Playlist.new(playlist_params(params))
-    create_group_redirect(params)
+    create_redirect
   end
 
   def destroy
@@ -30,7 +29,24 @@ class Group::PlaylistsController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def create_redirect
+    if Platform.find(params['post']['platform_id']).name != 'spotify'
+      flash[:warning] = "Sorry, this platform is not yet supported. Check back soon!"
+      redirect_to new_group_playlist_path
+    elsif params['post']['genre'].downcase != 'all'
+      flash[:warning] = "Sorry, genres are not yet supported. Check back soon!"
+      redirect_to new_group_playlist_path
+    elsif params['post']['description'] == ""
+      flash[:warning] = "Playlists must have a description!"
+      redirect_to new_group_playlist_path
+    else
+      @playlist = Playlist.new(playlist_params(params))
+      create_group_redirect(params)
+    end
+  end
+
   def create_group_redirect(params)
+    binding.pry
     if @playlist.save
       group = Group.create
       group.create_group(current_user, params, @playlist)

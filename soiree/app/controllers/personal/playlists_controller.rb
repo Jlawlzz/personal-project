@@ -5,8 +5,6 @@ class Personal::PlaylistsController < ApplicationController
   end
 
   def create
-    @playlist = Playlist.new(playlist_params(params))
-
     create_redirect
   end
 
@@ -27,11 +25,27 @@ class Personal::PlaylistsController < ApplicationController
                                       :description,
                                       :platform_id)
 
-    playlist_params[:preferences] = {genre: params[:post][:genre], type: 'personal'}
+    playlist_params[:preferences] = {genre: 'all', type: 'personal'}
     playlist_params
   end
 
   def create_redirect
+    if Platform.find(params['post']['platform_id']).name != 'spotify'
+      flash[:warning] = "Sorry, this platform is not yet supported. Check back soon!"
+      redirect_to new_personal_playlist_path
+    elsif params['post']['genre'].downcase != 'all'
+      flash[:warning] = "Sorry, genres are not yet supported. Check back soon!"
+      redirect_to new_personal_playlist_path
+    elsif params['post']['description'] == ""
+      flash[:warning] = "Playlists must have a description!"
+      redirect_to new_personal_playlist_path
+    else
+      @playlist = Playlist.new(playlist_params(params))
+      create_playlist_redirect
+    end
+  end
+
+  def create_playlist_redirect
     if @playlist.save
       current_user.playlists << @playlist
       redirect_to personal_playlist_path(@playlist.id)
