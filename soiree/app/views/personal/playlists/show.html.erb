@@ -2,8 +2,8 @@
   <div class="panel">
     <%= render partial: "/layouts/logout_button" %>
     <!-- Default panel contents -->
-    <div class="panel-heading" style="font-family:'Telex',sans-serif;"><%= @playlist.name %>
-      <h4><%= @playlist.description %></h4>
+    <div class="panel-heading" style="font-family:'Telex',sans-serif;">
+      <%= @playlist.name %>
     </div>
     <div class="panel-body">
       <%= link_to "Remove Playlist", personal_playlist_path(@playlist), method: :delete, :data => { :confirm => "This will prevent this playlist from being updated! This will not remove the playlist from your service."}, class:"btn btn-primary btn-lg blue-button remove" %>
@@ -18,7 +18,7 @@
       <div id="personalSongs">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <div class="container center" style="text-color:white;">
+            <div class="waiting-bar" style="text-color:white;">
               <h1> fresh tracks coming your way, hang tight! </h1>
             </div>
           </div>
