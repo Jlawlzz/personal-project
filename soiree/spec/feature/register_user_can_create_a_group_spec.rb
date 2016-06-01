@@ -34,7 +34,7 @@ RSpec.describe "User can create a group" do
 
       fill_in 'name:', with: "Boss"
       fill_in 'description:', with: "Coolio"
-      find(:css, "#Lawler").set(true)
+      find(:css, "#Andrew").set(true)
     end
 
     VCR.use_cassette("spotify#client_auth") do

@@ -40,7 +40,7 @@ RSpec.describe Playlist, type: :model do
       @songs = playlist.user_tracks_saved_by_platform(@user_auth)
     end
 
-    expect(@songs.count).to eq 14
+    expect(@songs.count).to eq 24
     expect(@songs.class).to eq Array
     expect(@songs[0].class).to eq String
   end
@@ -67,7 +67,7 @@ RSpec.describe Playlist, type: :model do
       @playlist = playlist.populate(@user_auth, @songs)
     end
 
-    expect(@playlist.count).to eq 14
+    expect(@playlist.count).to eq 24
     expect(@playlist[0].class).to eq RSpotify::Track
 
   end
