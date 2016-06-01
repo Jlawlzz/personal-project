@@ -15,8 +15,8 @@ RSpec.describe "User can delete a group playlist" do
                         provider: "facebook"
                         )
 
-    ApplicationController.any_instance.stub(:current_user).and_return(user)
-    ApplicationController.any_instance.stub(:spotify_user).and_return(user)
+    ApplicationController.any_instance.stubs(:current_user).returns(user)
+    ApplicationController.any_instance.stubs(:spotify_user).returns(user)
 
 
     playlist = Playlist.create(name: "Yay")

@@ -4,6 +4,7 @@ class SpotifyService
     RSpotify::authenticate(ENV['SPOTIFY_KEY'], ENV['SPOTIFY_SECRET'])
   end
 
+  # Does artist_dump need to be in there??
   def retrieve_saved(user_auth)
     tracks = user_auth.saved_tracks(limit: 30)
     artist_dump = []

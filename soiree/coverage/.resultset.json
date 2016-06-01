@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/helpers/application_helper.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -9,11 +9,26 @@
         2,
         2,
         2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        28,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
         null,
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/api/v1/group/platform_playlists_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/api/v1/group/platform_playlists_controller.rb": [
         1,
         null,
         1,
@@ -29,13 +44,12 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/api/api_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/api/api_controller.rb": [
         1,
         1,
-        null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/application_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -79,7 +93,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/group.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/group.rb": [
         1,
         1,
         1,
@@ -136,7 +150,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/group/invites_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/group/invites_controller.rb": [
         1,
         null,
         1,
@@ -159,7 +173,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/api/v1/personal/platform_playlists_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/api/v1/personal/platform_playlists_controller.rb": [
         1,
         null,
         1,
@@ -175,7 +189,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/echonest_service.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/services/echonest_service.rb": [
         1,
         null,
         1,
@@ -185,7 +199,7 @@
         null,
         null,
         1,
-        18,
+        16,
         3,
         null,
         null,
@@ -202,7 +216,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/invite.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/invite.rb": [
         1,
         1,
         1,
@@ -219,7 +233,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/playlist.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/playlist.rb": [
         1,
         1,
         1,
@@ -281,9 +295,9 @@
         null,
         1,
         null,
-        null,
-        null,
+        109,
         5,
+        null,
         null,
         null,
         1,
@@ -299,14 +313,14 @@
         1,
         5,
         5,
-        214,
+        288,
         null,
         null,
         null,
         null,
         null,
         null,
-        101,
+        132,
         null,
         null,
         null,
@@ -321,7 +335,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/song.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/song.rb": [
         1,
         1,
         1,
@@ -335,11 +349,12 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/spotify_service.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/services/spotify_service.rb": [
         1,
         null,
         1,
         22,
+        null,
         null,
         null,
         1,
@@ -388,7 +403,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/worker.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/worker.rb": [
         1,
         null,
         1,
@@ -445,13 +460,13 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/platform.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/platform.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/home_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/home_controller.rb": [
         1,
         null,
         1,
@@ -460,7 +475,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/permission_service.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/services/permission_service.rb": [
         1,
         1,
         null,
@@ -504,7 +519,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/user.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/user.rb": [
         1,
         1,
         1,
@@ -553,7 +568,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/sessions_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/sessions_controller.rb": [
         1,
         null,
         1,
@@ -569,7 +584,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/services/facebook_service.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/services/facebook_service.rb": [
         1,
         null,
         1,
@@ -586,7 +601,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/dashboard_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/dashboard_controller.rb": [
         1,
         null,
         1,
@@ -594,7 +609,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/spotify_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/spotify_controller.rb": [
         1,
         null,
         1,
@@ -605,19 +620,19 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/token.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/token.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/group_playlist.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/group_playlist.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/group_user.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/group_user.rb": [
         1,
         1,
         1,
@@ -628,7 +643,7 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/personal/playlists_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/personal/playlists_controller.rb": [
         1,
         null,
         1,
@@ -636,8 +651,6 @@
         null,
         null,
         1,
-        1,
-        null,
         1,
         null,
         null,
@@ -664,6 +677,22 @@
         null,
         1,
         1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
         1,
         1,
         null,
@@ -679,13 +708,13 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/playlist_song.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/playlist_song.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/controllers/group/playlists_controller.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/controllers/group/playlists_controller.rb": [
         1,
         null,
         1,
@@ -700,7 +729,6 @@
         null,
         1,
         1,
-        1,
         null,
         null,
         1,
@@ -716,6 +744,22 @@
         1,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        null,
+        1,
+        1,
+        null,
         null,
         null,
         1,
@@ -744,12 +788,12 @@
         null,
         null
       ],
-      "/Users/JordanLawler/turing/3module/projects/soiree/app/models/service_playlist.rb": [
+      "/Users/taylormoore/turing/3module/personal-project/soiree/app/models/service_playlist.rb": [
         0,
         0,
         0
       ]
     },
-    "timestamp": 1457630076
+    "timestamp": 1464824660
   }
 }

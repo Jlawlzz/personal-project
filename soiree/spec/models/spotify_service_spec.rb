@@ -15,7 +15,7 @@ RSpec.describe SpotifyService, type: :model do
       @songs = @ss.retrieve_saved(user_auth)
     end
 
-    expect(@songs.count).to eq 10
+    expect(@songs.count).to eq 24
   end
 
   it "creates_spotify_playlist" do
@@ -36,7 +36,7 @@ RSpec.describe SpotifyService, type: :model do
       @playlist = @ss.create_playlist(playlist.name, @user_auth)
     end
 
-    expect(@playlist.id).to eq "0H5Fy7twVSRZ95trTnReWE"
+    expect(@playlist.id).to eq "5p0kYFHxqkGsmB3FSzw9Hi"
     expect(@playlist.name).to eq "jamz - Tango"
     expect(@playlist.type).to eq "playlist"
   end
@@ -67,7 +67,7 @@ RSpec.describe SpotifyService, type: :model do
     VCR.use_cassette("saves_playlist") do
       @songs = @ss.save_playlist(songs, @user_auth, playlist)
     end
-    
+
     expect(@songs.count).to eq 10
   end
 

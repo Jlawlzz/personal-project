@@ -37,7 +37,7 @@ RSpec.describe Group, type: :model do
       @songs = group.grab_liked_songs
     end
 
-    expect(@songs[0].count).to eq 13
+    expect(@songs[0].count).to eq 24
   end
 
   it "populates group" do
@@ -80,6 +80,6 @@ RSpec.describe Group, type: :model do
       group.group_populate(@songs)
     end
 
-    expect(group.playlists[0].updated_at.to_s.split(" ")[0]).to eq "2016-03-10"
+    expect(group.playlists[0].updated_at.to_s.split(" ")[0]).to eq "2016-06-01"
   end
 end
