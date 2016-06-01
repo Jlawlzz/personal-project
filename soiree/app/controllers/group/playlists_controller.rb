@@ -46,7 +46,6 @@ class Group::PlaylistsController < ApplicationController
   end
 
   def create_group_redirect(params)
-    binding.pry
     if @playlist.save
       group = Group.create
       group.create_group(current_user, params, @playlist)
