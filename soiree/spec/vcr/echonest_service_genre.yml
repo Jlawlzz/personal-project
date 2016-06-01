@@ -20,14 +20,8 @@ http_interactions:
     headers:
       Access-Control-Allow-Origin:
       - "*"
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Fb-Trace-Id:
-      - CLsNkJ2MZzA
-      X-Fb-Rev:
-      - '2222534'
       Etag:
-      - '"8e93213bcb7239f4819c1c06387d056c0d1a2725"'
+      - '"14dbd23be4d203c28282b47073dc10501428136a"'
       Pragma:
       - no-cache
       Cache-Control:
@@ -36,21 +30,27 @@ http_interactions:
       - v2.5
       Expires:
       - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Fb-Trace-Id:
+      - EsDcgjuGKsz
+      X-Fb-Rev:
+      - '2365621'
       Vary:
       - Accept-Encoding
       X-Fb-Debug:
-      - IhjYuJ26G/H6His0VwhOTTMK5Tll+06rSXyZRZ3KadO3Lm62vjLf7kC4msdzEAgD8nqWv2Dzgxn7SD38H21Hxg==
+      - UZE4KRAyxXYRdttg50aoaMTfIpmUUjDs9TaWO3q4rob/8bQat2nCGW5otwoYYK+ba1mIRacqcXf/8DlPqipmuQ==
       Date:
-      - Thu, 10 Mar 2016 08:55:14 GMT
+      - Wed, 01 Jun 2016 02:30:44 GMT
       Connection:
       - keep-alive
       Content-Length:
-      - '508'
+      - '417'
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"name":"David Stinnette","id":"10106046331295548"},{"name":"Steve
-        Oscar","id":"788634289194"},{"name":"Jordan Lawler","id":"10153958223763622"},{"name":"Aaron
-        Greenspan","id":"3393381960832"}],"paging":{"next":"https:\/\/graph.facebook.com\/v2.5\/10156565555460075\/friends?access_token=CAAKC85ZBVS88BAM6PZAyhDVQiJbYrT9fx6JwslRvpnLW1u4q4jbLV1Ey2ePfbhlrjyYfGqkNRFgN4ljkYYTs2xSPr52RSq4PBqp6ZAS2CJrmq4Ds4Pj759cOYsbDXB8tRQq5H7AnrF253DBe6nJdOGaFmhIsA5ouuC5iYth7pVPUIjlXxAjIuxTEfHr1LkZD&limit=25&offset=25&__after_id=enc_AdDVPGnMebqs1e2i7Pezz6jPFCS3CYxBZAJT0ZC47gP6zMD5hNNgZAnFwZCKQcJxuPuDHIUZD"},"summary":{"total_count":1257}}'
+        Oscar","id":"788634289194"},{"name":"Jordan Andrew","id":"10153958223763622"},{"name":"Aaron
+        Greenspan","id":"3393381960832"},{"name":"July Tran","id":"745274818942344"}],"paging":{"cursors":{"before":"QVFIUk95NklaOGxsMkdJX20zNjZAUWTZACcHFzVXRTU2E0bmhPajV1YTRMQzh0RFhmLUJnRkhpVExubFI1aVM3R2NlOG8ZD","after":"QVFIUnhIUnVjRUx5TXpoazFUSDQ3a3B1RmctZA1FDSzZArU3hpMWZAMTzhIYUg2YlJZAQlRkTXFtajNaYjhHMDdmY2Y3ZAFdIbzMzSElJRnBRcEF2dW41M1IxOHBn"}},"summary":{"total_count":1270}}'
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 08:55:14 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Wed, 01 Jun 2016 02:30:43 GMT
+recorded_with: VCR 3.0.3

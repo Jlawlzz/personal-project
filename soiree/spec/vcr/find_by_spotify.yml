@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 10 Mar 2016 04:50:24 GMT
+      - Wed, 01 Jun 2016 02:30:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -27,9 +27,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - RgDFRQFIQl68ilgxSm/JEQ
+      - qjaMXwnYRDOSwPC15E+E4g
       X-Worker-Node:
-      - 89a7b:26554
+      - 94800:43983
       X-Ratelimit-Remaining:
       - '19'
       Server:
@@ -50,7 +50,7 @@ http_interactions:
         "songs": [{"artist_id": "ARVEJJX13DD21C402A", "id": "SOKKHXJ14522281393",
         "artist_name": "SZA", "title": "HiiiJack"}]}}'
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 04:50:23 GMT
+  recorded_at: Wed, 01 Jun 2016 02:30:43 GMT
 - request:
     method: get
     uri: http://developer.echonest.com/api/v4/song/profile?api_key=SWOUMYTGV1Z9RU0RU&track_id=spotify:track:0YqxF5zwV8a0UbBPW2xHaH
@@ -70,7 +70,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 10 Mar 2016 04:50:24 GMT
+      - Wed, 01 Jun 2016 02:30:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -78,9 +78,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - Nqa1Ul1oQraeUsw+Ub0Ldw
+      - UrQWl5vGQCin4EXKEwzFig
       X-Worker-Node:
-      - f61bc:41257
+      - 8d4ce:42002
       X-Ratelimit-Remaining:
       - '18'
       Server:
@@ -101,7 +101,7 @@ http_interactions:
         "songs": [{"artist_id": "AREFRHS12F54FAD82F", "id": "SOGZSEW1482D8C886A",
         "artist_name": "Collarbones", "title": "Turning"}]}}'
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 04:50:24 GMT
+  recorded_at: Wed, 01 Jun 2016 02:30:44 GMT
 - request:
     method: get
     uri: http://developer.echonest.com/api/v4/song/profile?api_key=SWOUMYTGV1Z9RU0RU&track_id=spotify:track:32SXFj9DD0ECBQYjr8Xrk7
@@ -121,7 +121,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 10 Mar 2016 04:50:24 GMT
+      - Wed, 01 Jun 2016 02:30:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -129,9 +129,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - ezFE00n6SkGK+y5pMSCEXQ
+      - UOBbAEvDQ7+g+bUB4Zxf+Q
       X-Worker-Node:
-      - 203d7:29653
+      - 89a7b:35556
       X-Ratelimit-Remaining:
       - '17'
       Server:
@@ -152,7 +152,7 @@ http_interactions:
         "songs": [{"artist_id": "ARUKIQX1271F5762F7", "id": "SOLUDYT15243B1D5BB",
         "artist_name": "TOKiMONSTA", "title": "I''m Waiting"}]}}'
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 04:50:24 GMT
+  recorded_at: Wed, 01 Jun 2016 02:30:44 GMT
 - request:
     method: get
     uri: http://developer.echonest.com/api/v4/song/profile?api_key=SWOUMYTGV1Z9RU0RU&track_id=spotify:track:0f420tG76j3felLh9TMUMq
@@ -172,7 +172,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 10 Mar 2016 04:50:24 GMT
+      - Wed, 01 Jun 2016 02:30:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -180,9 +180,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - feGMn+MuRvqRLTEAj8NZuw
+      - KQfZVc2ZSCu3tdPEDUOBjg
       X-Worker-Node:
-      - 13afb:10818
+      - f61bc:39417
       X-Ratelimit-Remaining:
       - '16'
       Server:
@@ -206,7 +206,7 @@ http_interactions:
         S0QxNENGMzBFN0I0OSIsICJhcnRpc3RfbmFtZSI6ICJNZXRoeWwgRXRoZWwi
         LCAidGl0bGUiOiAiSWTDqWUgRml4ZSJ9XX19
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 04:50:24 GMT
+  recorded_at: Wed, 01 Jun 2016 02:30:45 GMT
 - request:
     method: get
     uri: http://developer.echonest.com/api/v4/song/profile?api_key=SWOUMYTGV1Z9RU0RU&track_id=spotify:track:4jzRvmHo5owQBLa7tNH5gL
@@ -226,7 +226,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 10 Mar 2016 04:50:25 GMT
+      - Wed, 01 Jun 2016 02:30:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -234,9 +234,9 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Request-Id:
-      - YKaqHMorRNS+Oopl0fNIPw
+      - wCyToZiVQyiIiZ25ypVg5Q
       X-Worker-Node:
-      - 1c88a:19930
+      - d550a:11635
       X-Ratelimit-Remaining:
       - '15'
       Server:
@@ -257,5 +257,5 @@ http_interactions:
         "songs": [{"artist_id": "ARJGHNZ1512BD24DF7", "id": "SOWNTGW15144B35F1A",
         "artist_name": "Krrum", "title": "Evil Twin"}]}}'
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 04:50:24 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Wed, 01 Jun 2016 02:30:46 GMT
+recorded_with: VCR 3.0.3

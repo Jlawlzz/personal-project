@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://bc3ff7fdb9f44ae2aba52a8b22929996:14617af0a4894f2a81e0dfaba3bb139c@accounts.spotify.com/api/token
+    uri: https://accounts.spotify.com/api/token
     body:
       encoding: US-ASCII
       string: grant_type=client_credentials
@@ -11,6 +11,8 @@ http_interactions:
       - "*/*; q=0.5, application/xml"
       Accept-Encoding:
       - gzip, deflate
+      Authorization:
+      - Basic YmMzZmY3ZmRiOWY0NGFlMmFiYTUyYThiMjI5Mjk5OTY6MTQ2MTdhZjBhNDg5NGYyYTgxZTBkZmFiYTNiYjEzOWM=
       Content-Length:
       - '29'
       Content-Type:
@@ -25,7 +27,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 10 Mar 2016 03:14:06 GMT
+      - Wed, 01 Jun 2016 02:30:49 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -71,10 +73,10 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAAx3NTQuCMBgA4P+yc8JqNqujGYgULArB05jbi835lXOlRf89
-        6/pcnjcSUoK1fGgNNGiHwnO0X7ka0oYSHNhYuhfzWX4rT9JlpNz6Rj/qa5Qu
-        CUvUUR1UivEmNF6xbn1ae0GST+zpTHY3VVaNF8VjIaBAC/QP+DB18FtA9NDP
-        CmOne7BczzehGH++sySiIZEAAAA=
+        H4sIAAAAAAAAAx3NTQuCMBgA4P+yc8JoNqLj1Ah00peBp7H03RyCH9NQF/33
+        rOtzed5IFgUMgxjbGhp0QOzCXknLZ4XV8T494rR0ZMsrX7iWhXLP856a8pSk
+        RmviRhWHSy0oztTknpkzeX/1o8WLblVw9sjOukbLqAg02qB/IMalg98C0oJd
+        FebOWBiEWW9CMf58Aff1maKRAAAA
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 03:14:05 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Wed, 01 Jun 2016 02:30:48 GMT
+recorded_with: VCR 3.0.3
