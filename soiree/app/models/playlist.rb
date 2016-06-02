@@ -61,7 +61,6 @@ class Playlist < ActiveRecord::Base
     tracks.map do |song|
       song if !(self.songs.find_by(track_id: song))
     end.compact
-    # tracks
   end
 
   def save_songs_by_platform(sanitized_songs, user_auth)
