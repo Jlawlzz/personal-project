@@ -1,9 +1,9 @@
 class Playlist < ActiveRecord::Base
   belongs_to :user
-  has_many :playlist_songs
+  has_many :playlist_songs, dependent: :destroy
   has_many :songs, through: :playlist_songs
-  has_many :group_playlists
-  has_many :groups, through: :group_playlists
+  has_many :group_playlists, dependent: :destroy
+  has_many :groups, through: :group_playlists, dependent: :destroy
   belongs_to :platform
   belongs_to :service_playlist
   validates :name, presence: true
