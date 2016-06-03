@@ -1,9 +1,7 @@
 class Group < ActiveRecord::Base
-  has_many :group_users
-  has_many :users, through: :group_users
-  # has_many :group_playlists
+  has_many :group_users, dependent: :destroy
+  has_many :users, through: :group_users, dependent: :destroy
   belongs_to :playlist, dependent: :destroy
-  has_many :playlists, through: :group_playlists
   has_many :invites, dependent: :destroy
 
   def self.create_group_playlist(playlist, spotify_user)
@@ -19,19 +17,19 @@ class Group < ActiveRecord::Base
     self.playlist = playlist
     playlist.groups << self
     user.playlists << playlist
-    self.save
-    playlist.save
   end
 
   def update_group(invite, user)
-    playlist_clone = self.playlists.first
+    playlist_clone = self.playlist
     playlist = Playlist.create(name: playlist_clone.name,
                                description: playlist_clone.description,
                                preferences: playlist_clone.preferences,
                                platform_id: playlist_clone.platform_id)
+                               binding.pry
     user.playlists << playlist
+    self.playlist = playlist
     self.users << user
-    self.playlists << playlist
+    playlist.groups << self
     invite.destroy
     playlist
   end

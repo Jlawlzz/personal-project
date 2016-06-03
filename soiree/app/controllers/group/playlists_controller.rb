@@ -17,29 +17,32 @@ class Group::PlaylistsController < ApplicationController
   def destroy
     playlist = Playlist.find(params[:id])
     delete_group_invites(playlist)
-    delete_group_redirect(playlist)
+    # delete_group_redirect(playlist)
+    redirect_to dashboard_path
   end
 
   private
 
   def delete_group_redirect(playlist)
-    playlist.group_playlists.destroy_all
-    playlist.playlist_songs.destroy_all
     playlist.destroy
-    redirect_to dashboard_path
   end
 
   def delete_group_invites(playlist)
     # When a group member deletes their portion of the group playlist, their image should be taken off other group
     # Members pages
     group = playlist.groups[0]
-    group.destroy
-    # if GroupUser.where(group: group_id).length == 1
+    if GroupUser.where(group: group.id).length == 1
+      group.destroy
       # Determine if there is only one person in the group
       # Iterate through and delete the invites if any
-      # else
-      # Iterate through and delete the user from the group playlist
-    # end
+    else
+      binding.pry
+      GroupUser.where('user_id = ? AND group_id = ?', current_user.id, group.id).first.destroy
+      current_user.playlists.find(playlist.id).destroy
+      # playlist.group_playlists.destroy_all
+      # playlist.playlist_songs.destroy_all
+
+    end
   end
 
   def create_redirect

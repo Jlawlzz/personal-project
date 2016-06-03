@@ -9,7 +9,6 @@
     <% end %>
 
     <li role="presentation"><h4>My Groups<a href='/group/playlists/new'><span class="glyphicon glyphicon-plus-sign" id="add_group"></span></a></h4></li>
-
     <% current_user.group_playlists.each do |playlist| %>
       <li class="<%= playlist.platform_type %>"role="presentation"><%= link_to playlist.name_params, group_playlist_path(playlist) %></li>
     <% end %>
