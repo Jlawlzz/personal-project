@@ -38,7 +38,7 @@ class Group::PlaylistsController < ApplicationController
     else
       binding.pry
       GroupUser.where('user_id = ? AND group_id = ?', current_user.id, group.id).first.destroy
-      current_user.playlists.find(playlist.id).destroy
+      # current_user.playlists.find(playlist.id).destroy
       # playlist.group_playlists.destroy_all
       # playlist.playlist_songs.destroy_all
 

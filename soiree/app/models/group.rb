@@ -25,11 +25,9 @@ class Group < ActiveRecord::Base
                                description: playlist_clone.description,
                                preferences: playlist_clone.preferences,
                                platform_id: playlist_clone.platform_id)
-                               binding.pry
     user.playlists << playlist
-    self.playlist = playlist
     self.users << user
-    playlist.groups << self
+    self.playlist = playlist
     invite.destroy
     playlist
   end
