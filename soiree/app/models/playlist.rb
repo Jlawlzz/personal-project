@@ -58,10 +58,10 @@ class Playlist < ActiveRecord::Base
   end
 
   def sanitize_songs(tracks)
-    tracks.map do |song|
-      song if !(self.songs.find_by(track_id: song))
-    end.compact
-    # tracks
+    # tracks.map! do |song|
+    #   song if !(self.songs.find_by(track_id: song))
+    # end.compact!.flatten!
+    tracks
   end
 
   def save_songs_by_platform(sanitized_songs, user_auth)

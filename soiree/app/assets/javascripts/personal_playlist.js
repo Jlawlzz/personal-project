@@ -1,7 +1,3 @@
-$(document).ready(function(){
-  renderAllSongs();
-});
-
 function renderAllSongs(){
 
   var target = document.getElementById('personalSongs');
