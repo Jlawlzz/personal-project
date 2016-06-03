@@ -3,11 +3,11 @@
     Current Invites
   </p>
   <% current_user.invites.each do |invite| %>
-      <h1><%= invite.group.playlists.first.name %>
-        - <%= link_to "Accept", group_invite_path(invite.id), method: :patch %>
-        - <%= link_to "Decline", group_invite_path(invite.id), method: :delete %></h1>
-        <% invite.group.users.each do |user| %>
-        <%= image_tag user.image, title: user.name, class:"fb_image"%>
-        <% end %>
+    <h1><%= invite.group.playlist.name %>
+    - <%= link_to "Accept", group_invite_path(invite.id), method: :patch %>
+    - <%= link_to "Decline", group_invite_path(invite.id), method: :delete %></h1>
+    <% invite.group.users.each do |user| %>
+      <%= image_tag user.image, title: user.name, class:"fb_image"%>
+    <% end %>
   <% end %>
 </div>

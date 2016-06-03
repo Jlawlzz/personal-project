@@ -1,9 +1,8 @@
 class Playlist < ActiveRecord::Base
   belongs_to :user
-  has_many :playlist_songs
-  has_many :songs, through: :playlist_songs
-  has_many :group_playlists
-  has_many :groups, through: :group_playlists
+  has_many :playlist_songs, dependent: :destroy
+  has_many :songs, through: :playlist_songs, dependent: :destroy
+  has_many :groups, dependent: :destroy
   belongs_to :platform
   belongs_to :service_playlist
   validates :name, presence: true
@@ -58,10 +57,10 @@ class Playlist < ActiveRecord::Base
   end
 
   def sanitize_songs(tracks)
-    tracks.map do |song|
-      song if !(self.songs.find_by(track_id: song))
-    end.compact
-    # tracks
+    # tracks.map do |song|
+    #   song if !(self.songs.find_by(track_id: song))
+    # end.compact
+    tracks
   end
 
   def save_songs_by_platform(sanitized_songs, user_auth)
