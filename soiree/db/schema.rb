@@ -17,16 +17,6 @@ ActiveRecord::Schema.define(version: 20160307043414) do
   enable_extension "plpgsql"
   enable_extension "hstore"
 
-  create_table "group_playlists", force: :cascade do |t|
-    t.integer  "group_id"
-    t.integer  "playlist_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  add_index "group_playlists", ["group_id"], name: "index_group_playlists_on_group_id", using: :btree
-  add_index "group_playlists", ["playlist_id"], name: "index_group_playlists_on_playlist_id", using: :btree
-
   create_table "group_users", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "group_id"
@@ -38,9 +28,12 @@ ActiveRecord::Schema.define(version: 20160307043414) do
   add_index "group_users", ["user_id"], name: "index_group_users_on_user_id", using: :btree
 
   create_table "groups", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "playlist_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
+
+  add_index "groups", ["playlist_id"], name: "index_groups_on_playlist_id", using: :btree
 
   create_table "invites", force: :cascade do |t|
     t.integer  "user_id"
@@ -120,10 +113,9 @@ ActiveRecord::Schema.define(version: 20160307043414) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "group_playlists", "groups"
-  add_foreign_key "group_playlists", "playlists"
   add_foreign_key "group_users", "groups"
   add_foreign_key "group_users", "users"
+  add_foreign_key "groups", "playlists"
   add_foreign_key "invites", "groups"
   add_foreign_key "invites", "users"
   add_foreign_key "playlist_songs", "playlists"

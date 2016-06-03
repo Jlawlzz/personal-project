@@ -1,9 +1,10 @@
 class Group < ActiveRecord::Base
   has_many :group_users
   has_many :users, through: :group_users
-  has_many :group_playlists
+  # has_many :group_playlists
+  belongs_to :playlist, dependent: :destroy
   has_many :playlists, through: :group_playlists
-  has_many :invites
+  has_many :invites, dependent: :destroy
 
   def self.create_group_playlist(playlist, spotify_user)
     group = playlist.groups[0]
@@ -15,8 +16,11 @@ class Group < ActiveRecord::Base
   def create_group(user, params, playlist)
     Invite.send_invite(params['fb_ids'], self)
     self.users << user
-    self.playlists << playlist
+    self.playlist = playlist
+    playlist.groups << self
     user.playlists << playlist
+    self.save
+    playlist.save
   end
 
   def update_group(invite, user)
@@ -34,7 +38,7 @@ class Group < ActiveRecord::Base
 
   def grab_liked_songs
     saved_songs = self.users.map do |user|
-      platform = self.playlists.first.platform
+      platform = self.playlist.platform
       user_auth = user.find_token(platform).auth
       spotify_user = RSpotify::User.new(JSON.parse(user_auth))
       SpotifyService.new.retrieve_saved(spotify_user)
@@ -44,8 +48,8 @@ class Group < ActiveRecord::Base
 
   def group_populate(saved_songs)
     self.users.each do |user|
-      platform = self.playlists.first.platform
-      playlist = self.playlists.find_by(user_id: user.id)
+      playlist = self.playlist
+      platform = playlist.platform
       user_auth = user.find_token(platform).auth
       spotify_user = RSpotify::User.new(JSON.parse(user_auth))
       playlist.populate(spotify_user, saved_songs)

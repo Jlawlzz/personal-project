@@ -1,3 +1,4 @@
+
 class SpotifyService
 
   def initialize

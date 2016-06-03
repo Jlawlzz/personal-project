@@ -30,18 +30,16 @@ class Group::PlaylistsController < ApplicationController
   end
 
   def delete_group_invites(playlist)
-    #When a group member deletes their portion of the group playlist, their image should be taken off other group
+    # When a group member deletes their portion of the group playlist, their image should be taken off other group
     # Members pages
-    binding.pry
-    group_id = playlist.group_playlists[0].group_id
-
-    if GroupUser.where(group: group_id).length == 1
+    group = playlist.groups[0]
+    group.destroy
+    # if GroupUser.where(group: group_id).length == 1
       # Determine if there is only one person in the group
       # Iterate through and delete the invites if any
       # else
       # Iterate through and delete the user from the group playlist
-
-    end
+    # end
   end
 
   def create_redirect
