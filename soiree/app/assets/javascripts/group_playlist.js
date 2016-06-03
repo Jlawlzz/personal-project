@@ -1,8 +1,3 @@
-$(document).ready(function(){
-  renderGroupSongs();
-})
-
-
 function renderGroupSongs(){
 
   var groupTarget = document.getElementById('groupSongs')
