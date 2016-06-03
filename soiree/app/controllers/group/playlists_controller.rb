@@ -16,17 +16,21 @@ class Group::PlaylistsController < ApplicationController
 
   def destroy
     playlist = Playlist.find(params[:id])
-
-    delete_group_redirect(playlist)
+    delete_invites_group(playlist)
+    # delete_group_redirect(playlist)
+    # redirect_to dashboard_path
   end
 
   private
+
+  def delete_invites_group
+    
+  end
 
   def delete_group_redirect(playlist)
     playlist.group_playlists.destroy_all
     playlist.playlist_songs.destroy_all
     playlist.destroy
-    redirect_to dashboard_path
   end
 
   def create_redirect
