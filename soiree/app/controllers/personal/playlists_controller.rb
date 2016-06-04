@@ -14,8 +14,8 @@ class Personal::PlaylistsController < ApplicationController
 
   def destroy
     playlist = Playlist.find(params['id'])
-
-    delete_redirect(playlist)
+    playlist.destroy
+    redirect_to dashboard_path
   end
 
   private
@@ -54,10 +54,4 @@ class Personal::PlaylistsController < ApplicationController
     end
   end
 
-  def delete_redirect(playlist)
-    playlist.playlist_songs.delete_all
-    playlist.destroy
-
-    redirect_to dashboard_path
-  end
 end
