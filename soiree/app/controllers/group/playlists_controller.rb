@@ -1,3 +1,4 @@
+
 class Group::PlaylistsController < ApplicationController
 
   def new
