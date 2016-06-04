@@ -1,12 +1,17 @@
 class Playlist < ActiveRecord::Base
   belongs_to :user
-  has_many :playlist_songs, dependent: :destroy
+  has_many :playlist_songs
   has_many :songs, through: :playlist_songs
   has_many :group_playlists, dependent: :destroy
-  has_many :groups, through: :group_playlists, dependent: :destroy
+  has_many :groups, through: :group_playlists
   belongs_to :platform
   belongs_to :service_playlist
   validates :name, presence: true
+  before_destroy :destroy_songs
+
+  def destroy_songs
+    Song.destroy(self.songs.pluck(:id))
+  end
 
   def name_params
     if self.name.length > 18

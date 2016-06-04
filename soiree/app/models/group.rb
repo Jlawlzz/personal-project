@@ -1,8 +1,8 @@
 class Group < ActiveRecord::Base
   has_many :group_users, dependent: :destroy
-  has_many :users, through: :group_users, dependent: :destroy
+  has_many :users, through: :group_users
   has_many :group_playlists, dependent: :destroy
-  has_many :playlists, through: :group_playlists, dependent: :destroy
+  has_many :playlists, through: :group_playlists
   has_many :invites, dependent: :destroy
 
   def self.create_group_playlist(playlist, spotify_user)
