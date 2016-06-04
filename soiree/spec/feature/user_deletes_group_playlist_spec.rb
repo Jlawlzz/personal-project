@@ -72,6 +72,7 @@ RSpec.describe "User can delete a group playlist" do
 
       expect(current_path).to eq "/dashboard"
       expect(user2.playlists.count).to eq 0
+      expect(PlaylistSong.all.count).to eq 0
       expect(GroupPlaylist.all.count).to eq 0
       expect(Playlist.all.count).to eq 0
       expect(Song.all.count).to eq 0
