@@ -80,6 +80,6 @@ RSpec.describe Group, type: :model do
       group.group_populate(@songs)
     end
 
-    expect(group.playlists[0].updated_at.to_s.split(" ")[0]).to eq "2016-06-04"
+    expect(group.playlists[0].updated_at.to_s.split(" ")[0]).to eq "2016-06-05"
   end
 end
