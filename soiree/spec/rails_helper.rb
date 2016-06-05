@@ -24,6 +24,7 @@ RSpec.configure do |config|
   VCR.configure do |c|
     c.ignore_localhost = true
     c.cassette_library_dir = "spec/vcr"
+    c.allow_http_connections_when_no_cassette = true
     c.hook_into :webmock
   end
 
@@ -63,7 +64,7 @@ OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new({"provider"=>"spoti
     ENV["SPOTIFY_CLIENT_TOKEN"],
    "refresh_token"=>
     ENV["SPOTIFY_CLIENT_REFRESH"],
-   "expires_at"=>1456944208,
+   "expires_at"=>1464972427,
    "expires"=>true},
  "extra"=>{}} )
 
