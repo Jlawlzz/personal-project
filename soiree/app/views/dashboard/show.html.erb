@@ -7,10 +7,10 @@
     </button>
   <% end %>
   <% if !spotify_user %>
-    <button type="button" class="btn btn-primary btn-lg active blue-button">
-      <%= image_tag 'http://www.tunecore.com/images/music_stores/spotify_logo.png', class: "img-circle user-img" %>
-      <%= link_to 'Login to Spotify', '/auth/spotify', class:"logout" %>
-    </button>
+    <!-- <button type="button" class="btn btn-primary btn-lg active blue-button"> -->
+      <!-- <%= image_tag 'http://www.tunecore.com/images/music_stores/spotify_logo.png', class: "img-circle user-img" %> -->
+      <%= link_to 'Login to Spotify', '/auth/spotify', class:"logout btn btn-primary btn-lg active blue-button" %>
+    <!-- </button> -->
   <% end %>
 </div>
 <div class="text-center login-content">

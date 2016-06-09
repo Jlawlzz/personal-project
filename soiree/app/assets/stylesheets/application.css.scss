@@ -14,9 +14,13 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- html {
-  overflow: hidden;
+ @media screen and (max-width: 1000px) {
+   .container {
+     color: yellow!important;
+     background-color: yellow!important;
+   }
  }
+
 
 .home-stats{
   margin-top: 3vh;
