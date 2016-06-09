@@ -32,16 +32,14 @@ class User < ActiveRecord::Base
 
   def create_personal_playlist(spotify_user, playlist)
     playlist.platform_create(spotify_user)
-    songs = self.grab_liked_songs(spotify_user)
+    genre = playlist.preferences['genre']
+    songs = self.grab_liked_songs(spotify_user, genre)
     playlist.populate(spotify_user, songs)
     self.playlists << playlist
   end
 
-  def grab_liked_songs(user_auth)
-    saved_songs = SpotifyService.new.retrieve_saved(user_auth)
-    echo_tracks = EchonestService.find_by_spotify(saved_songs)
-    tracks = EchonestService.retrieve_playlist_from_likes(echo_tracks)
-    tracks
+  def grab_liked_songs(user_auth, genre)
+    SpotifyService.new.retrieve_saved(user_auth, genre)
   end
 
 end

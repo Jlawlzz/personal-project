@@ -24,8 +24,7 @@ class Personal::PlaylistsController < ApplicationController
     playlist_params = params.require(:post).permit(:name,
                                       :description,
                                       :platform_id)
-
-    playlist_params[:preferences] = {genre: 'all', type: 'personal'}
+    playlist_params[:preferences] = {genre: params[:post][:genre], type: 'personal'}
     playlist_params
   end
 
@@ -33,9 +32,9 @@ class Personal::PlaylistsController < ApplicationController
     if Platform.find(params['post']['platform_id']).name != 'spotify'
       flash[:warning] = "Sorry, this platform is not yet supported. Check back soon!"
       redirect_to new_personal_playlist_path
-    elsif params['post']['genre'].downcase != 'all'
-      flash[:warning] = "Sorry, genres are not yet supported. Check back soon!"
-      redirect_to new_personal_playlist_path
+    # elsif params['post']['genre'].downcase != 'all'
+    #   flash[:warning] = "Sorry, genres are not yet supported. Check back soon!"
+      # redirect_to new_personal_playlist_path
     elsif params['post']['description'] == ""
       flash[:warning] = "Playlists must have a description!"
       redirect_to new_personal_playlist_path

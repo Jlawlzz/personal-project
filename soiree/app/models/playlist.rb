@@ -52,20 +52,21 @@ class Playlist < ActiveRecord::Base
   end
 
   def retrieve_echonest_tracks(saved_songs)
-    case platform.name
-    when "spotify" then echo_tracks = EchonestService.find_by_spotify(saved_songs)
-    end
+    # case platform.name
+
+    # when "spotify" then echo_tracks = EchonestService.find_by_spotify(saved_songs)
+    # end
     echo_tracks
   end
 
   def retrieve_playlist_from_likes(echo_tracks)
-    EchonestService.retrieve_playlist_from_likes(echo_tracks)
+    # EchonestService.retrieve_playlist_from_likes(echo_tracks)
   end
 
   def sanitize_songs(tracks)
     # tracks.map! do |song|
     #   song if !(self.songs.find_by(track_id: song))
-    # end.compact!.flatten!
+    # end.compact!
     tracks
   end
 
