@@ -18,7 +18,11 @@ RSpec.describe Worker, type: :model do
 )
     @user_auth = RSpotify::User.new(token)
 
-    playlist = Playlist.create(name: "yo", platform_id: spotify.id)
+    playlist = Playlist.create(name: "yo",
+                               description: 'da bomb',
+                               platform_id: spotify.id,
+                               preferences: {genre: 'All', type: 'personal' })
+
 
     user = User.create(name: "Jordan", uid: '1')
 
@@ -44,7 +48,7 @@ RSpec.describe Worker, type: :model do
       Worker.personal_populate(playlist, "test")
     end
 
-    expect(playlist.songs.count).to eq 30
+    expect(playlist.songs.count).to eq 21
   end
 
 end

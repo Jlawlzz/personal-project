@@ -27,7 +27,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 01 Jun 2016 03:17:16 GMT
+      - Fri, 10 Jun 2016 22:58:19 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -58,7 +58,7 @@ http_interactions:
         nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
         BolRAAAA
     http_version: 
-  recorded_at: Wed, 01 Jun 2016 03:17:15 GMT
+  recorded_at: Fri, 10 Jun 2016 22:58:20 GMT
 - request:
     method: post
     uri: https://accounts.spotify.com/api/token
@@ -86,7 +86,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 01 Jun 2016 03:17:16 GMT
+      - Fri, 10 Jun 2016 22:58:19 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -132,12 +132,12 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAAx3Nuw6CMBQA0H/pLEmjYqNbBRXBASpBtgbKjYLl1Ut8xn8X
-        Xc9y3iRTChDl0F6hISuyjlyrvSEPPC+/w0Uboe240LFWtYbXRtB02VdhnWx1
-        sWP2vlehc/KdUgQJj/zpvMecoWEYitQMZ+vQ8EodK04m5B/I4dnBb4HMgBkV
-        Hl1pAGU53rMFpZ8vo4uXrpEAAAA=
+        H4sIAAAAAAAAAx3NTQuCMBgA4P+yc8IkrOxW08qPGEKC7vIy7QWt0DFNZ9F/
+        z7o+l+dNZFli10Hf3rEhW7JPGL2Muf06UQZ8zYPACVGIaHCLiFWZa5XykVcw
+        XZ+QwjFU4SHTYIwX88n3aiNVY+kiYY3NRxG3abpxhtt5RxbkH0A/KfwtKDXq
+        WdGoWmMH9XwvV5R+vlVIab2RAAAA
     http_version: 
-  recorded_at: Wed, 01 Jun 2016 03:17:15 GMT
+  recorded_at: Fri, 10 Jun 2016 22:58:20 GMT
 - request:
     method: post
     uri: https://api.spotify.com/v1/users/1232734959/playlists
@@ -165,7 +165,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 01 Jun 2016 03:17:17 GMT
+      - Fri, 10 Jun 2016 22:58:20 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -196,7 +196,7 @@ http_interactions:
         nJieChRTCslIVUhMTgYKKJTkZ6fmKaRWFGQWpaYoAVXWctUCAAAA//8DAFAZ
         BolRAAAA
     http_version: 
-  recorded_at: Wed, 01 Jun 2016 03:17:15 GMT
+  recorded_at: Fri, 10 Jun 2016 22:58:20 GMT
 - request:
     method: post
     uri: https://accounts.spotify.com/api/token
@@ -224,7 +224,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 01 Jun 2016 03:17:17 GMT
+      - Fri, 10 Jun 2016 22:58:20 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -270,16 +270,16 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAAx3QS3KCMAAA0LuwrjOgfEp3EBA0SuQrsMlgiEgRjAEB2+nd
-        a7t9y/ctFITQvsfDraGd8CGYvhW1KDOg7d5OTv8ZK9on1ajTZl9RORrOlrhS
-        e+pRnl1D78GxKN+PYN41m1F3Z2koYVhhtRKXeIEBNm5kt9WX+wvbN6e6kAax
-        5CGX16zripFZGwnHEk6vzwyC+yGtTXBJlBrkQeJpHYgMRc893SHBigSnYCog
-        crbSfVrqNXQObIj9hiEdrHlFptl4yOOsoAe3Ri9YR8qQkuLo3bMmAaWxrBcY
-        VVy9mjwvgdjMppfvEjtqbpEP0Bm7dnsuVlUFNSlZPVwz7qHfcWQx3l6HS4nD
-        dIrIuyUnB74J50Wu+fnFVgn0XeMc+OVeeBP++/DwZPTvkBac8pfSmdWc9rh+
-        za5UUfz5BYcFgfBvAQAA
+        H4sIAAAAAAAAAx3QS3KCMAAA0LuwrjMKCKE7BBV/QIIUccMESEBQCD8Ddnr3
+        2m7f8n0LOElI10V9XZJK+BRWUGcLJDlQ1/LF7BIO9UaBKtfwLi2DG6jXxgW8
+        fCdi7WZ/snEfBc5eow+QupM9JCEoHcYP3hPLcNhWHdA7S/Fs3UhDnj8oMQeu
+        XnFwDE9JVnWKphBU3EEQ+HnHXxZrEkNaFtK+dm/VvUzihB6grmt8XYvG4Lbj
+        8Y52S9twVxml0dPu1VimjePBSSwV+MxMvqlN13NZBkKKj4cSKNaFiQWTFv5s
+        sCKwxWnMYWy0iPtmRJ1KHJBjx7qPz2O+WianyyP2Zmco75E5M6Cvdqj1ZDEn
+        y2AsF4qP4Zg38pNKu42JJrmB7ldThFfhQ/jvi/qJkb9DglvSvpWM7NaSLrq9
+        ZyVlPv/5BfBmigpvAQAA
     http_version: 
-  recorded_at: Wed, 01 Jun 2016 03:17:16 GMT
+  recorded_at: Fri, 10 Jun 2016 22:58:20 GMT
 - request:
     method: post
     uri: https://api.spotify.com/v1/users/1232734959/playlists
@@ -292,7 +292,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       Authorization:
-      - Bearer BQDTmOYAKEHobGsjU57je7eGmYzTdvAGJcH1mbsOZYlSNur_04qWCxLkIv9Hx1tdKSg_6g02_-_C_AocLJ92MhpMkbia1t0drSr4FpnnavpDI1_U1_XlyYKCqPXiBChV5iCZRVN7nCTA59ZN9GcR3cRbRwaKOGJ1qw29iKGPptUQkpO9CFrgcwxAu4vx5OurDvNRFT5tXcaWNqYkVCdA2i-_Ogr6lBrZdC0kxBNZLVETkoTQCOf_HEmfa3ggK71V3uHBUsKQnrODprmlthd_SXwTc8D4VPrISx-Z7QZhE6cKQHAfRQdM
+      - Bearer BQAp1R3OQA9h1-XYuoF6Q7w9aIdkWi8oECX8zUO_prFJMNat_WOJ9fm8dPyNucY8kOpwKSva4QuGns8AsH6SNACdYwhmfeDuw7ZaWLYMcgns696eRjl8WWUhswzHpqcC35j3JoPinlkcbcfKQAA9wEo2CuPrxLlRI5NCPBgff_vNt7b4fqOSQy2k6QvgDwFoDPSPpg8YfaLKk86HXp2jp31U-uH_8GadbwQbCrRwUD_fOn2uRONbAUaTxhB5cMXmbS-TQ4JRD-CQU7sRrS42he5Wxk16UaQxhq4vf3IFDRy4qQPVqjYZ
       Content-Type:
       - application/json
       Content-Length:
@@ -307,7 +307,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 01 Jun 2016 03:17:18 GMT
+      - Fri, 10 Jun 2016 22:58:21 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -319,7 +319,7 @@ http_interactions:
       Cache-Control:
       - private, max-age=0
       Location:
-      - https://api.spotify.com/v1/users/1232734959/playlists/5p0kYFHxqkGsmB3FSzw9Hi
+      - https://api.spotify.com/v1/users/1232734959/playlists/72Xy8L1lFx4veNzn9M5aZH
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -339,16 +339,16 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAAKyTW0/CMBiG7/0Vy25FN07KdieEk6cYJERiDCmjg0rX1rZj
-        DMJ/d+02AgoSjbfPd3r7fl/XZ4ZhehRjMKYcSLSApuEaPsACFlRoAoXHEZOI
-        EhUgIcaaw6WEnAA8CjkWKrJOaMIFoxL5sSLmTErmWhZlkFxm/NKjgRUKyK1i
-        qVy6LlecqmMxDGKMhLSqzJ4PW53lx7wtgnq59byKnA4yk84bPdRPdNII8t2B
-        Mw79XWUJklQCrJi9rcyztCaRiAIM7WlaFLUscUiXOCZMt0YT3fjHlABMoRb9
-        arxpQkCgjTbfQbAyLow+IFOaJtOIQL7zwCNO/81rU9duCvve/cYVM6vNnv09
-        IGOWPk1V5jDkSLOsuati7r6sdFEsHGPkqVzJw/QEBQFMzKgcZSOXDafbpjfN
-        CilFDafnPQy7zUqL3yN/0HNkJ+7fiip/9Gu12hUbNF+atWqn3i9i4NHu0/i8
-        cpfaLDnw5ocO6V9PxMrG5KZJGOzeQYIwCpBUqGjbGSLJyr+cNPV9ATXMkxiH
-        C0RDcfr2twvJxaYGnFiJm2e7x37l5hMAAP//AwDjXMf+PAQAAA==
+        H4sIAAAAAAAAAKyTyU7DMBCG7zxFlCuFdFVpbnAIW+EQEKsQctNxYurYlu0E
+        Auq7EztJ1UJLBeL6zfb7n/HHjuO4EacUTbhEmuTgOr6DEVXQMqEpqEgSoQln
+        JsAySi2HNw2SIfqcSapM5KOkJVeCa4ILQ9xEa+F7HhfA9mu+H/HUyxRIr9Pt
+        dYe9/mgw8gRFBSVKe8PuXXEw7tDgrZ/D5TsbXQzQw4lbdp7bobjUyV9BLg9M
+        JOBlZSXSXCNqWHtR2WRZTaoUhQRZ0ZR3rCy1TpfaJMy2JlPb+MeUFMVgRT86
+        T5YwlFqj3ReUvjt7zjViMa+S+SsDufTADU7/zWvX1s5bq979xhW3rq2f/T2g
+        C1E9zVQ2MJPEsrq5b2L+qqxqUSKbUBKZXC2z6gQVQ0IlXD83I4Wm7D5WQeLB
+        btAL8zE+ugoDjoPwcALyGPfjg24oi/YpHfZn4Q3kxUyppBefofPB7dF9ZbOW
+        KJqtO6R/PRGvHtOYpiFdvoMSUZISbVCn3a4RK1f+5aQ5xgosbJKEhJzwTG2/
+        /cVCGrGVAVtW4jfZ/qZfOf8EAAD//wMAYQCDsDwEAAA=
     http_version: 
-  recorded_at: Wed, 01 Jun 2016 03:17:17 GMT
+  recorded_at: Fri, 10 Jun 2016 22:58:21 GMT
 recorded_with: VCR 3.0.3

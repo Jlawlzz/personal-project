@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "User can create a playlist" do
   include Capybara::DSL
   include WaitForAjax
-  it "create a 20 long song playlist", js: true do
+  xit "create a 20 long song playlist", js: true do
     Platform.create(name: 'spotify')
 
 

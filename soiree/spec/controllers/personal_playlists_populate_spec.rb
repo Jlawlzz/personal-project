@@ -30,7 +30,8 @@ RSpec.describe Api::V1::Personal::PlatformPlaylistsController, type: :controller
 
      playlist = Playlist.create(name: "jordans jamz",
                                 description: "yellow!",
-                                platform_id: spotify.id
+                                platform_id: spotify.id,
+                                preferences: {genre: 'All', type: 'personal' }
                                 )
 
      user.playlists << playlist
