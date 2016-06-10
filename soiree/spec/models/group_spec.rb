@@ -21,7 +21,10 @@ RSpec.describe Group, type: :model do
 
     group.users << user
 
-    playlist = Playlist.create(name: "jamz", platform_id: spotify.id)
+    playlist = Playlist.create(name: "jamz",
+                               description: 'da bomb',
+                               platform_id: spotify.id,
+                               preferences: {genre: 'All', type: 'group' })
 
     user.playlists << playlist
 
@@ -37,7 +40,7 @@ RSpec.describe Group, type: :model do
       @songs = group.grab_liked_songs
     end
 
-    expect(@songs[0].count).to eq 24
+    expect(@songs[0].count).to eq 21
   end
 
   it "populates group" do
@@ -60,7 +63,10 @@ RSpec.describe Group, type: :model do
 
     group.users << user
 
-    playlist = Playlist.create(name: "jamz", platform_id: spotify.id)
+    playlist = Playlist.create(name: "jamz",
+                               description: 'da bomb',
+                               platform_id: spotify.id,
+                               preferences: {genre: 'All', type: 'group' })
 
     user.playlists << playlist
 
@@ -80,6 +86,6 @@ RSpec.describe Group, type: :model do
       group.group_populate(@songs)
     end
 
-    expect(group.playlists[0].updated_at.to_s.split(" ")[0]).to eq "2016-06-05"
+    expect(group.playlists[0].updated_at.to_s.split(" ")[0]).to eq "2016-06-10"
   end
 end

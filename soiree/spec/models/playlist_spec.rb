@@ -17,7 +17,10 @@ RSpec.describe Playlist, type: :model do
 )
     @user_auth = RSpotify::User.new(token)
 
-    playlist = Playlist.create(name: "yo", platform_id: spotify.id)
+    playlist = Playlist.create(name: "yo",
+                               description: 'da bomb',
+                               platform_id: spotify.id,
+                               preferences: {genre: 'All', type: 'personal' })
 
     VCR.use_cassette("playlist_created_for_platorm") do
       playlist.platform_create(@user_auth)
@@ -34,13 +37,16 @@ RSpec.describe Playlist, type: :model do
 )
     @user_auth = RSpotify::User.new(token)
 
-    playlist = Playlist.create(name: "yo", platform_id: spotify.id)
+    playlist = Playlist.create(name: "yo",
+                               description: 'da bomb',
+                               platform_id: spotify.id,
+                               preferences: {genre: 'All', type: 'personal' })
 
     VCR.use_cassette("playlist_finds_saved_tracks") do
       @songs = playlist.user_tracks_saved_by_platform(@user_auth)
     end
 
-    expect(@songs.count).to eq 24
+    expect(@songs.count).to eq 30
     expect(@songs.class).to eq Array
     expect(@songs[0].class).to eq String
   end
@@ -53,7 +59,10 @@ RSpec.describe Playlist, type: :model do
 )
     @user_auth = RSpotify::User.new(token)
 
-    playlist = Playlist.create(name: "yo", platform_id: spotify.id)
+    playlist = Playlist.create(name: "yo",
+                               description: 'da bomb',
+                               platform_id: spotify.id,
+                               preferences: {genre: 'All', type: 'personal' })
 
     VCR.use_cassette("playlist_created_for_platorm") do
       playlist.platform_create(@user_auth)
@@ -67,7 +76,7 @@ RSpec.describe Playlist, type: :model do
       @playlist = playlist.populate(@user_auth, @songs)
     end
 
-    expect(@playlist.count).to eq 24
+    expect(@playlist.count).to eq 30
     expect(@playlist[0].class).to eq RSpotify::Track
 
   end

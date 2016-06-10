@@ -43,24 +43,14 @@ class Playlist < ActiveRecord::Base
 
   def user_tracks_saved_by_platform(user_auth)
     platform = Platform.find(self.platform_id)
+    genre = self.preferences['genre']
     case platform.name
     when "spotify"
       @spotify_service = SpotifyService.new
       saved_songs = @spotify_service.retrieve_saved(user_auth)
+      recommended_songs = @spotify_service.find_recommandations(saved_songs, genre)
     end
-    saved_songs
-  end
-
-  def retrieve_echonest_tracks(saved_songs)
-    # case platform.name
-
-    # when "spotify" then echo_tracks = EchonestService.find_by_spotify(saved_songs)
-    # end
-    echo_tracks
-  end
-
-  def retrieve_playlist_from_likes(echo_tracks)
-    # EchonestService.retrieve_playlist_from_likes(echo_tracks)
+    recommended_songs
   end
 
   def sanitize_songs(tracks)
