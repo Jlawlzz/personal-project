@@ -33,11 +33,12 @@ class Group < ActiveRecord::Base
   end
 
   def grab_liked_songs
-    saved_songs = self.users.map do |user|
+    saved_songs = []
+    self.users.map do |user|
       platform = self.playlists.first.platform
       user_auth = user.find_token(platform).auth
       spotify_user = RSpotify::User.new(JSON.parse(user_auth))
-      SpotifyService.new.retrieve_saved(spotify_user)
+      saved_songs << SpotifyService.new.retrieve_saved(spotify_user)
     end
     saved_songs
   end
