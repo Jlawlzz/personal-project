@@ -13,7 +13,7 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
-//= require turbolinks
+//= require bootstrap-slider
 //= require_tree .
 
 $(document).ready(function(){

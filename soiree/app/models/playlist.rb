@@ -46,12 +46,12 @@ class Playlist < ActiveRecord::Base
 
   def user_tracks_saved_by_platform(user_auth)
     platform = Platform.find(self.platform_id)
-    genre = self.preferences['genre']
+    preferences = self.preferences
     case platform.name
     when "spotify"
       @spotify_service = SpotifyService.new
       saved_songs = @spotify_service.retrieve_saved(user_auth)
-      recommended_songs = @spotify_service.find_recommandations(saved_songs, genre)
+      recommended_songs = @spotify_service.find_recommandations(saved_songs, preferences)
     end
     recommended_songs
   end
