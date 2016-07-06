@@ -16,17 +16,19 @@ class SpotifyService
     unique_songs
   end
 
-  def find_recommandations(unique_songs, genre)
-    tracks = RSpotify::Recommendations.generate(recommendation(unique_songs, genre)).tracks
+  def find_recommandations(unique_songs, preferences)
+    tracks = RSpotify::Recommendations.generate(recommendation(unique_songs, preferences)).tracks
 
     tracks.map! do |song|
       song.id
     end
   end
 
-  def recommendation(unique_songs, genre)
-    genre != 'All' ? {seed_genres: [genre.downcase], min_popularity: 50}
-          : {seed_tracks: unique_songs[0..3], min_popularity: 50}
+  def recommendation(unique_songs, preferences)
+    genre = preferences['genre'].downcase
+    max_pop = preferences['popularity']
+    genre != 'all' ? {seed_genres: [genre], max_popularity: max_pop}
+          : {seed_tracks: unique_songs[0..3], max_popularity: max_pop}
   end
 
   def self.login(auth, current_user)

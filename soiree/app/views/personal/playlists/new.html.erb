@@ -30,6 +30,22 @@
     </div>
 
     <div class="form-group">
+    <h2 class="form-text">popularity range:</h2>
+    <input
+          type="text"
+          name="slider"
+          data-provide="slider"
+          data-slider-ticks="[0..100]"
+          data-slider-min="20"
+          data-slider-max="100"
+          data-slider-step="1"
+          data-slider-value="50"
+          data-slider-tooltip="hide"
+    >
+    <br><br>
+  </div>
+
+    <div class="form-group">
     <%= f.submit "Create Playlist", class:"btn btn-primary btn-lg active logout-button" %>
     </div>
   <% end %>

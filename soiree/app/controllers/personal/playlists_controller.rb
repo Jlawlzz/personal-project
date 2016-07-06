@@ -23,8 +23,12 @@ class Personal::PlaylistsController < ApplicationController
   def playlist_params(params)
     playlist_params = params.require(:post).permit(:name,
                                       :description,
-                                      :platform_id)
-    playlist_params[:preferences] = {genre: params[:post][:genre], type: 'personal'}
+                                      :platform_id,
+                                      )
+    playlist_params[:preferences] = {genre: params[:post][:genre],
+                                     type: 'personal',
+                                     popularity: params[:slider]
+                                    }
     playlist_params
   end
 
