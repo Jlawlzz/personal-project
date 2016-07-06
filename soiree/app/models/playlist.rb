@@ -9,6 +9,9 @@ class Playlist < ActiveRecord::Base
   validates :name, presence: true
   before_destroy :destroy_songs
 
+
+  brad = Playlist.new
+
   def destroy_songs
     Song.destroy(self.songs.pluck(:id))
   end

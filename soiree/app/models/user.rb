@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
 
   def create_personal_playlist(spotify_user, playlist)
     playlist.platform_create(spotify_user)
-    songs = self.grab_liked_songs(spotify_user)
+    songs = playlist.user_tracks_saved_by_platform(spotify_user)
     playlist.populate(spotify_user, songs)
     self.playlists << playlist
   end
